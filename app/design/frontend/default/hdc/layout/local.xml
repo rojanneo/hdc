@@ -13,5 +13,8 @@
 
 			<action method="addItem"><type>skin_css</type><file>css/hdc.css</file></action>
 		</reference>
+		<remove name="top.links"/>
+		<remove name="top.search"/>
+		<remove name="welcome"/>
 	</default>
 </layout>
