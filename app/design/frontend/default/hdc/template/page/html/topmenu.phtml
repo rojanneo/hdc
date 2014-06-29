@@ -34,8 +34,18 @@
 <?php $_menu = $this->getHtml('level-top') ?>
 <?php if($_menu): ?>
 <div class="nav-container">
+<div class="menu">
     <ul id="nav">
+		<li><a href="#">Our Missions</a></li>
+		<li><a href="#">About Us</a></li>
         <?php echo $_menu ?>
+		<li><a href="#">Find Us</a></li>
+		<li><a href="#">Contact Us</a></li>
     </ul>
+</div>
+<div class="logo">
+	<img src="<?php echo $this->getSkinUrl('images/logo.gif');?>"/>
+</div>
+
 </div>
 <?php endif ?>
