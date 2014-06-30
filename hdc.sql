@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 30, 2014 at 08:21 AM
+-- Generation Time: Jun 30, 2014 at 01:59 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `adminnotification_inbox` (
   KEY `IDX_ADMINNOTIFICATION_INBOX_SEVERITY` (`severity`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_READ` (`is_read`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_REMOVE` (`is_remove`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=85 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=86 ;
 
 --
 -- Dumping data for table `adminnotification_inbox`
@@ -130,7 +130,8 @@ INSERT INTO `adminnotification_inbox` (`notification_id`, `severity`, `date_adde
 (81, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (82, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (83, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
-(84, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
+(84, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(85, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -229,7 +230,7 @@ CREATE TABLE IF NOT EXISTS `admin_user` (
 --
 
 INSERT INTO `admin_user` (`user_id`, `firstname`, `lastname`, `email`, `username`, `password`, `created`, `modified`, `logdate`, `lognum`, `reload_acl_flag`, `is_active`, `extra`, `rp_token`, `rp_token_created_at`) VALUES
-(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-06-30 00:34:28', 6, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
+(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-06-30 06:12:12', 7, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -6563,7 +6564,9 @@ INSERT INTO `log_url` (`url_id`, `visitor_id`, `visit_time`) VALUES
 (57, 4, '2014-06-29 20:12:45'),
 (58, 4, '2014-06-29 20:13:35'),
 (59, 4, '2014-06-29 20:14:00'),
-(60, 4, '2014-06-29 20:14:32');
+(60, 4, '2014-06-29 20:14:32'),
+(61, 5, '2014-06-30 00:51:25'),
+(62, 5, '2014-06-30 00:51:31');
 
 -- --------------------------------------------------------
 
@@ -6576,7 +6579,7 @@ CREATE TABLE IF NOT EXISTS `log_url_info` (
   `url` varchar(255) DEFAULT NULL COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=61 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=63 ;
 
 --
 -- Dumping data for table `log_url_info`
@@ -6642,7 +6645,9 @@ INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
 (57, 'http://192.168.0.107/hdc/index.php/', NULL),
 (58, 'http://192.168.0.107/hdc/index.php/', NULL),
 (59, 'http://192.168.0.107/hdc/index.php/', NULL),
-(60, 'http://192.168.0.107/hdc/index.php/', NULL);
+(60, 'http://192.168.0.107/hdc/index.php/', NULL),
+(61, 'http://192.168.0.107/hdc/index.php/whatpeoplesay', NULL),
+(62, 'http://192.168.0.107/hdc/index.php/whatpeoplesay', NULL);
 
 -- --------------------------------------------------------
 
@@ -6658,7 +6663,7 @@ CREATE TABLE IF NOT EXISTS `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `log_visitor`
@@ -6668,7 +6673,8 @@ INSERT INTO `log_visitor` (`visitor_id`, `session_id`, `first_visit_at`, `last_v
 (1, 'qpeu368bns7nh1spkdcvjdpag4', '2014-06-28 09:51:41', '2014-06-28 09:53:03', 2, 1),
 (2, 'e7vptbkgd7kjj5rc24id9v3pu3', '2014-06-29 07:37:45', '2014-06-29 08:37:37', 21, 1),
 (3, '2rlb799vntc2kcd0h0unl5igh2', '2014-06-29 10:57:34', '2014-06-29 11:39:15', 50, 1),
-(4, 'sjkal8l5ahqjh430j7egdro465', '2014-06-29 20:02:25', '2014-06-29 20:14:32', 60, 1);
+(4, 'sjkal8l5ahqjh430j7egdro465', '2014-06-29 20:02:25', '2014-06-29 20:14:32', 60, 1),
+(5, '7l530h2t5ohj7btf9vhrqbi9c2', '2014-06-30 00:51:23', '2014-06-30 00:51:30', 62, 1);
 
 -- --------------------------------------------------------
 
@@ -6695,7 +6701,8 @@ INSERT INTO `log_visitor_info` (`visitor_id`, `http_referer`, `http_user_agent`,
 (1, 'http://192.168.0.107/hdc/index.php/install/wizard/end/', 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (2, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (3, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
-(4, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669);
+(4, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
+(5, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669);
 
 -- --------------------------------------------------------
 
@@ -9697,11 +9704,11 @@ CREATE TABLE IF NOT EXISTS `what_people_say` (
 --
 
 INSERT INTO `what_people_say` (`post_id`, `title`, `type`, `description`, `link`) VALUES
-(1, 'Yeepet.com', '0', 'Yeepet.com', 'http://www.yeepet.com/forum/showthread.php?p=1567#post1567http://www.yeepet.com/forum/showthread.php?p=1567#post1567'),
-(2, 'Top 10 Best Dog Friendly Cities in America', '0', 'Top 10 Best Dog Friendly Cities in America', 'http://www.toptenz.net/top-10-best-dog-friendly-cities-in-america.php'),
-(3, 'Dogster.com', '1', 'Dogster.com', 'http://www.dogster.com/forums/search/index.php?q=himalayan+dog+chew'),
-(4, 'rat-terrier.com', '1', 'rat-terrier.com', 'http://www.rat-terrier.com/Home/tabid/37/forumid/4/postid/305614/view/topic/Default.aspx'),
-(5, 'Luke''s All Natural Pet Food', '2', 'Luke''s All Natural Pet Food', 'http://www.lukesallnatural.com/himalayan-dog-chew-p-3596.html');
+(1, 'Yeepet.com', 'blogs', 'Yeepet.com', 'http://www.yeepet.com/forum/showthread.php?p=1567#post1567http://www.yeepet.com/forum/showthread.php?p=1567#post1567'),
+(2, 'Top 10 Best Dog Friendly Cities in America', 'blogs', 'Top 10 Best Dog Friendly Cities in America', 'http://www.toptenz.net/top-10-best-dog-friendly-cities-in-america.php'),
+(3, 'Dogster.com', 'online discussions', 'Dogster.com', 'http://www.dogster.com/forums/search/index.php?q=himalayan+dog+chew'),
+(4, 'rat-terrier.com', 'online discussions', 'rat-terrier.com', 'http://www.rat-terrier.com/Home/tabid/37/forumid/4/postid/305614/view/topic/Default.aspx'),
+(5, 'Luke''s All Natural Pet Food', 'videos', 'Luke''s All Natural Pet Food', 'http://www.lukesallnatural.com/himalayan-dog-chew-p-3596.html');
 
 -- --------------------------------------------------------
 

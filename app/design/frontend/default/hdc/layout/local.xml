@@ -17,4 +17,13 @@
 		<remove name="top.search"/>
 		<remove name="welcome"/>
 	</default>
+	<cms_index_index>
+		<reference name="content">
+			<block type="core/template" name="whatpeoplesay" template="whatpeoplesay/wrapper.phtml">
+				<block type="whatpeoplesay/blogs" name="whatpeoplesay_blogs" template="whatpeoplesay/blogs.phtml"/>
+				<block type="whatpeoplesay/onlinediscussions" name="whatpeoplesay_onlinediscussions" template="whatpeoplesay/onlinediscussions.phtml"/>
+				<block type="whatpeoplesay/videos" name="whatpeoplesay_videos" template="whatpeoplesay/videos.phtml"/>
+			</block>
+		</reference>
+	</cms_index_index>
 </layout>

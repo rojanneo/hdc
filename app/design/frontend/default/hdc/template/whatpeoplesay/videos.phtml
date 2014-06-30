@@ -1,0 +1,11 @@
+<?php 
+$videos = $this->getDatasets();
+?>
+<div class="videos">
+<h3>Videos</h3>
+<ul>
+<?php foreach($videos as $video):?>
+	<li><a href="<?php echo $video->getLink()?>"><?php echo $video->getTitle()?></a></li>
+<?php endforeach;?>
+</ul>
+</div>

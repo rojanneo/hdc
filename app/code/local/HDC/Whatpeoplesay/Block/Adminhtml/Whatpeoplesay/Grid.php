@@ -71,10 +71,10 @@ class HDC_Whatpeoplesay_Block_Adminhtml_Whatpeoplesay_Grid extends Mage_Adminhtm
 			
 		static public function getOptionArray1()
 		{
-            $data_array=array(); 
-			$data_array[0]='Blogs';
-			$data_array[1]='Online Discussions';
-			$data_array[2]='Videos';
+           $data_array=array(); 
+			$data_array['blogs']='Blogs';
+			$data_array['online discussions']='Online Discussions';
+			$data_array['videos']='Videos';
             return($data_array);
 		}
 		static public function getValueArray1()

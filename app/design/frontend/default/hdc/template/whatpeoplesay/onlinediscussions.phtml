@@ -1,0 +1,11 @@
+<?php 
+$discussions = $this->getDatasets();
+?>
+<div class="online-disucssions">
+<h3>Online Discussions</h3>
+<ul>
+<?php foreach($discussions as $discussion):?>
+	<li><a href="<?php echo $discussion->getLink()?>"><?php echo $discussion->getTitle()?></a></li>
+<?php endforeach;?>
+</ul>
+</div>
