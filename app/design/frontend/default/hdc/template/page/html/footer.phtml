@@ -26,8 +26,23 @@
 ?>
 <div class="footer-container">
     <div class="footer">
-        <?php echo $this->getChildHtml() ?>
-        <p class="bugs"><?php echo $this->__('Help Us to Keep Magento Healthy') ?> - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong><?php echo $this->__('Report All Bugs') ?></strong></a> <?php echo $this->__('(ver. %s)', Mage::getVersion()) ?></p>
-        <address><?php echo $this->getCopyright() ?></address>
+        <?php //echo $this->getChildHtml() ?>
+        <div class="left"><?php echo $this->getCopyright() ?></div>
+		<div class="middle">
+			<ul>
+				<li><a href="#">Linked In</a></li>
+				<li><a href="#">Pininterest</a></li>
+				<li><a href="#">Youtube</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Twitter</a></li>
+			</ul>
+		</div>
+		<div class="right">
+			<ul>
+				<li><?php echo Mage::getStoreConfig('general/store_information/phone');?></li>
+				<li><?php echo Mage::getStoreConfig('trans_email/ident_support/email');?></li>
+			</ul>
+		</div>
     </div>
 </div>
