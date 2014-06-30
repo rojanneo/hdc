@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 30, 2014 at 04:00 AM
+-- Generation Time: Jun 30, 2014 at 08:21 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -229,7 +229,7 @@ CREATE TABLE IF NOT EXISTS `admin_user` (
 --
 
 INSERT INTO `admin_user` (`user_id`, `firstname`, `lastname`, `email`, `username`, `password`, `created`, `modified`, `logdate`, `lognum`, `reload_acl_flag`, `is_active`, `extra`, `rp_token`, `rp_token_created_at`) VALUES
-(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-06-29 20:04:43', 5, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
+(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-06-30 00:34:28', 6, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -3120,6 +3120,7 @@ INSERT INTO `core_resource` (`code`, `version`, `data_version`) VALUES
 ('tax_setup', '1.6.0.4', '1.6.0.4'),
 ('usa_setup', '1.6.0.3', '1.6.0.3'),
 ('weee_setup', '1.6.0.0', '1.6.0.0'),
+('whatpeoplesay_setup', '0.1.0', '0.1.0'),
 ('widget_setup', '1.6.0.0', '1.6.0.0'),
 ('wishlist_setup', '1.6.0.0', '1.6.0.0'),
 ('xmlconnect_setup', '1.6.0.0.1', '1.6.0.0.1');
@@ -9675,6 +9676,32 @@ CREATE TABLE IF NOT EXISTS `weee_tax` (
   KEY `IDX_WEEE_TAX_COUNTRY` (`country`),
   KEY `IDX_WEEE_TAX_ATTRIBUTE_ID` (`attribute_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Weee Tax' AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `what_people_say`
+--
+
+CREATE TABLE IF NOT EXISTS `what_people_say` (
+  `post_id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) DEFAULT NULL,
+  `type` varchar(255) DEFAULT NULL,
+  `description` text,
+  `link` text,
+  PRIMARY KEY (`post_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `what_people_say`
+--
+
+INSERT INTO `what_people_say` (`post_id`, `title`, `type`, `description`, `link`) VALUES
+(1, 'Yeepet.com', '0', 'Yeepet.com', 'http://www.yeepet.com/forum/showthread.php?p=1567#post1567http://www.yeepet.com/forum/showthread.php?p=1567#post1567'),
+(2, 'Top 10 Best Dog Friendly Cities in America', '0', 'Top 10 Best Dog Friendly Cities in America', 'http://www.toptenz.net/top-10-best-dog-friendly-cities-in-america.php'),
+(3, 'Dogster.com', '1', 'Dogster.com', 'http://www.dogster.com/forums/search/index.php?q=himalayan+dog+chew'),
+(4, 'rat-terrier.com', '1', 'rat-terrier.com', 'http://www.rat-terrier.com/Home/tabid/37/forumid/4/postid/305614/view/topic/Default.aspx'),
+(5, 'Luke''s All Natural Pet Food', '2', 'Luke''s All Natural Pet Food', 'http://www.lukesallnatural.com/himalayan-dog-chew-p-3596.html');
 
 -- --------------------------------------------------------
 
