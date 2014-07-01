@@ -19,6 +19,12 @@
 	</default>
 	<cms_index_index>
 		<reference name="content">
+			<block type="cms/block" name="home_info">
+	            <action method="setBlockId"><block_id>home-info</block_id></action>
+	        </block> 
+	        <block type="cms/block" name="home_guarantee">
+	            <action method="setBlockId"><block_id>home-guarantee</block_id></action>
+	        </block>
 			<block type="core/template" name="whatpeoplesay" template="whatpeoplesay/wrapper.phtml">
 				<block type="whatpeoplesay/blogs" name="whatpeoplesay_blogs" template="whatpeoplesay/blogs.phtml"/>
 				<block type="whatpeoplesay/onlinediscussions" name="whatpeoplesay_onlinediscussions" template="whatpeoplesay/onlinediscussions.phtml"/>

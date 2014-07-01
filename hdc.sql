@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.12
+-- version 4.0.4.1
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 30, 2014 at 01:59 PM
--- Server version: 5.6.16
--- PHP Version: 5.5.11
+-- Host: localhost
+-- Generation Time: Jul 01, 2014 at 10:50 AM
+-- Server version: 5.6.11
+-- PHP Version: 5.5.1
 
 SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `hdc`
 --
+CREATE DATABASE IF NOT EXISTS `hdc` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `hdc`;
 
 -- --------------------------------------------------------
 
@@ -230,7 +232,7 @@ CREATE TABLE IF NOT EXISTS `admin_user` (
 --
 
 INSERT INTO `admin_user` (`user_id`, `firstname`, `lastname`, `email`, `username`, `password`, `created`, `modified`, `logdate`, `lognum`, `reload_acl_flag`, `is_active`, `extra`, `rp_token`, `rp_token_created_at`) VALUES
-(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-06-30 06:12:12', 7, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
+(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-01 03:00:29', 8, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -2728,7 +2730,7 @@ CREATE TABLE IF NOT EXISTS `cms_block` (
   `update_time` timestamp NULL DEFAULT NULL COMMENT 'Block Modification Time',
   `is_active` smallint(6) NOT NULL DEFAULT '1' COMMENT 'Is Block Active',
   PRIMARY KEY (`block_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='CMS Block Table' AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='CMS Block Table' AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `cms_block`
@@ -2736,7 +2738,9 @@ CREATE TABLE IF NOT EXISTS `cms_block` (
 
 INSERT INTO `cms_block` (`block_id`, `title`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`) VALUES
 (1, 'Footer Links', 'footer_links', '<ul>\r\n<li><a href="{{store direct_url="about-magento-demo-store"}}">About Us</a></li>\r\n<li><a href="{{store direct_url="customer-service"}}">Customer Service</a></li>\r\n<li class="last privacy"><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy</a></li>\r\n</ul>', '2014-06-28 09:50:45', '2014-06-28 09:50:46', 1),
-(2, 'Cookie restriction notice', 'cookie_restriction_notice_block', '<p>This website requires cookies to provide all of its features. For more information on what data is contained in the cookies, please see our <a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy page</a>. To accept cookies from this site, please click the Allow button below.</p>', '2014-06-28 09:50:46', '2014-06-28 09:50:46', 1);
+(2, 'Cookie restriction notice', 'cookie_restriction_notice_block', '<p>This website requires cookies to provide all of its features. For more information on what data is contained in the cookies, please see our <a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy page</a>. To accept cookies from this site, please click the Allow button below.</p>', '2014-06-28 09:50:46', '2014-06-28 09:50:46', 1),
+(3, 'Home page Information', 'home-info', '<p><strong>Himalayan Dog Chew</strong><span>&nbsp;comes from an ancient recipe of the people of the Himalayas. In the mountains at more than 15,000 feet, it is made using traditional methods with Yak and Cow Milk and all natural products and no chemicals or preservatives.&nbsp;</span><br /><br /><span>Now, this piece of Himalayan culture is available to you and your Dog.</span></p>', '2014-07-01 03:01:30', '2014-07-01 03:01:30', 1),
+(4, '100 percent Natural', 'home-guarantee', '<p><strong>100% Natural. No Preservatives. No Additives. Authentic.</strong></p>', '2014-07-01 03:03:26', '2014-07-01 03:03:26', 1);
 
 -- --------------------------------------------------------
 
@@ -2757,7 +2761,9 @@ CREATE TABLE IF NOT EXISTS `cms_block_store` (
 
 INSERT INTO `cms_block_store` (`block_id`, `store_id`) VALUES
 (1, 0),
-(2, 0);
+(2, 0),
+(3, 1),
+(4, 1);
 
 -- --------------------------------------------------------
 
@@ -6566,7 +6572,11 @@ INSERT INTO `log_url` (`url_id`, `visitor_id`, `visit_time`) VALUES
 (59, 4, '2014-06-29 20:14:00'),
 (60, 4, '2014-06-29 20:14:32'),
 (61, 5, '2014-06-30 00:51:25'),
-(62, 5, '2014-06-30 00:51:31');
+(62, 5, '2014-06-30 00:51:31'),
+(63, 6, '2014-07-01 02:59:28'),
+(64, 6, '2014-07-01 03:02:52'),
+(65, 6, '2014-07-01 03:03:44'),
+(66, 6, '2014-07-01 03:04:03');
 
 -- --------------------------------------------------------
 
@@ -6579,7 +6589,7 @@ CREATE TABLE IF NOT EXISTS `log_url_info` (
   `url` varchar(255) DEFAULT NULL COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=63 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=67 ;
 
 --
 -- Dumping data for table `log_url_info`
@@ -6647,7 +6657,11 @@ INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
 (59, 'http://192.168.0.107/hdc/index.php/', NULL),
 (60, 'http://192.168.0.107/hdc/index.php/', NULL),
 (61, 'http://192.168.0.107/hdc/index.php/whatpeoplesay', NULL),
-(62, 'http://192.168.0.107/hdc/index.php/whatpeoplesay', NULL);
+(62, 'http://192.168.0.107/hdc/index.php/whatpeoplesay', NULL),
+(63, 'http://192.168.0.26/hdc/', NULL),
+(64, 'http://192.168.0.26/hdc/', NULL),
+(65, 'http://192.168.0.26/hdc/', NULL),
+(66, 'http://192.168.0.26/hdc/', NULL);
 
 -- --------------------------------------------------------
 
@@ -6663,7 +6677,7 @@ CREATE TABLE IF NOT EXISTS `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `log_visitor`
@@ -6674,7 +6688,8 @@ INSERT INTO `log_visitor` (`visitor_id`, `session_id`, `first_visit_at`, `last_v
 (2, 'e7vptbkgd7kjj5rc24id9v3pu3', '2014-06-29 07:37:45', '2014-06-29 08:37:37', 21, 1),
 (3, '2rlb799vntc2kcd0h0unl5igh2', '2014-06-29 10:57:34', '2014-06-29 11:39:15', 50, 1),
 (4, 'sjkal8l5ahqjh430j7egdro465', '2014-06-29 20:02:25', '2014-06-29 20:14:32', 60, 1),
-(5, '7l530h2t5ohj7btf9vhrqbi9c2', '2014-06-30 00:51:23', '2014-06-30 00:51:30', 62, 1);
+(5, '7l530h2t5ohj7btf9vhrqbi9c2', '2014-06-30 00:51:23', '2014-06-30 00:51:30', 62, 1),
+(6, 'a20jvl5hsobor8dve6amktelt3', '2014-07-01 02:59:25', '2014-07-01 03:04:03', 66, 1);
 
 -- --------------------------------------------------------
 
@@ -6702,7 +6717,8 @@ INSERT INTO `log_visitor_info` (`visitor_id`, `http_referer`, `http_user_agent`,
 (2, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (3, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (4, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
-(5, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669);
+(5, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
+(6, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750);
 
 -- --------------------------------------------------------
 
