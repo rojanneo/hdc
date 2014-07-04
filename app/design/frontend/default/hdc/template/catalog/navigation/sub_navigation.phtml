@@ -1,0 +1,32 @@
+<?php
+$_category  = $this->getCurrentCategory(); 
+$helper     = Mage::helper('catalog/category');
+
+$collection = Mage::getResourceModel('catalog/category_collection')
+    ->addAttributeToSelect('*')
+    ->addAttributeToFilter('is_active', 1) //only active categories
+    ->addAttributeToFilter('parent_id', $_category->getId())//get only subcategories of the category with id 10
+    ->addAttributeToSort('position')//sort by position
+;
+?>
+
+<div class="category-list">
+<ul class="categories">
+    <?php foreach ($collection as $cat):?>
+        <?php if($_category->getIsActive()):?>
+              <?php 
+                   $cur_category = Mage::getModel('catalog/category')->load($cat->getId());
+                   //var_dump($_category->getImageUrl());
+                   $_img = $cur_category->getImageUrl();  
+                   //var_dump($_img);
+
+              ?>
+            <li>
+            <a href="<?php echo $helper->getCategoryUrl($cat);?>">
+              <?php echo $cat->getName()?>
+            </a>
+          </li>
+        <?php endif?>
+    <?php endforeach;?>
+</ul>
+</div>

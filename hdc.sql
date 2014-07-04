@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 01, 2014 at 10:50 AM
+-- Generation Time: Jul 04, 2014 at 11:23 AM
 -- Server version: 5.6.11
 -- PHP Version: 5.5.1
 
@@ -232,7 +232,7 @@ CREATE TABLE IF NOT EXISTS `admin_user` (
 --
 
 INSERT INTO `admin_user` (`user_id`, `firstname`, `lastname`, `email`, `username`, `password`, `created`, `modified`, `logdate`, `lognum`, `reload_acl_flag`, `is_active`, `extra`, `rp_token`, `rp_token_created_at`) VALUES
-(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-01 03:00:29', 8, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
+(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-04 02:55:28', 9, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -779,14 +779,14 @@ CREATE TABLE IF NOT EXISTS `catalog_category_entity` (
 INSERT INTO `catalog_category_entity` (`entity_id`, `entity_type_id`, `attribute_set_id`, `parent_id`, `created_at`, `updated_at`, `path`, `position`, `level`, `children_count`) VALUES
 (1, 3, 0, 0, '2014-06-28 09:50:57', '2014-06-28 09:50:57', '1', 0, 0, 9),
 (2, 3, 3, 1, '2014-06-28 09:50:58', '2014-06-28 09:50:58', '1/2', 1, 1, 8),
-(3, 3, 3, 2, '2014-06-29 10:57:27', '2014-06-29 10:57:27', '1/2/3', 1, 2, 7),
-(4, 3, 3, 3, '2014-06-29 10:57:59', '2014-06-29 10:57:59', '1/2/3/4', 1, 3, 0),
-(5, 3, 3, 3, '2014-06-29 10:58:32', '2014-06-29 10:58:32', '1/2/3/5', 2, 3, 0),
-(6, 3, 3, 3, '2014-06-29 10:58:56', '2014-06-29 10:58:56', '1/2/3/6', 3, 3, 0),
-(7, 3, 3, 3, '2014-06-29 10:59:34', '2014-06-29 10:59:34', '1/2/3/7', 4, 3, 0),
-(8, 3, 3, 3, '2014-06-29 10:59:58', '2014-06-29 10:59:58', '1/2/3/8', 5, 3, 0),
-(9, 3, 3, 3, '2014-06-29 11:00:28', '2014-06-29 11:00:28', '1/2/3/9', 6, 3, 0),
-(10, 3, 3, 3, '2014-06-29 11:00:52', '2014-06-29 11:00:52', '1/2/3/10', 7, 3, 0);
+(3, 3, 3, 2, '2014-06-29 10:57:27', '2014-07-04 03:18:08', '1/2/3', 1, 2, 7),
+(4, 3, 3, 3, '2014-06-29 10:57:59', '2014-07-04 03:22:10', '1/2/3/4', 1, 3, 0),
+(5, 3, 3, 3, '2014-06-29 10:58:32', '2014-07-04 03:22:24', '1/2/3/5', 2, 3, 0),
+(6, 3, 3, 3, '2014-06-29 10:58:56', '2014-07-04 03:22:33', '1/2/3/6', 3, 3, 0),
+(7, 3, 3, 3, '2014-06-29 10:59:34', '2014-07-04 03:22:43', '1/2/3/7', 4, 3, 0),
+(8, 3, 3, 3, '2014-06-29 10:59:58', '2014-07-04 03:22:57', '1/2/3/8', 5, 3, 0),
+(9, 3, 3, 3, '2014-06-29 11:00:28', '2014-07-04 03:23:04', '1/2/3/9', 6, 3, 0),
+(10, 3, 3, 3, '2014-06-29 11:00:52', '2014-07-04 03:31:12', '1/2/3/10', 7, 3, 0);
 
 -- --------------------------------------------------------
 
@@ -806,7 +806,7 @@ CREATE TABLE IF NOT EXISTS `catalog_category_entity_datetime` (
   KEY `IDX_CATALOG_CATEGORY_ENTITY_DATETIME_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_DATETIME_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_DATETIME_STORE_ID` (`store_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Datetime Attribute Backend Table' AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Datetime Attribute Backend Table' AUTO_INCREMENT=45 ;
 
 --
 -- Dumping data for table `catalog_category_entity_datetime`
@@ -882,7 +882,7 @@ CREATE TABLE IF NOT EXISTS `catalog_category_entity_int` (
   KEY `IDX_CATALOG_CATEGORY_ENTITY_INT_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_INT_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_INT_STORE_ID` (`store_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Integer Attribute Backend Table' AUTO_INCREMENT=55 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Integer Attribute Backend Table' AUTO_INCREMENT=74 ;
 
 --
 -- Dumping data for table `catalog_category_entity_int`
@@ -897,48 +897,48 @@ INSERT INTO `catalog_category_entity_int` (`value_id`, `entity_type_id`, `attrib
 (6, 3, 67, 1, 2, 1),
 (7, 3, 42, 0, 3, 1),
 (8, 3, 67, 0, 3, 1),
-(9, 3, 50, 0, 3, NULL),
+(9, 3, 50, 0, 3, 5),
 (10, 3, 51, 0, 3, 1),
 (11, 3, 68, 0, 3, 0),
 (12, 3, 69, 0, 3, 0),
 (13, 3, 42, 0, 4, 1),
-(14, 3, 67, 0, 4, 1),
+(14, 3, 67, 0, 4, 0),
 (15, 3, 50, 0, 4, NULL),
 (16, 3, 51, 0, 4, 1),
 (17, 3, 68, 0, 4, 0),
 (18, 3, 69, 0, 4, 0),
 (19, 3, 42, 0, 5, 1),
-(20, 3, 67, 0, 5, 1),
+(20, 3, 67, 0, 5, 0),
 (21, 3, 50, 0, 5, NULL),
 (22, 3, 51, 0, 5, 1),
 (23, 3, 68, 0, 5, 0),
 (24, 3, 69, 0, 5, 0),
 (25, 3, 42, 0, 6, 1),
-(26, 3, 67, 0, 6, 1),
+(26, 3, 67, 0, 6, 0),
 (27, 3, 50, 0, 6, NULL),
 (28, 3, 51, 0, 6, 1),
 (29, 3, 68, 0, 6, 0),
 (30, 3, 69, 0, 6, 0),
 (31, 3, 42, 0, 7, 1),
-(32, 3, 67, 0, 7, 1),
+(32, 3, 67, 0, 7, 0),
 (33, 3, 50, 0, 7, NULL),
 (34, 3, 51, 0, 7, 1),
 (35, 3, 68, 0, 7, 0),
 (36, 3, 69, 0, 7, 0),
 (37, 3, 42, 0, 8, 1),
-(38, 3, 67, 0, 8, 1),
+(38, 3, 67, 0, 8, 0),
 (39, 3, 50, 0, 8, NULL),
 (40, 3, 51, 0, 8, 1),
 (41, 3, 68, 0, 8, 0),
 (42, 3, 69, 0, 8, 0),
 (43, 3, 42, 0, 9, 1),
-(44, 3, 67, 0, 9, 1),
+(44, 3, 67, 0, 9, 0),
 (45, 3, 50, 0, 9, NULL),
 (46, 3, 51, 0, 9, 1),
 (47, 3, 68, 0, 9, 0),
 (48, 3, 69, 0, 9, 0),
 (49, 3, 42, 0, 10, 1),
-(50, 3, 67, 0, 10, 1),
+(50, 3, 67, 0, 10, 0),
 (51, 3, 50, 0, 10, NULL),
 (52, 3, 51, 0, 10, 1),
 (53, 3, 68, 0, 10, 0),
@@ -962,7 +962,7 @@ CREATE TABLE IF NOT EXISTS `catalog_category_entity_text` (
   KEY `IDX_CATALOG_CATEGORY_ENTITY_TEXT_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_TEXT_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_TEXT_STORE_ID` (`store_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Text Attribute Backend Table' AUTO_INCREMENT=45 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Text Attribute Backend Table' AUTO_INCREMENT=115 ;
 
 --
 -- Dumping data for table `catalog_category_entity_text`
@@ -1032,7 +1032,7 @@ CREATE TABLE IF NOT EXISTS `catalog_category_entity_varchar` (
   KEY `IDX_CATALOG_CATEGORY_ENTITY_VARCHAR_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_VARCHAR_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_VARCHAR_STORE_ID` (`store_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Varchar Attribute Backend Table' AUTO_INCREMENT=72 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Varchar Attribute Backend Table' AUTO_INCREMENT=115 ;
 
 --
 -- Dumping data for table `catalog_category_entity_varchar`
@@ -1049,7 +1049,7 @@ INSERT INTO `catalog_category_entity_varchar` (`value_id`, `entity_type_id`, `at
 (8, 3, 41, 0, 3, 'Our Creations'),
 (9, 3, 43, 0, 3, 'our-creations'),
 (10, 3, 46, 0, 3, 'Our Creations'),
-(11, 3, 49, 0, 3, 'PRODUCTS'),
+(11, 3, 49, 0, 3, 'PAGE'),
 (12, 3, 58, 0, 3, NULL),
 (13, 3, 61, 0, 3, NULL),
 (14, 3, 57, 1, 3, 'our-creations.html'),
@@ -1109,7 +1109,9 @@ INSERT INTO `catalog_category_entity_varchar` (`value_id`, `entity_type_id`, `at
 (68, 3, 58, 0, 10, NULL),
 (69, 3, 61, 0, 10, NULL),
 (70, 3, 57, 1, 10, 'our-creations/seasoning.html'),
-(71, 3, 57, 0, 10, 'our-creations/seasoning.html');
+(71, 3, 57, 0, 10, 'our-creations/seasoning.html'),
+(77, 3, 132, 0, 3, NULL),
+(81, 3, 45, 0, 3, 'creations-slice.png');
 
 -- --------------------------------------------------------
 
@@ -2730,7 +2732,7 @@ CREATE TABLE IF NOT EXISTS `cms_block` (
   `update_time` timestamp NULL DEFAULT NULL COMMENT 'Block Modification Time',
   `is_active` smallint(6) NOT NULL DEFAULT '1' COMMENT 'Is Block Active',
   PRIMARY KEY (`block_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='CMS Block Table' AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='CMS Block Table' AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `cms_block`
@@ -2740,7 +2742,8 @@ INSERT INTO `cms_block` (`block_id`, `title`, `identifier`, `content`, `creation
 (1, 'Footer Links', 'footer_links', '<ul>\r\n<li><a href="{{store direct_url="about-magento-demo-store"}}">About Us</a></li>\r\n<li><a href="{{store direct_url="customer-service"}}">Customer Service</a></li>\r\n<li class="last privacy"><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy</a></li>\r\n</ul>', '2014-06-28 09:50:45', '2014-06-28 09:50:46', 1),
 (2, 'Cookie restriction notice', 'cookie_restriction_notice_block', '<p>This website requires cookies to provide all of its features. For more information on what data is contained in the cookies, please see our <a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy page</a>. To accept cookies from this site, please click the Allow button below.</p>', '2014-06-28 09:50:46', '2014-06-28 09:50:46', 1),
 (3, 'Home page Information', 'home-info', '<p><strong>Himalayan Dog Chew</strong><span>&nbsp;comes from an ancient recipe of the people of the Himalayas. In the mountains at more than 15,000 feet, it is made using traditional methods with Yak and Cow Milk and all natural products and no chemicals or preservatives.&nbsp;</span><br /><br /><span>Now, this piece of Himalayan culture is available to you and your Dog.</span></p>', '2014-07-01 03:01:30', '2014-07-01 03:01:30', 1),
-(4, '100 percent Natural', 'home-guarantee', '<p><strong>100% Natural. No Preservatives. No Additives. Authentic.</strong></p>', '2014-07-01 03:03:26', '2014-07-01 03:03:26', 1);
+(4, '100 percent Natural', 'home-guarantee', '<p><strong>100% Natural. No Preservatives. No Additives. Authentic.</strong></p>', '2014-07-01 03:03:26', '2014-07-01 03:03:26', 1),
+(5, 'Sub Category Listing,', 'sub_category_listing', '<p>{{block type="catalog/navigation" template="catalog/navigation/sub_navigation.phtml"}}</p>', '2014-07-04 02:58:00', '2014-07-04 02:59:05', 1);
 
 -- --------------------------------------------------------
 
@@ -2763,7 +2766,8 @@ INSERT INTO `cms_block_store` (`block_id`, `store_id`) VALUES
 (1, 0),
 (2, 0),
 (3, 1),
-(4, 1);
+(4, 1),
+(5, 1);
 
 -- --------------------------------------------------------
 
@@ -6401,11 +6405,11 @@ CREATE TABLE IF NOT EXISTS `index_process` (
 INSERT INTO `index_process` (`process_id`, `indexer_code`, `status`, `started_at`, `ended_at`, `mode`) VALUES
 (1, 'catalog_product_attribute', 'pending', '2014-06-28 09:52:38', '2014-06-28 09:52:38', 'real_time'),
 (2, 'catalog_product_price', 'pending', '2014-06-28 09:52:38', '2014-06-28 09:52:40', 'real_time'),
-(3, 'catalog_url', 'pending', '2014-06-29 11:00:53', '2014-06-29 11:00:53', 'real_time'),
+(3, 'catalog_url', 'pending', '2014-07-04 03:31:13', '2014-07-04 03:31:13', 'real_time'),
 (4, 'catalog_product_flat', 'pending', '2014-06-28 09:52:40', '2014-06-28 09:52:40', 'real_time'),
 (5, 'catalog_category_flat', 'pending', '2014-06-28 09:52:40', '2014-06-28 09:52:41', 'real_time'),
-(6, 'catalog_category_product', 'pending', '2014-06-29 11:00:53', '2014-06-29 11:00:53', 'real_time'),
-(7, 'catalogsearch_fulltext', 'pending', '2014-06-29 11:00:53', '2014-06-29 11:00:53', 'real_time'),
+(6, 'catalog_category_product', 'pending', '2014-07-04 03:31:13', '2014-07-04 03:31:13', 'real_time'),
+(7, 'catalogsearch_fulltext', 'pending', '2014-07-04 03:31:13', '2014-07-04 03:31:13', 'real_time'),
 (8, 'cataloginventory_stock', 'pending', '2014-06-28 09:52:37', '2014-06-28 09:52:38', 'real_time'),
 (9, 'tag_summary', 'pending', '2014-06-28 09:52:42', '2014-06-28 09:52:42', 'real_time');
 
@@ -6576,7 +6580,52 @@ INSERT INTO `log_url` (`url_id`, `visitor_id`, `visit_time`) VALUES
 (63, 6, '2014-07-01 02:59:28'),
 (64, 6, '2014-07-01 03:02:52'),
 (65, 6, '2014-07-01 03:03:44'),
-(66, 6, '2014-07-01 03:04:03');
+(66, 6, '2014-07-01 03:04:03'),
+(67, 7, '2014-07-04 02:59:39'),
+(68, 7, '2014-07-04 03:00:59'),
+(69, 7, '2014-07-04 03:03:24'),
+(70, 7, '2014-07-04 03:03:58'),
+(71, 7, '2014-07-04 03:04:07'),
+(72, 7, '2014-07-04 03:04:46'),
+(73, 7, '2014-07-04 03:05:00'),
+(74, 7, '2014-07-04 03:05:39'),
+(75, 7, '2014-07-04 03:05:59'),
+(76, 7, '2014-07-04 03:07:05'),
+(77, 7, '2014-07-04 03:07:07'),
+(78, 7, '2014-07-04 03:09:05'),
+(79, 7, '2014-07-04 03:10:31'),
+(80, 7, '2014-07-04 03:11:02'),
+(81, 7, '2014-07-04 03:11:26'),
+(82, 7, '2014-07-04 03:11:42'),
+(83, 7, '2014-07-04 03:11:47'),
+(84, 7, '2014-07-04 03:12:04'),
+(85, 7, '2014-07-04 03:12:52'),
+(86, 7, '2014-07-04 03:15:30'),
+(87, 7, '2014-07-04 03:16:27'),
+(88, 7, '2014-07-04 03:16:31'),
+(89, 7, '2014-07-04 03:18:31'),
+(90, 7, '2014-07-04 03:20:39'),
+(91, 7, '2014-07-04 03:21:20'),
+(92, 7, '2014-07-04 03:21:55'),
+(93, 7, '2014-07-04 03:22:14'),
+(94, 7, '2014-07-04 03:23:18'),
+(95, 7, '2014-07-04 03:23:19'),
+(96, 7, '2014-07-04 03:24:13'),
+(97, 7, '2014-07-04 03:24:50'),
+(98, 7, '2014-07-04 03:25:32'),
+(99, 7, '2014-07-04 03:25:52'),
+(100, 7, '2014-07-04 03:28:07'),
+(101, 7, '2014-07-04 03:28:35'),
+(102, 7, '2014-07-04 03:29:32'),
+(103, 7, '2014-07-04 03:29:39'),
+(104, 7, '2014-07-04 03:29:50'),
+(105, 7, '2014-07-04 03:31:02'),
+(106, 7, '2014-07-04 03:31:19'),
+(107, 7, '2014-07-04 03:31:38'),
+(108, 7, '2014-07-04 03:31:53'),
+(109, 7, '2014-07-04 03:35:00'),
+(110, 7, '2014-07-04 03:35:37'),
+(111, 7, '2014-07-04 03:35:41');
 
 -- --------------------------------------------------------
 
@@ -6589,7 +6638,7 @@ CREATE TABLE IF NOT EXISTS `log_url_info` (
   `url` varchar(255) DEFAULT NULL COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=67 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=112 ;
 
 --
 -- Dumping data for table `log_url_info`
@@ -6661,7 +6710,52 @@ INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
 (63, 'http://192.168.0.26/hdc/', NULL),
 (64, 'http://192.168.0.26/hdc/', NULL),
 (65, 'http://192.168.0.26/hdc/', NULL),
-(66, 'http://192.168.0.26/hdc/', NULL);
+(66, 'http://192.168.0.26/hdc/', NULL),
+(67, 'http://192.168.0.26/hdc/', NULL),
+(68, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(69, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(70, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(71, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', NULL),
+(72, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
+(73, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(74, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(75, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(76, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
+(77, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(78, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(79, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(80, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(81, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(82, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(83, 'http://192.168.0.26/hdc/', NULL),
+(84, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(85, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(86, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(87, 'http://192.168.0.26/hdc/', NULL),
+(88, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(89, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(90, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(91, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(92, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(93, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(94, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
+(95, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
+(96, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(97, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(98, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(99, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(100, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(101, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(102, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(103, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(104, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(105, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(106, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(107, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(108, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
+(109, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/our-creations/chews.html'),
+(110, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/our-creations/chews.html'),
+(111, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/');
 
 -- --------------------------------------------------------
 
@@ -6677,7 +6771,7 @@ CREATE TABLE IF NOT EXISTS `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `log_visitor`
@@ -6689,7 +6783,8 @@ INSERT INTO `log_visitor` (`visitor_id`, `session_id`, `first_visit_at`, `last_v
 (3, '2rlb799vntc2kcd0h0unl5igh2', '2014-06-29 10:57:34', '2014-06-29 11:39:15', 50, 1),
 (4, 'sjkal8l5ahqjh430j7egdro465', '2014-06-29 20:02:25', '2014-06-29 20:14:32', 60, 1),
 (5, '7l530h2t5ohj7btf9vhrqbi9c2', '2014-06-30 00:51:23', '2014-06-30 00:51:30', 62, 1),
-(6, 'a20jvl5hsobor8dve6amktelt3', '2014-07-01 02:59:25', '2014-07-01 03:04:03', 66, 1);
+(6, 'a20jvl5hsobor8dve6amktelt3', '2014-07-01 02:59:25', '2014-07-01 03:04:03', 66, 1),
+(7, 'vij3es8dnrq05hjll7ugidglm2', '2014-07-04 02:59:36', '2014-07-04 03:35:41', 111, 1);
 
 -- --------------------------------------------------------
 
@@ -6718,7 +6813,8 @@ INSERT INTO `log_visitor_info` (`visitor_id`, `http_referer`, `http_user_agent`,
 (3, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (4, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (5, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
-(6, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750);
+(6, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750),
+(7, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750);
 
 -- --------------------------------------------------------
 
