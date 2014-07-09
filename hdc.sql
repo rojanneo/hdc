@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 09, 2014 at 07:41 AM
+-- Generation Time: Jul 09, 2014 at 01:11 PM
 -- Server version: 5.6.11
 -- PHP Version: 5.5.1
 
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `adminnotification_inbox` (
   KEY `IDX_ADMINNOTIFICATION_INBOX_SEVERITY` (`severity`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_READ` (`is_read`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_REMOVE` (`is_remove`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=87 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=91 ;
 
 --
 -- Dumping data for table `adminnotification_inbox`
@@ -134,7 +134,11 @@ INSERT INTO `adminnotification_inbox` (`notification_id`, `severity`, `date_adde
 (83, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (84, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (85, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
-(86, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
+(86, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(87, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(88, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(89, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(90, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -233,7 +237,7 @@ CREATE TABLE IF NOT EXISTS `admin_user` (
 --
 
 INSERT INTO `admin_user` (`user_id`, `firstname`, `lastname`, `email`, `username`, `password`, `created`, `modified`, `logdate`, `lognum`, `reload_acl_flag`, `is_active`, `extra`, `rp_token`, `rp_token_created_at`) VALUES
-(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-08 22:53:28', 10, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
+(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-09 05:25:00', 15, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -389,6 +393,113 @@ CREATE TABLE IF NOT EXISTS `api_user` (
   `is_active` smallint(6) NOT NULL DEFAULT '1' COMMENT 'Account status',
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Api Users' AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bannerslider_banner`
+--
+
+CREATE TABLE IF NOT EXISTS `bannerslider_banner` (
+  `banner_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `order_banner` int(11) DEFAULT '0',
+  `bannerslider_id` int(11) DEFAULT NULL,
+  `status` smallint(6) NOT NULL DEFAULT '0',
+  `click_url` varchar(255) DEFAULT '',
+  `imptotal` int(11) DEFAULT '0',
+  `clicktotal` int(11) DEFAULT '0',
+  `tartget` int(11) DEFAULT '0',
+  `image` varchar(255) DEFAULT NULL,
+  `image_alt` varchar(255) DEFAULT NULL,
+  `width` float DEFAULT NULL,
+  `height` float DEFAULT NULL,
+  `start_time` datetime DEFAULT NULL,
+  `end_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`banner_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `bannerslider_banner`
+--
+
+INSERT INTO `bannerslider_banner` (`banner_id`, `name`, `order_banner`, `bannerslider_id`, `status`, `click_url`, `imptotal`, `clicktotal`, `tartget`, `image`, `image_alt`, `width`, `height`, `start_time`, `end_time`) VALUES
+(1, 'home-1', 0, 1, 0, NULL, 0, 0, 0, 'bestinshow.jpg', NULL, NULL, NULL, '2014-07-09 09:34:46', '2014-07-10 09:34:46'),
+(2, 'home-2', 0, 1, 0, NULL, 0, 0, 0, 'eddieNorge.jpg', NULL, NULL, NULL, '2014-07-09 09:35:24', '2014-07-09 09:35:24'),
+(3, 'home-3', 0, 1, 0, NULL, 0, 0, 0, 'miloN.jpg', NULL, NULL, NULL, '2014-07-09 09:35:59', '2014-07-09 09:35:59'),
+(4, 'home-4', 0, 1, 0, NULL, 0, 0, 0, 'prudence.jpg', NULL, NULL, NULL, '2014-07-09 09:36:23', '2014-07-09 09:36:23');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bannerslider_report`
+--
+
+CREATE TABLE IF NOT EXISTS `bannerslider_report` (
+  `report_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `banner_id` int(11) DEFAULT NULL,
+  `bannerslider_id` int(11) DEFAULT NULL,
+  `impmode` int(11) DEFAULT '0',
+  `clicks` int(11) DEFAULT '0',
+  `date_click` datetime DEFAULT NULL,
+  PRIMARY KEY (`report_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bannerslider_slider`
+--
+
+CREATE TABLE IF NOT EXISTS `bannerslider_slider` (
+  `bannerslider_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL DEFAULT '',
+  `position` varchar(255) DEFAULT NULL,
+  `show_title` tinyint(1) DEFAULT '0',
+  `status` smallint(6) NOT NULL DEFAULT '0',
+  `sort_type` int(11) DEFAULT NULL,
+  `description` text,
+  `category_ids` varchar(255) DEFAULT NULL,
+  `style_content` smallint(6) NOT NULL DEFAULT '0',
+  `custom_code` text,
+  `style_slide` varchar(255) DEFAULT NULL,
+  `width` float DEFAULT NULL,
+  `height` float DEFAULT NULL,
+  `note_color` varchar(40) DEFAULT NULL,
+  `animationB` varchar(255) DEFAULT NULL,
+  `caption` smallint(6) DEFAULT NULL,
+  `position_note` int(11) DEFAULT '1',
+  `slider_speed` float DEFAULT NULL,
+  `url_view` varchar(255) DEFAULT NULL,
+  `min_item` int(11) DEFAULT NULL,
+  `max_item` int(11) DEFAULT NULL,
+  PRIMARY KEY (`bannerslider_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `bannerslider_slider`
+--
+
+INSERT INTO `bannerslider_slider` (`bannerslider_id`, `title`, `position`, `show_title`, `status`, `sort_type`, `description`, `category_ids`, `style_content`, `custom_code`, `style_slide`, `width`, `height`, `note_color`, `animationB`, `caption`, `position_note`, `slider_speed`, `url_view`, `min_item`, `max_item`) VALUES
+(1, 'Home page Slider', 'custom', 0, 1, 1, NULL, NULL, 0, NULL, '7', 400, 200, '#f7d700', 'fade', 1, 1, 4500, 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_standardslider/preview/key/1712e0a5dded36c25d4dab6d3f81f718/', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bannerslider_value`
+--
+
+CREATE TABLE IF NOT EXISTS `bannerslider_value` (
+  `value_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `banner_id` int(11) unsigned NOT NULL,
+  `store_id` smallint(5) unsigned NOT NULL,
+  `attribute_code` varchar(63) NOT NULL DEFAULT '',
+  `value` text NOT NULL,
+  PRIMARY KEY (`value_id`),
+  UNIQUE KEY `banner_id` (`banner_id`,`store_id`,`attribute_code`),
+  KEY `banner_id_2` (`banner_id`),
+  KEY `store_id` (`store_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2742,8 +2853,8 @@ CREATE TABLE IF NOT EXISTS `cms_block` (
 INSERT INTO `cms_block` (`block_id`, `title`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`) VALUES
 (1, 'Footer Links', 'footer_links', '<ul>\r\n<li><a href="{{store direct_url="about-magento-demo-store"}}">About Us</a></li>\r\n<li><a href="{{store direct_url="customer-service"}}">Customer Service</a></li>\r\n<li class="last privacy"><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy</a></li>\r\n</ul>', '2014-06-28 09:50:45', '2014-06-28 09:50:46', 1),
 (2, 'Cookie restriction notice', 'cookie_restriction_notice_block', '<p>This website requires cookies to provide all of its features. For more information on what data is contained in the cookies, please see our <a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy page</a>. To accept cookies from this site, please click the Allow button below.</p>', '2014-06-28 09:50:46', '2014-06-28 09:50:46', 1),
-(3, 'Home page Information', 'home-info', '<p><strong>Himalayan Dog Chew</strong><span>&nbsp;comes from an ancient recipe of the people of the Himalayas. In the mountains at more than 15,000 feet, it is made using traditional methods with Yak and Cow Milk and all natural products and no chemicals or preservatives.&nbsp;</span><br /><br /><span>Now, this piece of Himalayan culture is available to you and your Dog.</span></p>', '2014-07-01 03:01:30', '2014-07-01 03:01:30', 1),
-(4, '100 percent Natural', 'home-guarantee', '<p><strong>100% Natural. No Preservatives. No Additives. Authentic.</strong></p>', '2014-07-01 03:03:26', '2014-07-01 03:03:26', 1),
+(3, 'Home page Information', 'home-info', '<div class="home-info"><p><strong>Himalayan Dog Chew</strong><span>&nbsp;comes from an ancient recipe of the people of the Himalayas. In the mountains at more than 15,000 feet, it is made using traditional methods with Yak and Cow Milk and all natural products and no chemicals or preservatives.&nbsp;</span><br /><br /><span>Now, this piece of Himalayan culture is available to you and your Dog.</span></p></div>', '2014-07-01 03:01:30', '2014-07-09 05:17:07', 1),
+(4, '100 percent Natural', 'home-guarantee', '<div class="home-guarantee"><p><strong>100% Natural. No Preservatives. No Additives. Authentic.</strong></p></div>', '2014-07-01 03:03:26', '2014-07-09 05:17:33', 1),
 (5, 'Sub Category Listing,', 'sub_category_listing', '<p>{{block type="catalog/navigation" template="catalog/navigation/sub_navigation.phtml"}}</p>', '2014-07-04 02:58:00', '2014-07-04 02:59:05', 1);
 
 -- --------------------------------------------------------
@@ -2905,7 +3016,7 @@ CREATE TABLE IF NOT EXISTS `core_config_data` (
   `value` text COMMENT 'Config Value',
   PRIMARY KEY (`config_id`),
   UNIQUE KEY `UNQ_CORE_CONFIG_DATA_SCOPE_SCOPE_ID_PATH` (`scope`,`scope_id`,`path`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Config Data' AUTO_INCREMENT=71 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Config Data' AUTO_INCREMENT=73 ;
 
 --
 -- Dumping data for table `core_config_data`
@@ -2916,8 +3027,8 @@ INSERT INTO `core_config_data` (`config_id`, `scope`, `scope_id`, `path`, `value
 (2, 'default', 0, 'general/region/state_required', 'AT,CA,EE,FI,FR,DE,LV,LT,RO,ES,CH,US'),
 (3, 'default', 0, 'catalog/category/root_id', '2'),
 (4, 'default', 0, 'admin/dashboard/enable_charts', '1'),
-(5, 'default', 0, 'web/unsecure/base_url', 'http://192.168.0.26/hdc/'),
-(6, 'default', 0, 'web/secure/base_url', 'http://192.168.0.26/hdc/'),
+(5, 'default', 0, 'web/unsecure/base_url', 'http://192.168.0.107/hdc/'),
+(6, 'default', 0, 'web/secure/base_url', 'http://192.168.0.107/hdc/'),
 (7, 'default', 0, 'general/locale/code', 'en_US'),
 (8, 'default', 0, 'general/locale/timezone', 'America/Los_Angeles'),
 (9, 'default', 0, 'currency/options/base', 'USD'),
@@ -2981,7 +3092,9 @@ INSERT INTO `core_config_data` (`config_id`, `scope`, `scope_id`, `path`, `value
 (67, 'default', 0, 'trans_email/ident_custom1/name', 'Custom 1'),
 (68, 'default', 0, 'trans_email/ident_custom1/email', 'custom1@example.com'),
 (69, 'default', 0, 'trans_email/ident_custom2/name', 'Custom 2'),
-(70, 'default', 0, 'trans_email/ident_custom2/email', 'custom2@example.com');
+(70, 'default', 0, 'trans_email/ident_custom2/email', 'custom2@example.com'),
+(71, 'websites', 1, 'dev/debug/template_hints', ''),
+(72, 'websites', 1, 'dev/debug/template_hints_blocks', '');
 
 -- --------------------------------------------------------
 
@@ -3088,6 +3201,7 @@ INSERT INTO `core_resource` (`code`, `version`, `data_version`) VALUES
 ('api2_setup', '1.0.0.0', '1.0.0.0'),
 ('api_setup', '1.6.0.1', '1.6.0.1'),
 ('backup_setup', '1.6.0.0', '1.6.0.0'),
+('bannerslider_setup', '3.0.0', '3.0.0'),
 ('bundle_setup', '1.6.0.0.1', '1.6.0.0.1'),
 ('captcha_setup', '1.7.0.0.0', '1.7.0.0.0'),
 ('catalogindex_setup', '1.6.0.0', '1.6.0.0'),
@@ -3108,9 +3222,11 @@ INSERT INTO `core_resource` (`code`, `version`, `data_version`) VALUES
 ('eav_setup', '1.6.0.1', '1.6.0.1'),
 ('events_setup', '0.1.0', '0.1.0'),
 ('giftmessage_setup', '1.6.0.0', '1.6.0.0'),
+('ibanners_setup', '1.2.4.0', '1.2.4.0'),
 ('importexport_setup', '1.6.0.2', '1.6.0.2'),
 ('index_setup', '1.6.0.0', '1.6.0.0'),
 ('log_setup', '1.6.0.0', '1.6.0.0'),
+('magenotification_setup', '0.1.3', '0.1.3'),
 ('moneybookers_setup', '1.6.0.0', '1.6.0.0'),
 ('newsletter_setup', '1.6.0.1', '1.6.0.1'),
 ('oauth_setup', '1.0.0.0', '1.0.0.0'),
@@ -6362,6 +6478,69 @@ CREATE TABLE IF NOT EXISTS `gift_message` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `ibanners_banner`
+--
+
+CREATE TABLE IF NOT EXISTS `ibanners_banner` (
+  `banner_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `group_id` int(11) unsigned DEFAULT NULL,
+  `title` varchar(255) NOT NULL DEFAULT '',
+  `url` varchar(255) NOT NULL DEFAULT '',
+  `image` varchar(255) NOT NULL DEFAULT '',
+  `alt_text` varchar(255) NOT NULL DEFAULT '',
+  `sort_order` tinyint(3) unsigned NOT NULL DEFAULT '1',
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `html` text NOT NULL,
+  PRIMARY KEY (`banner_id`),
+  KEY `FK_GROUP_ID_BANNER` (`group_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `ibanners_banner`
+--
+
+INSERT INTO `ibanners_banner` (`banner_id`, `group_id`, `title`, `url`, `image`, `alt_text`, `sort_order`, `is_enabled`, `html`) VALUES
+(2, 1, 'home 1', '', 'bestinshow_1.jpg', '', 0, 1, ''),
+(3, 1, 'home 2', '', 'eddieNorge.jpg', '', 0, 1, ''),
+(4, 1, 'home 3', '', 'miloN.jpg', '', 0, 1, ''),
+(5, 1, 'home 4', '', 'prudence.jpg', '', 0, 1, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ibanners_group`
+--
+
+CREATE TABLE IF NOT EXISTS `ibanners_group` (
+  `group_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `store_id` int(11) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(255) NOT NULL DEFAULT '',
+  `code` varchar(32) NOT NULL DEFAULT '',
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `carousel_duration` int(3) unsigned DEFAULT NULL,
+  `carousel_auto` int(1) unsigned DEFAULT NULL,
+  `carousel_frequency` int(3) unsigned DEFAULT NULL,
+  `carousel_visible_slides` int(3) unsigned DEFAULT NULL,
+  `carousel_effect` varchar(32) NOT NULL DEFAULT '',
+  `carousel_transition` varchar(32) NOT NULL DEFAULT '',
+  `carousel_animate` int(1) unsigned NOT NULL DEFAULT '1',
+  `randomise_banners` int(1) unsigned NOT NULL DEFAULT '0',
+  `controls_position` varchar(32) NOT NULL DEFAULT '',
+  `controls_overlap` int(1) unsigned DEFAULT '0',
+  PRIMARY KEY (`group_id`),
+  UNIQUE KEY `code` (`code`,`store_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `ibanners_group`
+--
+
+INSERT INTO `ibanners_group` (`group_id`, `store_id`, `title`, `code`, `is_enabled`, `carousel_duration`, `carousel_auto`, `carousel_frequency`, `carousel_visible_slides`, `carousel_effect`, `carousel_transition`, `carousel_animate`, `randomise_banners`, `controls_position`, `controls_overlap`) VALUES
+(1, 0, 'Homepage', 'home', 1, 1, 1, 1, 1, 'scroll', 'sinoidal', 1, 0, '', 0);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `importexport_importdata`
 --
 
@@ -6675,7 +6854,139 @@ INSERT INTO `log_url` (`url_id`, `visitor_id`, `visit_time`) VALUES
 (132, 9, '2014-07-08 23:31:52'),
 (133, 9, '2014-07-08 23:34:03'),
 (134, 9, '2014-07-08 23:37:01'),
-(135, 9, '2014-07-08 23:37:14');
+(135, 9, '2014-07-08 23:37:14'),
+(136, 10, '2014-07-09 03:19:19'),
+(137, 10, '2014-07-09 03:20:22'),
+(138, 10, '2014-07-09 03:28:51'),
+(139, 10, '2014-07-09 03:28:57'),
+(140, 10, '2014-07-09 03:32:40'),
+(141, 10, '2014-07-09 03:35:28'),
+(142, 10, '2014-07-09 03:36:13'),
+(143, 10, '2014-07-09 03:37:33'),
+(144, 10, '2014-07-09 03:37:35'),
+(145, 10, '2014-07-09 03:37:36'),
+(146, 10, '2014-07-09 03:37:37'),
+(147, 10, '2014-07-09 03:38:41'),
+(148, 10, '2014-07-09 03:38:43'),
+(149, 10, '2014-07-09 03:38:45'),
+(150, 10, '2014-07-09 03:38:46'),
+(151, 10, '2014-07-09 03:38:46'),
+(152, 10, '2014-07-09 03:41:00'),
+(153, 10, '2014-07-09 03:41:33'),
+(154, 10, '2014-07-09 03:41:51'),
+(155, 10, '2014-07-09 03:42:17'),
+(156, 10, '2014-07-09 03:42:27'),
+(157, 10, '2014-07-09 03:45:40'),
+(158, 10, '2014-07-09 03:48:43'),
+(159, 10, '2014-07-09 03:48:45'),
+(160, 10, '2014-07-09 03:50:04'),
+(161, 10, '2014-07-09 03:50:42'),
+(162, 10, '2014-07-09 03:51:08'),
+(163, 10, '2014-07-09 03:51:30'),
+(164, 10, '2014-07-09 03:51:54'),
+(165, 10, '2014-07-09 03:52:44'),
+(166, 10, '2014-07-09 03:53:12'),
+(167, 10, '2014-07-09 03:53:21'),
+(168, 10, '2014-07-09 03:53:36'),
+(169, 10, '2014-07-09 03:53:51'),
+(170, 10, '2014-07-09 03:54:25'),
+(171, 10, '2014-07-09 03:54:26'),
+(172, 10, '2014-07-09 03:57:10'),
+(173, 10, '2014-07-09 03:57:39'),
+(174, 10, '2014-07-09 03:57:52'),
+(175, 10, '2014-07-09 03:58:29'),
+(176, 10, '2014-07-09 03:58:40'),
+(177, 10, '2014-07-09 04:01:29'),
+(178, 10, '2014-07-09 04:01:31'),
+(179, 10, '2014-07-09 04:03:07'),
+(180, 10, '2014-07-09 04:03:09'),
+(181, 10, '2014-07-09 04:03:10'),
+(182, 10, '2014-07-09 04:03:12'),
+(183, 10, '2014-07-09 04:03:43'),
+(184, 10, '2014-07-09 04:04:18'),
+(185, 10, '2014-07-09 04:04:31'),
+(186, 10, '2014-07-09 04:04:33'),
+(187, 10, '2014-07-09 04:04:49'),
+(188, 10, '2014-07-09 04:05:07'),
+(189, 10, '2014-07-09 04:05:15'),
+(190, 10, '2014-07-09 04:05:17'),
+(191, 10, '2014-07-09 04:05:19'),
+(192, 10, '2014-07-09 04:05:20'),
+(193, 10, '2014-07-09 04:06:08'),
+(194, 10, '2014-07-09 04:06:09'),
+(195, 10, '2014-07-09 04:06:11'),
+(196, 10, '2014-07-09 04:06:12'),
+(197, 10, '2014-07-09 04:06:13'),
+(198, 10, '2014-07-09 04:07:24'),
+(199, 10, '2014-07-09 04:09:00'),
+(200, 10, '2014-07-09 04:09:50'),
+(201, 10, '2014-07-09 04:10:22'),
+(202, 10, '2014-07-09 04:10:47'),
+(203, 10, '2014-07-09 04:11:06'),
+(204, 10, '2014-07-09 04:11:12'),
+(205, 10, '2014-07-09 04:11:35'),
+(206, 10, '2014-07-09 04:11:57'),
+(207, 10, '2014-07-09 04:12:44'),
+(208, 10, '2014-07-09 04:12:47'),
+(209, 10, '2014-07-09 04:12:50'),
+(210, 10, '2014-07-09 04:12:51'),
+(211, 10, '2014-07-09 05:12:15'),
+(212, 10, '2014-07-09 05:12:16'),
+(213, 10, '2014-07-09 05:12:18'),
+(214, 10, '2014-07-09 05:12:19'),
+(215, 10, '2014-07-09 05:12:20'),
+(216, 10, '2014-07-09 05:13:22'),
+(217, 10, '2014-07-09 05:13:25'),
+(218, 10, '2014-07-09 05:13:27'),
+(219, 10, '2014-07-09 05:13:29'),
+(220, 10, '2014-07-09 05:14:02'),
+(221, 10, '2014-07-09 05:14:04'),
+(222, 10, '2014-07-09 05:14:05'),
+(223, 10, '2014-07-09 05:14:06'),
+(224, 10, '2014-07-09 05:14:40'),
+(225, 10, '2014-07-09 05:14:43'),
+(226, 10, '2014-07-09 05:14:44'),
+(227, 10, '2014-07-09 05:14:45'),
+(228, 10, '2014-07-09 05:15:21'),
+(229, 10, '2014-07-09 05:15:24'),
+(230, 10, '2014-07-09 05:15:25'),
+(231, 10, '2014-07-09 05:15:26'),
+(232, 10, '2014-07-09 05:15:40'),
+(233, 10, '2014-07-09 05:15:42'),
+(234, 10, '2014-07-09 05:15:44'),
+(235, 10, '2014-07-09 05:15:46'),
+(236, 10, '2014-07-09 05:17:45'),
+(237, 10, '2014-07-09 05:17:48'),
+(238, 10, '2014-07-09 05:17:49'),
+(239, 10, '2014-07-09 05:17:52'),
+(240, 10, '2014-07-09 05:19:13'),
+(241, 10, '2014-07-09 05:19:17'),
+(242, 10, '2014-07-09 05:19:20'),
+(243, 10, '2014-07-09 05:19:22'),
+(244, 10, '2014-07-09 05:20:01'),
+(245, 10, '2014-07-09 05:20:04'),
+(246, 10, '2014-07-09 05:20:05'),
+(247, 10, '2014-07-09 05:20:07'),
+(248, 10, '2014-07-09 05:20:10'),
+(249, 10, '2014-07-09 05:20:38'),
+(250, 10, '2014-07-09 05:20:38'),
+(251, 10, '2014-07-09 05:20:39'),
+(252, 10, '2014-07-09 05:20:40'),
+(253, 10, '2014-07-09 05:20:42'),
+(254, 10, '2014-07-09 05:20:44'),
+(255, 10, '2014-07-09 05:20:45'),
+(256, 10, '2014-07-09 05:20:58'),
+(257, 10, '2014-07-09 05:21:11'),
+(258, 10, '2014-07-09 05:21:22'),
+(259, 10, '2014-07-09 05:21:30'),
+(260, 10, '2014-07-09 05:21:38'),
+(261, 10, '2014-07-09 05:21:59'),
+(262, 10, '2014-07-09 05:22:23'),
+(263, 10, '2014-07-09 05:22:37'),
+(264, 10, '2014-07-09 05:23:47'),
+(265, 10, '2014-07-09 05:24:19'),
+(266, 10, '2014-07-09 05:25:12'),
+(267, 10, '2014-07-09 05:25:24');
 
 -- --------------------------------------------------------
 
@@ -6688,7 +6999,7 @@ CREATE TABLE IF NOT EXISTS `log_url_info` (
   `url` varchar(255) DEFAULT NULL COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=136 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=268 ;
 
 --
 -- Dumping data for table `log_url_info`
@@ -6829,7 +7140,139 @@ INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
 (132, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
 (133, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
 (134, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
-(135, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/');
+(135, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(136, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(137, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(138, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(139, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(140, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(141, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(142, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(143, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(144, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/'),
+(145, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/'),
+(146, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/'),
+(147, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(148, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/'),
+(149, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/'),
+(150, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(151, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/'),
+(152, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(153, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(154, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(155, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(156, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(157, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(158, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_bannerslider/new/key/79202e1ee288d14bc3d2c590017bb5f6/'),
+(159, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_banner/new/key/081ab86be73a9315afe97950fd618e8a/'),
+(160, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_banner/new/key/081ab86be73a9315afe97950fd618e8a/'),
+(161, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_banner/new/key/081ab86be73a9315afe97950fd618e8a/'),
+(162, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_banner/new/key/081ab86be73a9315afe97950fd618e8a/'),
+(163, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_bannerslider/edit/id/1/key/0a83b0c4df33df918fd2f2719cc88be1/'),
+(164, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(165, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_bannerslider/edit/id/1/key/0a83b0c4df33df918fd2f2719cc88be1/'),
+(166, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(167, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_bannerslider/edit/id/1/key/0a83b0c4df33df918fd2f2719cc88be1/'),
+(168, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(169, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_bannerslider/edit/id/1/key/0a83b0c4df33df918fd2f2719cc88be1/'),
+(170, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_bannerslider/edit/id/1/key/0a83b0c4df33df918fd2f2719cc88be1/'),
+(171, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(172, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(173, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(174, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(175, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(176, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(177, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_bannerslider/edit/id/1/key/0a83b0c4df33df918fd2f2719cc88be1/'),
+(178, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(179, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(180, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/'),
+(181, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/'),
+(182, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/'),
+(183, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(184, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_bannerslider/edit/id/1/key/0a83b0c4df33df918fd2f2719cc88be1/'),
+(185, 'http://192.168.0.26/hdc/js/prototype/windows/themes/magento.css', 'http://192.168.0.26/hdc/index.php/bannerslideradmin/adminhtml_bannerslider/edit/id/1/key/0a83b0c4df33df918fd2f2719cc88be1/'),
+(186, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(187, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(188, 'http://192.168.0.26/hdc/index.php/debug/index/toggleTemplateHints/', 'http://192.168.0.26/hdc/'),
+(189, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/'),
+(190, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(191, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(192, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(193, 'http://192.168.0.26/hdc/index.php/debug/index/toggleTemplateHints/', 'http://192.168.0.26/hdc/index.php/'),
+(194, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(195, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(196, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(197, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(198, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(199, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(200, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(201, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(202, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(203, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(204, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(205, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(206, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(207, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(208, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(209, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(210, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(211, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(212, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(213, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(214, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(215, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(216, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(217, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(218, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(219, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(220, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(221, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(222, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(223, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(224, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(225, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(226, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(227, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(228, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(229, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(230, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(231, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(232, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(233, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(234, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(235, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(236, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(237, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(238, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(239, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(240, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(241, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(242, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(243, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(244, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(245, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(246, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(247, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(248, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(249, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(250, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(251, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(252, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(253, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(254, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(255, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(256, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(257, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(258, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(259, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(260, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(261, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(262, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(263, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(264, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(265, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(266, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(267, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/');
 
 -- --------------------------------------------------------
 
@@ -6845,7 +7288,7 @@ CREATE TABLE IF NOT EXISTS `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `log_visitor`
@@ -6860,7 +7303,8 @@ INSERT INTO `log_visitor` (`visitor_id`, `session_id`, `first_visit_at`, `last_v
 (6, 'a20jvl5hsobor8dve6amktelt3', '2014-07-01 02:59:25', '2014-07-01 03:04:03', 66, 1),
 (7, 'vij3es8dnrq05hjll7ugidglm2', '2014-07-04 02:59:36', '2014-07-04 03:35:41', 111, 1),
 (8, '526f312o87m3h6ddrarlnuuii1', '2014-07-04 03:42:26', '2014-07-04 03:42:27', 112, 1),
-(9, 'p9pmvmhfe4u8ms6i6s8bscae55', '2014-07-08 22:52:54', '2014-07-08 23:37:14', 135, 1);
+(9, 'p9pmvmhfe4u8ms6i6s8bscae55', '2014-07-08 22:52:54', '2014-07-08 23:37:14', 135, 1),
+(10, 'f8faja228ucv45ckdkjl19t5h5', '2014-07-09 03:19:15', '2014-07-09 05:25:24', 267, 1);
 
 -- --------------------------------------------------------
 
@@ -6892,7 +7336,8 @@ INSERT INTO `log_visitor_info` (`visitor_id`, `http_referer`, `http_user_agent`,
 (6, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750),
 (7, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750),
 (8, NULL, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6,es;q=0.4', -1062731750, -1062731768),
-(9, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750);
+(9, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750),
+(10, 'http://192.168.0.26/hdc/', 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750);
 
 -- --------------------------------------------------------
 
@@ -6913,6 +7358,104 @@ CREATE TABLE IF NOT EXISTS `log_visitor_online` (
   KEY `IDX_LOG_VISITOR_ONLINE_FIRST_VISIT_AT_LAST_VISIT_AT` (`first_visit_at`,`last_visit_at`),
   KEY `IDX_LOG_VISITOR_ONLINE_CUSTOMER_ID` (`customer_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Log Visitor Online Table' AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `magenotification`
+--
+
+CREATE TABLE IF NOT EXISTS `magenotification` (
+  `magenotification_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `notification_id` int(10) unsigned NOT NULL,
+  `url` varchar(255) NOT NULL DEFAULT '',
+  `added_date` datetime NOT NULL,
+  PRIMARY KEY (`magenotification_id`),
+  UNIQUE KEY `notification_id` (`notification_id`,`url`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `magenotification_extension_feedback`
+--
+
+CREATE TABLE IF NOT EXISTS `magenotification_extension_feedback` (
+  `feedback_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `code` varchar(255) NOT NULL DEFAULT '',
+  `extension` varchar(255) NOT NULL DEFAULT '',
+  `extension_version` varchar(50) NOT NULL DEFAULT '',
+  `coupon_code` varchar(255) NOT NULL DEFAULT '',
+  `coupon_value` varchar(50) NOT NULL DEFAULT '',
+  `expired_counpon` datetime NOT NULL,
+  `content` text NOT NULL,
+  `file` text NOT NULL,
+  `comment` text NOT NULL,
+  `latest_message` text NOT NULL,
+  `latest_response` text NOT NULL,
+  `latest_response_time` datetime DEFAULT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '3',
+  `is_sent` tinyint(1) NOT NULL DEFAULT '2',
+  `created` datetime NOT NULL,
+  `updated` datetime NOT NULL,
+  PRIMARY KEY (`feedback_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `magenotification_extension_feedbackmessage`
+--
+
+CREATE TABLE IF NOT EXISTS `magenotification_extension_feedbackmessage` (
+  `feedbackmessage_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `feedback_id` int(11) unsigned NOT NULL,
+  `feedback_code` varchar(255) NOT NULL DEFAULT '',
+  `user` varchar(255) NOT NULL DEFAULT '',
+  `is_customer` tinyint(1) DEFAULT '2',
+  `message` text NOT NULL,
+  `file` text NOT NULL,
+  `posted_time` datetime DEFAULT NULL,
+  `is_sent` tinyint(1) DEFAULT '2',
+  PRIMARY KEY (`feedbackmessage_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `magenotification_license`
+--
+
+CREATE TABLE IF NOT EXISTS `magenotification_license` (
+  `license_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `extension_code` varchar(100) NOT NULL DEFAULT '',
+  `license_key` text NOT NULL,
+  `active_at` date NOT NULL,
+  `sum_code` varchar(255) DEFAULT NULL,
+  `response_code` smallint(5) DEFAULT NULL,
+  `domains` varchar(255) DEFAULT NULL,
+  `is_valid` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`license_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `magenotification_log`
+--
+
+CREATE TABLE IF NOT EXISTS `magenotification_log` (
+  `log_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `extension_code` varchar(100) NOT NULL DEFAULT '',
+  `license_type` varchar(50) NOT NULL DEFAULT '',
+  `license_key` text NOT NULL,
+  `check_date` date NOT NULL,
+  `sum_code` varchar(255) DEFAULT NULL,
+  `response_code` smallint(5) DEFAULT NULL,
+  `expired_time` varchar(255) DEFAULT NULL,
+  `is_valid` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`log_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -10165,6 +10708,13 @@ ALTER TABLE `api_session`
   ADD CONSTRAINT `FK_API_SESSION_USER_ID_API_USER_USER_ID` FOREIGN KEY (`user_id`) REFERENCES `api_user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+-- Constraints for table `bannerslider_value`
+--
+ALTER TABLE `bannerslider_value`
+  ADD CONSTRAINT `bannerslider_value_ibfk_1` FOREIGN KEY (`banner_id`) REFERENCES `bannerslider_banner` (`banner_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `bannerslider_value_ibfk_2` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
 -- Constraints for table `cataloginventory_stock_item`
 --
 ALTER TABLE `cataloginventory_stock_item`
@@ -11015,6 +11565,12 @@ ALTER TABLE `eav_form_type`
 ALTER TABLE `eav_form_type_entity`
   ADD CONSTRAINT `FK_EAV_FORM_TYPE_ENTITY_TYPE_ID_EAV_FORM_TYPE_TYPE_ID` FOREIGN KEY (`type_id`) REFERENCES `eav_form_type` (`type_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `FK_EAV_FORM_TYPE_ENTT_ENTT_TYPE_ID_EAV_ENTT_TYPE_ENTT_TYPE_ID` FOREIGN KEY (`entity_type_id`) REFERENCES `eav_entity_type` (`entity_type_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `ibanners_banner`
+--
+ALTER TABLE `ibanners_banner`
+  ADD CONSTRAINT `FK_GROUP_ID_BANNER` FOREIGN KEY (`group_id`) REFERENCES `ibanners_group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `index_process_event`

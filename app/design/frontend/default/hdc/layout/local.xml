@@ -9,9 +9,13 @@
 			<action method="addJs">
 				<script>jquery/jquery.js</script>
 			</action>
+			<action method="addJs">
+				<script>jquery/jquery.flexslider-min.js</script>
+			</action>
 			<action method="addJs"><script>jquery/jquery.noconflict.js</script></action>
 
 			<action method="addItem"><type>skin_css</type><file>css/hdc.css</file></action>
+			<action method="addItem"><type>skin_css</type><file>css/flexslider.css</file></action>
 		</reference>
 		<remove name="top.links"/>
 		<remove name="top.search"/>
@@ -20,9 +24,14 @@
 	</default>
 	<cms_index_index>
 		<reference name="content">
+			
 			<block type="cms/block" name="home_info">
 	            <action method="setBlockId"><block_id>home-info</block_id></action>
 	        </block> 
+	        <block type="ibanners/view" name="ibanners.homepage" before="-">
+				<action method="setGroupCode"><group_code>home</group_code></action>
+				
+			</block>
 	        <block type="cms/block" name="home_guarantee">
 	            <action method="setBlockId"><block_id>home-guarantee</block_id></action>
 	        </block>

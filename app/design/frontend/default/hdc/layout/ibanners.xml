@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<layout>
+	<!--
+	 /**
+	  * The cms_index_index block below injects the banner group with the code 'home'
+	  * into the homepage
+	  *
+	  * To include other banner groups, copy the block code
+	  * To include the JS/CSS on a page, ensure you include the <update handle line
+	  *
+	  */
+	-->
+	<cms_index_index>
+		
+	</cms_index_index>
+</layout>

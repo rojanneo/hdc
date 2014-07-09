@@ -1,2 +1,8 @@
 .page .nav-container .menu{float:left}
 .page .nav-container .logo{float:none}
+/*.ibanners.animated ul li{width:400px !important}*/
+.ibanners-wrapper{width:400px;float:right;}
+.home-info {width: 588px;float:left;}
+.home-guarantee{float:left;width: 588px;}
+.whatpeoplesay{float:left;}
+.upcoming-events{float:left;}
