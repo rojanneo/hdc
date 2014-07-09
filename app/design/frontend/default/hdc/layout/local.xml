@@ -31,6 +31,7 @@
 				<block type="whatpeoplesay/onlinediscussions" name="whatpeoplesay_onlinediscussions" template="whatpeoplesay/onlinediscussions.phtml"/>
 				<block type="whatpeoplesay/videos" name="whatpeoplesay_videos" template="whatpeoplesay/videos.phtml"/>
 			</block>
+			<block type="events/upcoming" name="upcoming_events" template="events/home_upcoming.phtml"/>
 		</reference>
 	</cms_index_index>
 	<catalog_category_view>

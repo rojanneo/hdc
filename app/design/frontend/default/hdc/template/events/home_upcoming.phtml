@@ -1,0 +1,20 @@
+<?php
+	$collection = $this->getDatasets();
+?>
+<div class="upcoming-events">
+	<p>Please visit us at the following events for special discounts and offerings. </p>
+	<div class="events">
+		<ul>
+			<?php foreach($collection as $event):?>
+			<li>
+				<div class="event">
+					<a href="<?php $url = $event->getEventLink(); echo ($url)?$url:'#'?>"><h4><?php echo $event->getEventName();?></h4></a>
+					<p><?php echo $event->getEventAddress();?></p>	
+					<?php $endDate = ' - '.$event->getEventEndDate();?>
+					<p><span><?php echo $event->getEventStartDate();?></span><?php echo ($event->getEventEndDate())?$endDate:null;?><span></span></p>
+				</div>
+			</li>
+		<?php endforeach;?>
+		</ul>
+	</div>
+</div>

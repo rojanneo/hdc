@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 04, 2014 at 11:23 AM
+-- Generation Time: Jul 09, 2014 at 07:41 AM
 -- Server version: 5.6.11
 -- PHP Version: 5.5.1
 
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `adminnotification_inbox` (
   KEY `IDX_ADMINNOTIFICATION_INBOX_SEVERITY` (`severity`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_READ` (`is_read`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_REMOVE` (`is_remove`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=86 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=87 ;
 
 --
 -- Dumping data for table `adminnotification_inbox`
@@ -133,7 +133,8 @@ INSERT INTO `adminnotification_inbox` (`notification_id`, `severity`, `date_adde
 (82, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (83, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (84, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
-(85, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
+(85, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(86, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -232,7 +233,7 @@ CREATE TABLE IF NOT EXISTS `admin_user` (
 --
 
 INSERT INTO `admin_user` (`user_id`, `firstname`, `lastname`, `email`, `username`, `password`, `created`, `modified`, `logdate`, `lognum`, `reload_acl_flag`, `is_active`, `extra`, `rp_token`, `rp_token_created_at`) VALUES
-(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-04 02:55:28', 9, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
+(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-08 22:53:28', 10, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -806,7 +807,7 @@ CREATE TABLE IF NOT EXISTS `catalog_category_entity_datetime` (
   KEY `IDX_CATALOG_CATEGORY_ENTITY_DATETIME_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_DATETIME_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_DATETIME_STORE_ID` (`store_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Datetime Attribute Backend Table' AUTO_INCREMENT=45 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Datetime Attribute Backend Table' AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `catalog_category_entity_datetime`
@@ -882,7 +883,7 @@ CREATE TABLE IF NOT EXISTS `catalog_category_entity_int` (
   KEY `IDX_CATALOG_CATEGORY_ENTITY_INT_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_INT_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_INT_STORE_ID` (`store_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Integer Attribute Backend Table' AUTO_INCREMENT=74 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Integer Attribute Backend Table' AUTO_INCREMENT=55 ;
 
 --
 -- Dumping data for table `catalog_category_entity_int`
@@ -962,7 +963,7 @@ CREATE TABLE IF NOT EXISTS `catalog_category_entity_text` (
   KEY `IDX_CATALOG_CATEGORY_ENTITY_TEXT_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_TEXT_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_TEXT_STORE_ID` (`store_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Text Attribute Backend Table' AUTO_INCREMENT=115 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Text Attribute Backend Table' AUTO_INCREMENT=45 ;
 
 --
 -- Dumping data for table `catalog_category_entity_text`
@@ -1032,7 +1033,7 @@ CREATE TABLE IF NOT EXISTS `catalog_category_entity_varchar` (
   KEY `IDX_CATALOG_CATEGORY_ENTITY_VARCHAR_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_VARCHAR_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_VARCHAR_STORE_ID` (`store_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Varchar Attribute Backend Table' AUTO_INCREMENT=115 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Category Varchar Attribute Backend Table' AUTO_INCREMENT=82 ;
 
 --
 -- Dumping data for table `catalog_category_entity_varchar`
@@ -2915,8 +2916,8 @@ INSERT INTO `core_config_data` (`config_id`, `scope`, `scope_id`, `path`, `value
 (2, 'default', 0, 'general/region/state_required', 'AT,CA,EE,FI,FR,DE,LV,LT,RO,ES,CH,US'),
 (3, 'default', 0, 'catalog/category/root_id', '2'),
 (4, 'default', 0, 'admin/dashboard/enable_charts', '1'),
-(5, 'default', 0, 'web/unsecure/base_url', 'http://192.168.0.107/hdc/'),
-(6, 'default', 0, 'web/secure/base_url', 'http://192.168.0.107/hdc/'),
+(5, 'default', 0, 'web/unsecure/base_url', 'http://192.168.0.26/hdc/'),
+(6, 'default', 0, 'web/secure/base_url', 'http://192.168.0.26/hdc/'),
 (7, 'default', 0, 'general/locale/code', 'en_US'),
 (8, 'default', 0, 'general/locale/timezone', 'America/Los_Angeles'),
 (9, 'default', 0, 'currency/options/base', 'USD'),
@@ -3105,6 +3106,7 @@ INSERT INTO `core_resource` (`code`, `version`, `data_version`) VALUES
 ('directory_setup', '1.6.0.2', '1.6.0.2'),
 ('downloadable_setup', '1.6.0.0.2', '1.6.0.0.2'),
 ('eav_setup', '1.6.0.1', '1.6.0.1'),
+('events_setup', '0.1.0', '0.1.0'),
 ('giftmessage_setup', '1.6.0.0', '1.6.0.0'),
 ('importexport_setup', '1.6.0.2', '1.6.0.2'),
 ('index_setup', '1.6.0.0', '1.6.0.0'),
@@ -6321,6 +6323,30 @@ INSERT INTO `eav_form_type_entity` (`type_id`, `entity_type_id`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `events`
+--
+
+CREATE TABLE IF NOT EXISTS `events` (
+  `event_id` int(11) NOT NULL AUTO_INCREMENT,
+  `event_name` varchar(255) DEFAULT NULL,
+  `event_address` text,
+  `event_start_date` date DEFAULT NULL,
+  `event_end_date` date DEFAULT NULL,
+  `event_link` text,
+  PRIMARY KEY (`event_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `events`
+--
+
+INSERT INTO `events` (`event_id`, `event_name`, `event_address`, `event_start_date`, `event_end_date`, `event_link`) VALUES
+(1, 'SuperZoo Trade Show', 'Las Vegas, NV', '2014-07-22', '2014-07-24', 'http://superzoo.org/'),
+(2, 'Paws Walk', NULL, '2014-09-06', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `gift_message`
 --
 
@@ -6625,7 +6651,31 @@ INSERT INTO `log_url` (`url_id`, `visitor_id`, `visit_time`) VALUES
 (108, 7, '2014-07-04 03:31:53'),
 (109, 7, '2014-07-04 03:35:00'),
 (110, 7, '2014-07-04 03:35:37'),
-(111, 7, '2014-07-04 03:35:41');
+(111, 7, '2014-07-04 03:35:41'),
+(112, 8, '2014-07-04 03:42:27'),
+(113, 9, '2014-07-08 22:53:01'),
+(114, 9, '2014-07-08 23:18:02'),
+(115, 9, '2014-07-08 23:19:48'),
+(116, 9, '2014-07-08 23:20:04'),
+(117, 9, '2014-07-08 23:21:05'),
+(118, 9, '2014-07-08 23:23:19'),
+(119, 9, '2014-07-08 23:23:59'),
+(120, 9, '2014-07-08 23:24:06'),
+(121, 9, '2014-07-08 23:25:39'),
+(122, 9, '2014-07-08 23:26:16'),
+(123, 9, '2014-07-08 23:26:26'),
+(124, 9, '2014-07-08 23:26:41'),
+(125, 9, '2014-07-08 23:26:46'),
+(126, 9, '2014-07-08 23:27:10'),
+(127, 9, '2014-07-08 23:27:30'),
+(128, 9, '2014-07-08 23:28:55'),
+(129, 9, '2014-07-08 23:29:30'),
+(130, 9, '2014-07-08 23:30:24'),
+(131, 9, '2014-07-08 23:30:34'),
+(132, 9, '2014-07-08 23:31:52'),
+(133, 9, '2014-07-08 23:34:03'),
+(134, 9, '2014-07-08 23:37:01'),
+(135, 9, '2014-07-08 23:37:14');
 
 -- --------------------------------------------------------
 
@@ -6638,7 +6688,7 @@ CREATE TABLE IF NOT EXISTS `log_url_info` (
   `url` varchar(255) DEFAULT NULL COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=112 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=136 ;
 
 --
 -- Dumping data for table `log_url_info`
@@ -6755,7 +6805,31 @@ INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
 (108, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
 (109, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/our-creations/chews.html'),
 (110, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/our-creations/chews.html'),
-(111, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/');
+(111, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(112, 'http://192.168.0.26/hdc/', NULL),
+(113, 'http://192.168.0.26/hdc/', NULL),
+(114, 'http://192.168.0.26/hdc/', NULL),
+(115, 'http://192.168.0.26/hdc/', NULL),
+(116, 'http://192.168.0.26/hdc/', NULL),
+(117, 'http://192.168.0.26/hdc/', NULL),
+(118, 'http://192.168.0.26/hdc/', NULL),
+(119, 'http://192.168.0.26/hdc/', NULL),
+(120, 'http://192.168.0.26/hdc/', NULL),
+(121, 'http://192.168.0.26/hdc/', NULL),
+(122, 'http://192.168.0.26/hdc/', NULL),
+(123, 'http://192.168.0.26/hdc/', NULL),
+(124, 'http://192.168.0.26/hdc/', NULL),
+(125, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(126, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(127, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(128, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(129, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(130, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(131, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(132, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(133, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(134, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/'),
+(135, 'http://192.168.0.26/hdc/', 'http://192.168.0.26/hdc/');
 
 -- --------------------------------------------------------
 
@@ -6771,7 +6845,7 @@ CREATE TABLE IF NOT EXISTS `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `log_visitor`
@@ -6784,7 +6858,9 @@ INSERT INTO `log_visitor` (`visitor_id`, `session_id`, `first_visit_at`, `last_v
 (4, 'sjkal8l5ahqjh430j7egdro465', '2014-06-29 20:02:25', '2014-06-29 20:14:32', 60, 1),
 (5, '7l530h2t5ohj7btf9vhrqbi9c2', '2014-06-30 00:51:23', '2014-06-30 00:51:30', 62, 1),
 (6, 'a20jvl5hsobor8dve6amktelt3', '2014-07-01 02:59:25', '2014-07-01 03:04:03', 66, 1),
-(7, 'vij3es8dnrq05hjll7ugidglm2', '2014-07-04 02:59:36', '2014-07-04 03:35:41', 111, 1);
+(7, 'vij3es8dnrq05hjll7ugidglm2', '2014-07-04 02:59:36', '2014-07-04 03:35:41', 111, 1),
+(8, '526f312o87m3h6ddrarlnuuii1', '2014-07-04 03:42:26', '2014-07-04 03:42:27', 112, 1),
+(9, 'p9pmvmhfe4u8ms6i6s8bscae55', '2014-07-08 22:52:54', '2014-07-08 23:37:14', 135, 1);
 
 -- --------------------------------------------------------
 
@@ -6814,7 +6890,9 @@ INSERT INTO `log_visitor_info` (`visitor_id`, `http_referer`, `http_user_agent`,
 (4, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (5, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (6, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750),
-(7, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750);
+(7, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750),
+(8, NULL, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6,es;q=0.4', -1062731750, -1062731768),
+(9, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750);
 
 -- --------------------------------------------------------
 
