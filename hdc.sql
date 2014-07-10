@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 09, 2014 at 01:11 PM
+-- Generation Time: Jul 10, 2014 at 08:27 AM
 -- Server version: 5.6.11
 -- PHP Version: 5.5.1
 
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `adminnotification_inbox` (
   KEY `IDX_ADMINNOTIFICATION_INBOX_SEVERITY` (`severity`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_READ` (`is_read`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_REMOVE` (`is_remove`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=91 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=92 ;
 
 --
 -- Dumping data for table `adminnotification_inbox`
@@ -138,7 +138,8 @@ INSERT INTO `adminnotification_inbox` (`notification_id`, `severity`, `date_adde
 (87, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (88, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (89, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
-(90, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
+(90, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(91, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -237,7 +238,29 @@ CREATE TABLE IF NOT EXISTS `admin_user` (
 --
 
 INSERT INTO `admin_user` (`user_id`, `firstname`, `lastname`, `email`, `username`, `password`, `created`, `modified`, `logdate`, `lognum`, `reload_acl_flag`, `is_active`, `extra`, `rp_token`, `rp_token_created_at`) VALUES
-(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-09 05:25:00', 15, 0, 1, 'a:1:{s:11:"configState";a:17:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";}}', NULL, NULL);
+(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-10 00:08:18', 16, 0, 1, 'a:1:{s:11:"configState";a:18:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"1";s:25:"trans_email_ident_general";s:1:"0";s:23:"trans_email_ident_sales";s:1:"0";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"0";s:25:"trans_email_ident_custom2";s:1:"0";s:21:"announcements_general";s:1:"1";}}', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `announcements`
+--
+
+CREATE TABLE IF NOT EXISTS `announcements` (
+  `announcement_id` int(11) NOT NULL AUTO_INCREMENT,
+  `announcement_title` varchar(255) DEFAULT NULL,
+  `announcement_text` longtext,
+  `enabled` int(11) DEFAULT NULL,
+  PRIMARY KEY (`announcement_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `announcements`
+--
+
+INSERT INTO `announcements` (`announcement_id`, `announcement_title`, `announcement_text`, `enabled`) VALUES
+(1, 'Announcement 1', '<p><strong>Dear Dog Lovers:</strong><br /><br /><span>We are devastated to learn the losses of so many dogs from taking the treats from China in the recent years. Our heart, prayers and solidarity are with the families who lost their dogs, the families who have dogs as their pets, and families who have pets.</span><br /><br /><span>Product of highest quality and confidence should be the most essential priority of any product manufacturer. We, at Himalayan, strive to bring such products in the market, and put all efforts to ensure that none of the ingredients and packaging materials is from China. We continue to procure our products from the USA and Nepal only, as we have in the past.</span><br /><br /><span>Please contact&nbsp;</span><a href="mailto:info@himalayandogchew.com">info@himalayandogchew.com</a><span>&nbsp;if you have any questions, concerns or suggestions.</span><br /><br /><span>Sujan Kumar Shrestha</span><br /><span>Chairman &amp; CEO</span></p>', 1),
+(2, 'Announcement 2', '<p><span>Dear Dog Lovers:</span><br /><br /><span>We are devastated to learn the losses of so many dogs from taking the treats from China in the recent years. Our heart, prayers and solidarity are with the families who lost their dogs, the families who have dogs as their pets, and families who have pets.</span><br /><br /><span>Product of highest quality and confidence should be the most essential priority of any product manufacturer. We, at Himalayan, strive to bring such products in the market, and put all efforts to ensure that none of the ingredients and packaging materials is from China. We continue to procure our products from the USA and Nepal only, as we have in the past.</span><br /><br /><span>Please contact&nbsp;</span><a href="mailto:info@himalayandogchew.com">info@himalayandogchew.com</a><span>&nbsp;if you have any questions, concerns or suggestions.</span><br /><br /><span>Sujan Kumar Shrestha</span><br /><span>Chairman &amp; CEO</span></p>', 0);
 
 -- --------------------------------------------------------
 
@@ -3016,7 +3039,7 @@ CREATE TABLE IF NOT EXISTS `core_config_data` (
   `value` text COMMENT 'Config Value',
   PRIMARY KEY (`config_id`),
   UNIQUE KEY `UNQ_CORE_CONFIG_DATA_SCOPE_SCOPE_ID_PATH` (`scope`,`scope_id`,`path`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Config Data' AUTO_INCREMENT=73 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Config Data' AUTO_INCREMENT=75 ;
 
 --
 -- Dumping data for table `core_config_data`
@@ -3094,7 +3117,9 @@ INSERT INTO `core_config_data` (`config_id`, `scope`, `scope_id`, `path`, `value
 (69, 'default', 0, 'trans_email/ident_custom2/name', 'Custom 2'),
 (70, 'default', 0, 'trans_email/ident_custom2/email', 'custom2@example.com'),
 (71, 'websites', 1, 'dev/debug/template_hints', ''),
-(72, 'websites', 1, 'dev/debug/template_hints_blocks', '');
+(72, 'websites', 1, 'dev/debug/template_hints_blocks', ''),
+(73, 'default', 0, 'announcements/general/visible_count', '2'),
+(74, 'default', 0, 'announcements/general/enable_disable', '0');
 
 -- --------------------------------------------------------
 
@@ -3198,6 +3223,7 @@ CREATE TABLE IF NOT EXISTS `core_resource` (
 INSERT INTO `core_resource` (`code`, `version`, `data_version`) VALUES
 ('adminnotification_setup', '1.6.0.0', '1.6.0.0'),
 ('admin_setup', '1.6.1.1', '1.6.1.1'),
+('announcements_setup', '0.1.1', '0.1.1'),
 ('api2_setup', '1.0.0.0', '1.0.0.0'),
 ('api_setup', '1.6.0.1', '1.6.0.1'),
 ('backup_setup', '1.6.0.0', '1.6.0.0'),
@@ -6986,7 +7012,40 @@ INSERT INTO `log_url` (`url_id`, `visitor_id`, `visit_time`) VALUES
 (264, 10, '2014-07-09 05:23:47'),
 (265, 10, '2014-07-09 05:24:19'),
 (266, 10, '2014-07-09 05:25:12'),
-(267, 10, '2014-07-09 05:25:24');
+(267, 10, '2014-07-09 05:25:24'),
+(268, 11, '2014-07-10 00:08:13'),
+(269, 12, '2014-07-10 00:08:16'),
+(270, 11, '2014-07-10 00:08:17'),
+(271, 11, '2014-07-10 00:08:18'),
+(272, 11, '2014-07-10 00:08:19'),
+(273, 11, '2014-07-10 00:08:21'),
+(274, 11, '2014-07-10 00:08:21'),
+(275, 11, '2014-07-10 00:08:22'),
+(276, 11, '2014-07-10 00:28:28'),
+(277, 11, '2014-07-10 00:28:29'),
+(278, 11, '2014-07-10 00:28:30'),
+(279, 11, '2014-07-10 00:28:31'),
+(280, 11, '2014-07-10 00:28:52'),
+(281, 11, '2014-07-10 00:29:48'),
+(282, 11, '2014-07-10 00:30:34'),
+(283, 11, '2014-07-10 00:30:47'),
+(284, 11, '2014-07-10 00:30:59'),
+(285, 11, '2014-07-10 00:31:30'),
+(286, 11, '2014-07-10 00:32:29'),
+(287, 11, '2014-07-10 00:33:02'),
+(288, 11, '2014-07-10 00:33:13'),
+(289, 11, '2014-07-10 00:33:34'),
+(290, 11, '2014-07-10 00:34:26'),
+(291, 11, '2014-07-10 00:34:41'),
+(292, 11, '2014-07-10 00:35:21'),
+(293, 11, '2014-07-10 00:37:27'),
+(294, 11, '2014-07-10 00:38:02'),
+(295, 11, '2014-07-10 00:38:14'),
+(296, 11, '2014-07-10 00:39:23'),
+(297, 11, '2014-07-10 00:40:16'),
+(298, 11, '2014-07-10 00:40:18'),
+(299, 11, '2014-07-10 00:40:19'),
+(300, 11, '2014-07-10 00:40:21');
 
 -- --------------------------------------------------------
 
@@ -6999,7 +7058,7 @@ CREATE TABLE IF NOT EXISTS `log_url_info` (
   `url` varchar(255) DEFAULT NULL COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=268 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=301 ;
 
 --
 -- Dumping data for table `log_url_info`
@@ -7272,7 +7331,40 @@ INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
 (264, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
 (265, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
 (266, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
-(267, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/');
+(267, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/'),
+(268, 'http://192.168.0.26/hdc/', NULL),
+(269, 'http://192.168.0.26/hdc/', NULL),
+(270, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/'),
+(271, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/'),
+(272, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/'),
+(273, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/'),
+(274, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/'),
+(275, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/'),
+(276, 'http://192.168.0.26/hdc/', NULL),
+(277, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/'),
+(278, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/'),
+(279, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/'),
+(280, 'http://192.168.0.26/hdc/', NULL),
+(281, 'http://192.168.0.26/hdc/', NULL),
+(282, 'http://192.168.0.26/hdc/', NULL),
+(283, 'http://192.168.0.26/hdc/', NULL),
+(284, 'http://192.168.0.26/hdc/', NULL),
+(285, 'http://192.168.0.26/hdc/', NULL),
+(286, 'http://192.168.0.26/hdc/', NULL),
+(287, 'http://192.168.0.26/hdc/', NULL),
+(288, 'http://192.168.0.26/hdc/', NULL),
+(289, 'http://192.168.0.26/hdc/', NULL),
+(290, 'http://192.168.0.26/hdc/', NULL),
+(291, 'http://192.168.0.26/hdc/', NULL),
+(292, 'http://192.168.0.26/hdc/', NULL),
+(293, 'http://192.168.0.26/hdc/', NULL),
+(294, 'http://192.168.0.26/hdc/', NULL),
+(295, 'http://192.168.0.26/hdc/', NULL),
+(296, 'http://192.168.0.26/hdc/', NULL),
+(297, 'http://192.168.0.26/hdc/', NULL),
+(298, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/'),
+(299, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/'),
+(300, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/');
 
 -- --------------------------------------------------------
 
@@ -7288,7 +7380,7 @@ CREATE TABLE IF NOT EXISTS `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `log_visitor`
@@ -7304,7 +7396,9 @@ INSERT INTO `log_visitor` (`visitor_id`, `session_id`, `first_visit_at`, `last_v
 (7, 'vij3es8dnrq05hjll7ugidglm2', '2014-07-04 02:59:36', '2014-07-04 03:35:41', 111, 1),
 (8, '526f312o87m3h6ddrarlnuuii1', '2014-07-04 03:42:26', '2014-07-04 03:42:27', 112, 1),
 (9, 'p9pmvmhfe4u8ms6i6s8bscae55', '2014-07-08 22:52:54', '2014-07-08 23:37:14', 135, 1),
-(10, 'f8faja228ucv45ckdkjl19t5h5', '2014-07-09 03:19:15', '2014-07-09 05:25:24', 267, 1);
+(10, 'f8faja228ucv45ckdkjl19t5h5', '2014-07-09 03:19:15', '2014-07-09 05:25:24', 267, 1),
+(11, '3n68picvhdb9im3ruaiibji1s7', '2014-07-10 00:08:10', '2014-07-10 00:40:20', 300, 1),
+(12, '7kq0mhcnjfetfes4m1it9160a2', '2014-07-10 00:08:15', '2014-07-10 00:08:16', 269, 1);
 
 -- --------------------------------------------------------
 
@@ -7337,7 +7431,9 @@ INSERT INTO `log_visitor_info` (`visitor_id`, `http_referer`, `http_user_agent`,
 (7, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750),
 (8, NULL, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6,es;q=0.4', -1062731750, -1062731768),
 (9, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750),
-(10, 'http://192.168.0.26/hdc/', 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750);
+(10, 'http://192.168.0.26/hdc/', 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750),
+(11, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750),
+(12, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750);
 
 -- --------------------------------------------------------
 

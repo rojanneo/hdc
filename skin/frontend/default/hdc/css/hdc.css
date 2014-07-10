@@ -4,5 +4,6 @@
 .ibanners-wrapper{width:400px;float:right;}
 .home-info {width: 588px;float:left;}
 .home-guarantee{float:left;width: 588px;}
-.whatpeoplesay{float:left;}
+.whatpeoplesay{float:left;clear:right;}
 .upcoming-events{float:left;}
+.announcements{float:left;}

@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <HDC_Announcements>
+      <version>0.1.1</version>
+    </HDC_Announcements>
+  </modules>
+  <global>
+    <helpers>
+      <announcements>
+        <class>HDC_Announcements_Helper</class>
+      </announcements>
+    </helpers>
+	<blocks>
+	  <announcements>
+		<class>HDC_Announcements_Block</class>
+	  </announcements>
+	</blocks>
+	<models>
+	  <announcements>
+		<class>HDC_Announcements_Model</class>
+		<resourceModel>announcements_mysql4</resourceModel>
+	  </announcements>
+	  <announcements_mysql4>
+		<class>HDC_Announcements_Model_Mysql4</class>
+		<entities>		  
+			  <announcements>
+				<table>announcements</table>
+			  </announcements>
+        </entities>
+	  </announcements_mysql4>
+	</models>
+	<resources>
+	  <announcements_setup>
+		<setup>
+		  <module>HDC_Announcements</module>
+		</setup>
+		<connection>
+		  <use>core_setup</use>
+		</connection>
+	  </announcements_setup>
+	  <announcements_write>
+		<connection>
+		  <use>core_write</use>
+		</connection>
+	  </announcements_write>
+	  <announcements_read>
+		<connection>
+		  <use>core_read</use>
+		</connection>
+	  </announcements_read>
+	</resources>
+  </global>
+  <admin>
+	<routers>
+	  <announcements>
+	    <use>admin</use>
+		<args>
+		  <module>HDC_Announcements</module>
+		  <frontName>announcements</frontName>
+		</args>
+	  </announcements>
+	</routers>
+  </admin>
+  <adminhtml>
+	<menu>
+	  <hdc module="announcements">
+		<sort_order>100</sort_order>
+		<children>
+		  <announcements module="announcements">
+		    <title>Make An Announcement</title>
+			<sort_order>0</sort_order>
+			<action>announcements/adminhtml_announcements</action>
+		  </announcements>
+		</children>
+	  </hdc>
+	</menu>
+	<acl>
+	  <resources>
+		<all>
+		  <title>Allow Everything</title>
+		</all>
+		<admin>
+		  <children>
+			<announcements translate="title" module="announcements">
+			  <title>Announcements</title>
+			  <sort_order>1000</sort_order>
+			  <children>
+		  <announcements translate="title">
+			<title>Manage Announcements</title>
+			<sort_order>0</sort_order>
+		  </announcements>
+			  </children>
+			</announcements>
+		  </children>
+		</admin>
+	  </resources>
+	</acl>
+	<layout>
+	  <updates>
+		<announcements>
+		  <file>announcements.xml</file>
+		</announcements>
+	  </updates>
+	</layout>
+  </adminhtml>
+</config> 

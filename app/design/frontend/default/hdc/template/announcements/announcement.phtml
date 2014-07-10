@@ -1,0 +1,17 @@
+<?php $collection = Mage::getModel('announcements/announcements')->getCollection()->addFieldToFilter('enabled',1);;
+// $count = Mage::getStoreConfig('announcements/general/visible_count');
+// if(!$count) $count = 1;
+$collection->getSelect()->limit(1);
+?>
+<div class="announcements">
+	<h4>Announcements and Events</h4>
+	<ul class="announcements-list">
+	<?php foreach($collection as $announcement):?>
+		<li>
+			<div class="announcement">
+				<?php echo $announcement->getAnnouncementText();?>
+			</div>
+		</li>
+	<?php endforeach;?>
+	</ul>
+</div>

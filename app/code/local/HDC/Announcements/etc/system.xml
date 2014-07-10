@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<config>
+	  <tabs>
+		<hdc translate="label" module="announcements">
+            <label>Himalayan Dog Chew</label>
+            <sort_order>0</sort_order>
+        </hdc>
+	  </tabs>
+	  <sections>
+		<announcements  translate="label" module="announcements">                    
+		<label>Announcement</label>
+		<tab>hdc</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>0</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+					<groups>
+				      <general translate="label"> 
+					  <label>General</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>0</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <enable_disable translate="label">
+                            <label>Enable / Disable Announcements</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </enable_disable>
+                         <!--  <visible_count translate="label">
+                            <label>How many announcement to show</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </visible_count> -->
+					   </fields>
+					   </general>
+					</groups>
+		</announcements>
+	  </sections>
+</config>
