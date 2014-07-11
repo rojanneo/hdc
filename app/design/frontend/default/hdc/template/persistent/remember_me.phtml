@@ -23,22 +23,19 @@
  * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
+?>
+<?php
 /**
- * @var Mage_Page_Block_Html_Header $this
+ * Customer "Remember Me" template
+ *
+ * @var $this Mage_Persistent_Block_Form_Remember
  */
 ?>
-<div class="header-container">
-    <div class="header">
-       
-        <div class="quick-access">
-            <a href="<?php echo Mage::getUrl('photogallery')?>">Photo Gallery</a>
-            <a href="<?php echo Mage::getUrl('customer/account/login')?>">Sign In</a>
-<!--             <?php echo $this->getChildHtml('topSearch') ?>
-            <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
-            <?php echo $this->getChildHtml('topLinks') ?>
-            <?php echo $this->getChildHtml('store_language') ?>
- -->        </div>
-        <?php echo $this->getChildHtml('topContainer'); ?>
+<li id="remember-me-box" class="control">
+    <?php $rememberMeId = 'remember_me' . Mage::helper('core')->getRandomString(10); ?>
+    <div class="input-box">
+        <input type="checkbox" name="persistent_remember_me" class="checkbox" id="<?php echo $rememberMeId; ?>"<?php if ($this->isRememberMeChecked()): ?> checked="checked"<?php endif; ?> title="<?php echo $this->__('Remember Me') ?>" />
     </div>
-</div>
-<?php echo $this->getChildHtml('topMenu') ?>
+    <label for="<?php echo $rememberMeId; ?>"><?php echo $this->__('Remember Me') ?></label>
+    <a class="link-tip" href="#"><?php echo $this->__('What\'s this?') ?></a>
+</li>
