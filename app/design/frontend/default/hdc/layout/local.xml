@@ -9,8 +9,11 @@
 			<action method="addJs">
 				<script>jquery/jquery.js</script>
 			</action>
-			<action method="addJs">
+<!-- 			<action method="addJs">
 				<script>jquery/jquery.flexslider-min.js</script>
+			</action>
+ -->			<action method="addJs">
+				<script>jquery/jquery.flexslider.js</script>
 			</action>
 			<action method="addJs"><script>jquery/jquery.noconflict.js</script></action>
 

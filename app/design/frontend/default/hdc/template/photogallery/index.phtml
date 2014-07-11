@@ -1,0 +1,45 @@
+<?php
+$gallery = $this->getDatasets();
+?>
+
+<div class="photo-gallery">
+	<ul class="slides">
+		<?php foreach($gallery as $photo):?>
+			<li><img src="<?php echo Mage::getBaseUrl('media').$photo->getPhoto()?>"/>			<p><?php echo $photo->getPhotoCaption();?></p>
+</li>
+		<?php endforeach;?>
+	</ul>
+</div>
+<div class="photo-gallery-thumbs">
+	<ul class="slides">
+		<?php foreach($gallery as $photo):?>
+			<li><img src="<?php echo Mage::getBaseUrl('media').$photo->getPhoto()?>" width="200" height="200"/></li>
+		<?php endforeach;?>
+	</ul>
+</div>
+ <script type="text/javascript">
+
+    jQuery(window).load(function(){
+      jQuery('.photo-gallery-thumbs').flexslider({
+        animation: "slide",
+        controlNav: false,
+        directionNav: true,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 200,
+        itemHeight:200,
+        itemMargin: 5,
+        asNavFor: '.photo-gallery'
+      });
+
+      jQuery('.photo-gallery').flexslider({
+        animation: "slide",
+        controlNav: false,
+        directionNav: true,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 800,
+        sync: ".photo-gallery-thumbs",
+      });
+    });
+  </script>
