@@ -1,11 +1,9 @@
 <?php
 
 
-class HDC_Announcements_Block_Adminhtml_Announcements extends Mage_Adminhtml_Block_Widget_Grid_Container{
-
+class HDC_Announcements_Block_Adminhtml_Announcement extends Mage_Adminhtml_Block_Widget_Grid_Container{
 	public function __construct()
 	{
-
 	$this->_controller = "adminhtml_announcements";
 	$this->_blockGroup = "announcements";
 	$this->_headerText = Mage::helper("announcements")->__("Announcements Manager");

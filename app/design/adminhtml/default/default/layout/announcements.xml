@@ -2,7 +2,7 @@
 <layout version="0.1.0">
   <announcements_adminhtml_announcements_index>
 	<reference name="content">
-	  <block type="announcements/adminhtml_announcements" name="announcements" />
+	  <block type="announcements/adminhtml_announcement" name="announcements" />
 	</reference>
   </announcements_adminhtml_announcements_index>
 </layout>

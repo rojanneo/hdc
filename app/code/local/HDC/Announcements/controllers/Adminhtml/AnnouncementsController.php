@@ -1,5 +1,4 @@
 <?php
-
 class HDC_Announcements_Adminhtml_AnnouncementsController extends Mage_Adminhtml_Controller_Action
 {
 		protected function _initAction()
