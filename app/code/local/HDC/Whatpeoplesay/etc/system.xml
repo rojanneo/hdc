@@ -5,6 +5,7 @@
             <label>Himalayan Dog Chew</label>
             <sort_order>0</sort_order>
         </hdc>
+       
 	  </tabs>
 	  <sections>
 		<what_people_say  translate="label" module="whatpeoplesay">                    
@@ -39,4 +40,8 @@
 					</groups>
 		</what_people_say>
 	  </sections>
+
+
+	  
+   
 </config>

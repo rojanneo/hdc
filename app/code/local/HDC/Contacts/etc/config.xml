@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <HDC_Contacts>
+      <version>0.1.0</version>
+    </HDC_Contacts>
+  </modules>
+   <frontend>
+        <routers>
+            <contacts>
+                <args>
+                    <modules>
+                        <HDC_Contacts before="Mage_Contacts">HDC_Contacts</HDC_Contacts>
+                    </modules>
+                </args>
+            </contacts>
+        </routers>
+    </frontend>
+  <global>
+  </global>
+  <admin>
+	<routers>
+	  <contacts>
+	    <use>admin</use>
+		<args>
+		  <module>HDC_Contacts</module>
+		  <frontName>contacts</frontName>
+		</args>
+	  </contacts>
+	</routers>
+  </admin>
+</config> 

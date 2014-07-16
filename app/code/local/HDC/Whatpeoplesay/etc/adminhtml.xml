@@ -13,6 +13,12 @@
 											<sort_order>0</sort_order>
 										</what_people_say>
 									</children>
+									<children>
+										<market_management1 translate="title" module="whatpeoplesay">
+											<title>What People Say Section</title>
+											<sort_order>0</sort_order>
+										</market_management1>
+									</children>
 								</config>
 							</children>
 						</system>

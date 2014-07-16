@@ -1,0 +1,88 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
+<form action="<?php echo $this->getFormAction(); ?>" id="contactForm" method="post">
+    <div class="fieldset contact-fieldset">
+        <ul class="form-list">
+            <li class="fields">
+                <div class="field">
+                    <label for="name" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Name') ?></label>
+                    <div class="input-box">
+                        <input name="name" id="name" title="<?php echo Mage::helper('contacts')->__('Name') ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserName()) ?>" class="input-text required-entry" type="text" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="email" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Email') ?></label>
+                    <div class="input-box">
+                        <input name="email" id="email" title="<?php echo Mage::helper('contacts')->__('Email') ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserEmail()) ?>" class="input-text required-entry validate-email" type="text" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <label for="nature"><?php echo Mage::helper('contacts')->__('Nature of Enquiry') ?></label>
+                <div class="input-box">
+                    <input name="nature" id="nature" title="<?php echo Mage::helper('contacts')->__('Nature of Enquiry') ?>" value="" class="input-text" type="text" />
+                </div>
+            </li>
+            <li class="wide">
+                <label for="message" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Message') ?></label>
+                <div class="input-box">
+                    <textarea name="message" id="comment" title="<?php echo Mage::helper('contacts')->__('Message') ?>" class="required-entry input-text" cols="5" rows="3"></textarea>
+                </div>
+            </li>
+            <li>
+                        <input type="text" name="hideit" id="hideit" value="" style="display:none !important;" />
+        <button type="submit" title="<?php echo Mage::helper('contacts')->__('Submit') ?>" class="button"><span><span><?php echo Mage::helper('contacts')->__('Submit') ?></span></span></button>
+
+            </li>
+        </ul>
+    </div>
+</form>
+
+<div class="contacts-sidebar">
+    <a href="#"><?php echo $this->__('our FAQs')?></a>
+    <div class="store-info">
+        <p><?php echo Mage::getStoreConfig('general/store_information/name');?></p>
+        <p><?php echo Mage::getStoreConfig('general/store_information/address');?></p>
+        <p><span><?php echo $this->__('toll-free')?> : </span><?php echo Mage::getStoreConfig('general/store_information/phone');?></p>
+
+    </div>
+    <div class="store-emails">
+        <ul class="emails">
+            <li><span><?php echo $this->__('Sales/Orders/Returns')?> : </span><span><?php echo Mage::getStoreConfig('trans_email/ident_sales/email');?></span></li>
+            <li><span><?php echo $this->__('Vendors')?> : </span><span><?php echo Mage::getStoreConfig('trans_email/ident_custom2/email');?></span></li>
+            <li><span><?php echo $this->__('Marketing/Donations')?> : </span><span><?php echo Mage::getStoreConfig('trans_email/ident_custom1/email');?></span></li>
+            <li><span><?php echo $this->__('Employment/HR')?> : </span><span><?php echo Mage::getStoreConfig('trans_email/ident_support/email');?></span></li>
+            <li><span><?php echo $this->__('General Inquiries')?> : </span><span><?php echo Mage::getStoreConfig('trans_email/ident_general/email');?></span></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    var contactForm = new VarienForm('contactForm', true);
+//]]>
+</script>
