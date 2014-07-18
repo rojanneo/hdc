@@ -23,26 +23,5 @@
  * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
-/**
- * @var Mage_Page_Block_Html_Header $this
- */
 ?>
-<div class="header-container">
-    <div class="header">
-       
-        <div class="quick-access">
-            <a href="<?php echo Mage::getUrl('photogallery')?>">Photo Gallery</a>
-			<?php if(!Mage::getSingleton('customer/session')->isLoggedIn()):?>
-				<a href="<?php echo Mage::getUrl('customer/account/login')?>">Sign In</a>
-			<?php else:?>
-				<a href="<?php echo Mage::getUrl('customer/account/logout')?>">Sign Out</a>
-			<?php endif;?>
-<!--             <?php echo $this->getChildHtml('topSearch') ?>
-            <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
-            <?php echo $this->getChildHtml('topLinks') ?>
-            <?php echo $this->getChildHtml('store_language') ?>
- -->        </div>
-        <?php echo $this->getChildHtml('topContainer'); ?>
-    </div>
-</div>
-<?php echo $this->getChildHtml('topMenu') ?>
+<?php Mage::app()->getFrontController()->getResponse()->setRedirect(Mage::getBaseUrl());?>

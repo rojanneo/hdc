@@ -25,14 +25,14 @@
   </frontend>
   <global>
     <helpers>
-      <customer>
+      <hdccustomer>
         <class>HDC_Customer_Helper</class>
-      </customer>
+      </hdccustomer>
     </helpers>
 	<blocks>
-	  <customer>
+	  <hdccustomer>
 		<class>HDC_Customer_Block</class>
-	  </customer>
+	  </hdccustomer>
 	</blocks>
   </global>
 </config> 

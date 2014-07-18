@@ -1,7 +1,11 @@
 <?php
 class HDC_Customer_IndexController extends Mage_Core_Controller_Front_Action{
     public function IndexAction() {
-      
+      if(!Mage::getSingleton('customer/session')->isLoggedIn())
+	  {
+		//Mage::getSingleton('core/session')->addError('You need to be logged in to view this page');
+		$this->_redirect('');
+	  }
 	  $this->loadLayout();   
 	  $this->getLayout()->getBlock("head")->setTitle($this->__("Titlename"));
 	    //     $breadcrumbs = $this->getLayout()->getBlock("breadcrumbs");
@@ -22,6 +26,11 @@ class HDC_Customer_IndexController extends Mage_Core_Controller_Front_Action{
 
     public function pricingAction()
     {
+	  if(!Mage::getSingleton('customer/session')->isLoggedIn())
+	  {
+		//Mage::getSingleton('core/session')->addError('You need to be logged in to view this page');
+		$this->_redirect('');
+	  }
       $this->loadLayout();
       $this->renderLayout();
     }
