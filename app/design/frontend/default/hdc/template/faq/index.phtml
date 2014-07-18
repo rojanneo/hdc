@@ -1,0 +1,60 @@
+<?php
+$faqs = $this->getDataset();
+
+
+
+
+?>
+
+<div class="faq-section">
+	<ul>
+		<?php foreach($faqs as $faq):?>
+			<li><a href="<?php echo $this->getUrl('faq/index/faqdetail',array('id'=>$faq->getFaqId()));?>"><?php echo $faq->getFaqQuestion()?></a></li>
+		<?php endforeach;?>
+	</ul>
+</div>
+<div class="faq-search">
+	<div class="search-box">
+			<input type="text" name="search-box-faq"/>
+			<input type="button" value="Search" id="search-button" onclick = "ajaxSearch();"/>
+	</div>
+	<div class="search-result">
+		<p>Press the search button to search if the question you want to ask is already answered</p>
+	</div>
+	<script>
+		function ajaxSearch()
+		{
+			jQuery('#search-button').click(function(){
+			var q = jQuery('input[name=search-box-faq]').val();
+			jQuery.ajax({
+				type:"post",
+				url:"<?php echo $this->getUrl('faq/index/ajaxsearch')?>",
+				data:{question: q}
+			}).done(function(msg){
+
+				try
+					{
+					   var data = JSON.parse(msg);
+
+				var string = '<ul>';
+				data.forEach(function(value)
+				{
+					string += '<li><a href="'+'<?php echo $this->getUrl("faq/index/faqdetail")?>'+'id/'+value.id+'">'+value.question+'</a></li>';	
+				});
+				string += '</ul>';
+					}
+					catch(e)
+					{
+						string = msg;
+					   
+					}
+				jQuery('.search-result').html(string);
+				
+				//alert(string);
+				// var data = jQuery.parseJSON(msg);
+			});
+		});
+		}
+	</script>
+</div>
+
