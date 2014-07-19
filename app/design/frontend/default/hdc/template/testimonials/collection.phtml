@@ -1,0 +1,26 @@
+<?php echo $this->getMessagesBlock()->getGroupedHtml(); ?>
+<?php $collection = $this->getCollection(); ?>
+<div class="page-title">
+    <h1><?php echo $this->__('Testimonials') ?></h1>
+	<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('testimonial_text')->toHtml();?>
+</div>
+<?php if($collection->getSize()): ?>
+<div class="testimonials">
+<ul class="testimonials-list">
+<?php foreach($collection as $testimonial):?>
+<li>
+<div class="testimonial">
+<p><span class="name"><?php echo $testimonial->getTestimonialName()?></span> <?php echo $this->__('from')?><span class="address"> <?php echo $testimonial->getTestimonialAddress()?></span> <?php echo $this->__('on')?><span class="date"> <?php echo $this->formatDate($testimonial->getTestimonialDate())?></span>
+<p class="comment">
+<?php echo $testimonial->getTestimonialComment();?>
+</p>
+</div> 
+</li>
+<?php endforeach;?>
+</ul>
+</div>
+<script type="text/javascript">decorateTable('my-custom-table');</script>
+<?php echo $this->getPagerHtml(); ?>
+<?php else: ?>
+    <p><?php echo $this->__('The collection is empty.'); ?></p>
+<?php endif ?>

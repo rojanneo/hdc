@@ -1,0 +1,12 @@
+<?xml version="1.0"?>   
+<layout version="0.1.0">   
+  <testimonials_index_index>   
+    <reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference>   
+    <reference name="content">   
+      <block type="testimonials/index" name="testimonials_index" template="testimonials/index.phtml"/>   
+    </reference>   
+  </testimonials_index_index>   
+</layout>   
+	
