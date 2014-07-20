@@ -47,7 +47,18 @@
     <ul class="product-desc-list">
     <?php foreach($_productCollection as $_product):?>
         <li class="desc-<?php echo $count++?> product-desc" style="display:none">
+		<?php if($_product->getTypeId()!="configurable"):?>
             <p><?php echo $_helper->productAttribute($_product, $_product->getDetailDescription(), 'description') ?></p>
+		<?php else:?>
+			<?php
+			$conf = Mage::getModel('catalog/product_type_configurable')->setProduct($_product);
+    $simple_collection = $conf->getUsedProductCollection()->addAttributeToSelect('*')->addFilterByRequiredOptions();
+    foreach($simple_collection as $simple_product){
+		$product = Mage::getModel('catalog/product')->loadByAttribute('sku',$simple_product->getSku());
+		echo $_helper->productAttribute($product, $product->getDetailDescription(), 'description');
+    }
+			?>
+		<?php endif;?>
         </li>
     <?php endforeach;?>
     </ul>

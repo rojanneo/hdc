@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 19, 2014 at 10:15 AM
+-- Generation Time: Jul 20, 2014 at 07:31 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `adminnotification_inbox` (
   KEY `IDX_ADMINNOTIFICATION_INBOX_SEVERITY` (`severity`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_READ` (`is_read`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_REMOVE` (`is_remove`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=102 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=103 ;
 
 --
 -- Dumping data for table `adminnotification_inbox`
@@ -147,7 +147,8 @@ INSERT INTO `adminnotification_inbox` (`notification_id`, `severity`, `date_adde
 (98, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (99, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (100, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
-(101, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
+(101, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(102, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -246,7 +247,7 @@ CREATE TABLE IF NOT EXISTS `admin_user` (
 --
 
 INSERT INTO `admin_user` (`user_id`, `firstname`, `lastname`, `email`, `username`, `password`, `created`, `modified`, `logdate`, `lognum`, `reload_acl_flag`, `is_active`, `extra`, `rp_token`, `rp_token_created_at`) VALUES
-(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-19 01:18:08', 34, 0, 1, 'a:1:{s:11:"configState";a:34:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"0";s:25:"trans_email_ident_general";s:1:"1";s:23:"trans_email_ident_sales";s:1:"1";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"1";s:25:"trans_email_ident_custom2";s:1:"1";s:21:"announcements_general";s:1:"1";s:12:"admin_emails";s:1:"0";s:13:"admin_startup";s:1:"0";s:9:"admin_url";s:1:"0";s:14:"admin_security";s:1:"0";s:15:"admin_dashboard";s:1:"0";s:20:"admin_aoe_filepicker";s:1:"1";s:13:"admin_captcha";s:1:"0";s:22:"customer_account_share";s:1:"0";s:25:"customer_online_customers";s:1:"0";s:23:"customer_create_account";s:1:"0";s:17:"customer_password";s:1:"0";s:16:"customer_address";s:1:"0";s:16:"customer_startup";s:1:"0";s:26:"customer_address_templates";s:1:"0";s:16:"customer_captcha";s:1:"1";s:19:"testimonial_general";s:1:"1";}}', NULL, NULL);
+(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-19 22:59:56', 35, 0, 1, 'a:1:{s:11:"configState";a:34:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"0";s:25:"trans_email_ident_general";s:1:"1";s:23:"trans_email_ident_sales";s:1:"1";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"1";s:25:"trans_email_ident_custom2";s:1:"1";s:21:"announcements_general";s:1:"1";s:12:"admin_emails";s:1:"0";s:13:"admin_startup";s:1:"0";s:9:"admin_url";s:1:"0";s:14:"admin_security";s:1:"0";s:15:"admin_dashboard";s:1:"0";s:20:"admin_aoe_filepicker";s:1:"1";s:13:"admin_captcha";s:1:"0";s:22:"customer_account_share";s:1:"0";s:25:"customer_online_customers";s:1:"0";s:23:"customer_create_account";s:1:"0";s:17:"customer_password";s:1:"0";s:16:"customer_address";s:1:"0";s:16:"customer_startup";s:1:"0";s:26:"customer_address_templates";s:1:"0";s:16:"customer_captcha";s:1:"1";s:19:"testimonial_general";s:1:"1";}}', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -601,7 +602,7 @@ CREATE TABLE IF NOT EXISTS `cataloginventory_stock_item` (
   UNIQUE KEY `UNQ_CATALOGINVENTORY_STOCK_ITEM_PRODUCT_ID_STOCK_ID` (`product_id`,`stock_id`),
   KEY `IDX_CATALOGINVENTORY_STOCK_ITEM_PRODUCT_ID` (`product_id`),
   KEY `IDX_CATALOGINVENTORY_STOCK_ITEM_STOCK_ID` (`stock_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Cataloginventory Stock Item' AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Cataloginventory Stock Item' AUTO_INCREMENT=21 ;
 
 --
 -- Dumping data for table `cataloginventory_stock_item`
@@ -625,7 +626,9 @@ INSERT INTO `cataloginventory_stock_item` (`item_id`, `product_id`, `stock_id`, 
 (15, 15, 1, '100.0000', '0.0000', 1, 0, 0, 1, '1.0000', 1, '0.0000', 1, 1, NULL, NULL, 1, 0, 1, 0, 1, '0.0000', 1, 0, 0),
 (16, 16, 1, '100.0000', '0.0000', 1, 0, 0, 1, '1.0000', 1, '0.0000', 1, 1, NULL, NULL, 1, 0, 1, 0, 1, '0.0000', 1, 0, 0),
 (17, 17, 1, '100.0000', '0.0000', 1, 0, 0, 1, '1.0000', 1, '0.0000', 1, 1, NULL, NULL, 1, 0, 1, 0, 1, '0.0000', 1, 0, 0),
-(18, 18, 1, '100.0000', '0.0000', 1, 0, 0, 1, '1.0000', 1, '0.0000', 1, 0, NULL, NULL, 1, 0, 1, 0, 1, '0.0000', 1, 0, 0);
+(18, 18, 1, '100.0000', '0.0000', 1, 0, 0, 1, '1.0000', 1, '0.0000', 1, 0, NULL, NULL, 1, 0, 1, 0, 1, '0.0000', 1, 0, 0),
+(19, 19, 1, '100.0000', '0.0000', 1, 0, 0, 1, '1.0000', 1, '0.0000', 1, 1, NULL, NULL, 1, 0, 1, 0, 1, '0.0000', 1, 0, 0),
+(20, 20, 1, '0.0000', '0.0000', 1, 0, 0, 1, '1.0000', 1, '0.0000', 1, 1, NULL, NULL, 1, 0, 1, 0, 1, '0.0000', 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -666,7 +669,9 @@ INSERT INTO `cataloginventory_stock_status` (`product_id`, `website_id`, `stock_
 (15, 1, 1, '100.0000', 1),
 (16, 1, 1, '100.0000', 1),
 (17, 1, 1, '100.0000', 1),
-(18, 1, 1, '100.0000', 0);
+(18, 1, 1, '100.0000', 0),
+(19, 1, 1, '100.0000', 1),
+(20, 1, 1, '0.0000', 1);
 
 -- --------------------------------------------------------
 
@@ -849,7 +854,7 @@ CREATE TABLE IF NOT EXISTS `catalogsearch_fulltext` (
   PRIMARY KEY (`fulltext_id`),
   UNIQUE KEY `UNQ_CATALOGSEARCH_FULLTEXT_PRODUCT_ID_STORE_ID` (`product_id`,`store_id`),
   FULLTEXT KEY `FTI_CATALOGSEARCH_FULLTEXT_DATA_INDEX` (`data_index`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Catalog search result table' AUTO_INCREMENT=35 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Catalog search result table' AUTO_INCREMENT=38 ;
 
 --
 -- Dumping data for table `catalogsearch_fulltext`
@@ -873,7 +878,8 @@ INSERT INTO `catalogsearch_fulltext` (`fulltext_id`, `product_id`, `store_id`, `
 (20, 15, 1, 'lotsa-chicken-4|Taxable Goods|Yaky Yam Lotsa Chicken|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|For all dog sizes|3.99|1'),
 (21, 16, 1, 'lotsa-chicken-14|Taxable Goods|Yaky Yam Lotsa Chicken|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|9.99|1'),
 (22, 17, 1, 'very-veggy-4|Taxable Goods|Yaky Yam Very Veggy|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|For all dog sizes|3.99|1'),
-(23, 18, 1, 'very-veggy-14|Taxable Goods|Yaky Yam Very Veggy|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|9.99|0');
+(23, 18, 1, 'very-veggy-14|Taxable Goods|Yaky Yam Very Veggy|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|9.99|0'),
+(37, 20, 1, 'yaky-yam-configurable|Taxable Goods|None|Yaky Yam Configurable Product Test|Yaky Yam Configurable 1|Test|Yaky Yam Configurable 1|Test|Yaky Yam Configurable 1|0|3.99|1');
 
 -- --------------------------------------------------------
 
@@ -1418,6 +1424,8 @@ INSERT INTO `catalog_category_product` (`category_id`, `product_id`, `position`)
 (8, 16, 1),
 (8, 17, 1),
 (8, 18, 1),
+(8, 19, 1),
+(8, 20, 1),
 (9, 8, 1),
 (9, 9, 1),
 (10, 7, 1);
@@ -1445,6 +1453,7 @@ CREATE TABLE IF NOT EXISTS `catalog_category_product_index` (
 --
 
 INSERT INTO `catalog_category_product_index` (`category_id`, `product_id`, `position`, `is_parent`, `store_id`, `visibility`) VALUES
+(2, 19, 240001, 0, 1, 1),
 (2, 15, 0, 0, 1, 4),
 (2, 1, 80001, 0, 1, 4),
 (2, 2, 80001, 0, 1, 4),
@@ -1460,9 +1469,11 @@ INSERT INTO `catalog_category_product_index` (`category_id`, `product_id`, `posi
 (2, 16, 240001, 0, 1, 4),
 (2, 17, 240001, 0, 1, 4),
 (2, 18, 240001, 0, 1, 4),
+(2, 20, 240001, 0, 1, 4),
 (2, 8, 280001, 0, 1, 4),
 (2, 9, 280001, 0, 1, 4),
 (2, 7, 320001, 0, 1, 4),
+(3, 19, 240001, 0, 1, 1),
 (3, 1, 80001, 0, 1, 4),
 (3, 2, 80001, 0, 1, 4),
 (3, 3, 80001, 0, 1, 4),
@@ -1477,6 +1488,7 @@ INSERT INTO `catalog_category_product_index` (`category_id`, `product_id`, `posi
 (3, 16, 240001, 0, 1, 4),
 (3, 17, 240001, 0, 1, 4),
 (3, 18, 240001, 0, 1, 4),
+(3, 20, 240001, 0, 1, 4),
 (3, 8, 280001, 0, 1, 4),
 (3, 9, 280001, 0, 1, 4),
 (3, 7, 320001, 0, 1, 4),
@@ -1489,11 +1501,13 @@ INSERT INTO `catalog_category_product_index` (`category_id`, `product_id`, `posi
 (6, 10, 1, 1, 1, 4),
 (7, 11, 1, 1, 1, 4),
 (7, 12, 1, 1, 1, 4),
+(8, 19, 1, 1, 1, 1),
 (8, 13, 1, 1, 1, 4),
 (8, 14, 1, 1, 1, 4),
 (8, 16, 1, 1, 1, 4),
 (8, 17, 1, 1, 1, 4),
 (8, 18, 1, 1, 1, 4),
+(8, 20, 1, 1, 1, 4),
 (9, 8, 1, 1, 1, 4),
 (9, 9, 1, 1, 1, 4),
 (10, 7, 1, 1, 1, 4);
@@ -1702,7 +1716,8 @@ INSERT INTO `catalog_eav_attribute` (`attribute_id`, `frontend_input_renderer`, 
 (130, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'downloadable', 0, 0, 0, 0),
 (131, NULL, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 'downloadable', 0, 0, 0, 0),
 (132, NULL, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, NULL, 0, 0, 0, 0),
-(133, NULL, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, NULL, 0, 0, 0, 0);
+(133, NULL, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, NULL, 0, 0, 0, 0),
+(134, NULL, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, NULL, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1838,7 +1853,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_ENTITY_TYPE_ID` (`entity_type_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_ATTRIBUTE_SET_ID` (`attribute_set_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_SKU` (`sku`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Table' AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Table' AUTO_INCREMENT=21 ;
 
 --
 -- Dumping data for table `catalog_product_entity`
@@ -1862,7 +1877,9 @@ INSERT INTO `catalog_product_entity` (`entity_id`, `entity_type_id`, `attribute_
 (15, 4, 4, 'simple', 'lotsa-chicken-4', 0, 0, '2014-07-11 03:39:07', '2014-07-11 03:39:07'),
 (16, 4, 4, 'simple', 'lotsa-chicken-14', 0, 0, '2014-07-11 03:40:28', '2014-07-11 03:40:28'),
 (17, 4, 4, 'simple', 'very-veggy-4', 0, 0, '2014-07-11 03:41:42', '2014-07-11 03:41:42'),
-(18, 4, 4, 'simple', 'very-veggy-14', 0, 0, '2014-07-11 03:42:37', '2014-07-11 03:42:37');
+(18, 4, 4, 'simple', 'very-veggy-14', 0, 0, '2014-07-11 03:42:37', '2014-07-11 03:42:37'),
+(19, 4, 4, 'simple', 'yaky-yam-configurable-4', 0, 0, '2014-07-19 23:08:02', '2014-07-19 23:29:26'),
+(20, 4, 4, 'configurable', 'yaky-yam-configurable', 1, 1, '2014-07-19 23:08:23', '2014-07-19 23:08:23');
 
 -- --------------------------------------------------------
 
@@ -1882,7 +1899,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_datetime` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DATETIME_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DATETIME_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DATETIME_ENTITY_ID` (`entity_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Datetime Attribute Backend Table' AUTO_INCREMENT=139 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Datetime Attribute Backend Table' AUTO_INCREMENT=157 ;
 
 --
 -- Dumping data for table `catalog_product_entity_datetime`
@@ -1996,7 +2013,19 @@ INSERT INTO `catalog_product_entity_datetime` (`value_id`, `entity_type_id`, `at
 (135, 4, 77, 0, 18, NULL),
 (136, 4, 78, 0, 18, NULL),
 (137, 4, 104, 0, 18, NULL),
-(138, 4, 105, 0, 18, NULL);
+(138, 4, 105, 0, 18, NULL),
+(139, 4, 93, 0, 19, NULL),
+(140, 4, 94, 0, 19, NULL),
+(141, 4, 77, 0, 19, NULL),
+(142, 4, 78, 0, 19, NULL),
+(143, 4, 104, 0, 19, NULL),
+(144, 4, 105, 0, 19, NULL),
+(145, 4, 93, 0, 20, NULL),
+(146, 4, 94, 0, 20, NULL),
+(147, 4, 77, 0, 20, NULL),
+(148, 4, 78, 0, 20, NULL),
+(149, 4, 104, 0, 20, NULL),
+(150, 4, 105, 0, 20, NULL);
 
 -- --------------------------------------------------------
 
@@ -2016,7 +2045,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_decimal` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DECIMAL_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DECIMAL_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DECIMAL_ATTRIBUTE_ID` (`attribute_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Decimal Attribute Backend Table' AUTO_INCREMENT=88 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Decimal Attribute Backend Table' AUTO_INCREMENT=98 ;
 
 --
 -- Dumping data for table `catalog_product_entity_decimal`
@@ -2094,7 +2123,14 @@ INSERT INTO `catalog_product_entity_decimal` (`value_id`, `entity_type_id`, `att
 (84, 4, 80, 0, 18, '1.0000'),
 (85, 4, 75, 0, 18, '9.9900'),
 (86, 4, 76, 0, 18, NULL),
-(87, 4, 120, 0, 18, NULL);
+(87, 4, 120, 0, 18, NULL),
+(88, 4, 80, 0, 19, '4.0000'),
+(89, 4, 75, 0, 19, '3.9900'),
+(90, 4, 76, 0, 19, NULL),
+(91, 4, 120, 0, 19, NULL),
+(92, 4, 75, 0, 20, '0.0000'),
+(93, 4, 76, 0, 20, NULL),
+(94, 4, 120, 0, 20, NULL);
 
 -- --------------------------------------------------------
 
@@ -2135,7 +2171,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_group_price` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_GROUP_PRICE_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_GROUP_PRICE_CUSTOMER_GROUP_ID` (`customer_group_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_GROUP_PRICE_WEBSITE_ID` (`website_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Group Price Attribute Backend Table' AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Group Price Attribute Backend Table' AUTO_INCREMENT=20 ;
 
 --
 -- Dumping data for table `catalog_product_entity_group_price`
@@ -2159,7 +2195,8 @@ INSERT INTO `catalog_product_entity_group_price` (`value_id`, `entity_id`, `all_
 (15, 15, 0, 3, '1.8500', 0),
 (16, 16, 0, 3, '4.8500', 0),
 (17, 17, 0, 3, '1.8500', 0),
-(18, 18, 0, 3, '4.8500', 0);
+(18, 18, 0, 3, '4.8500', 0),
+(19, 19, 0, 3, '1.8500', 0);
 
 -- --------------------------------------------------------
 
@@ -2179,7 +2216,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_int` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_INT_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_INT_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_INT_ENTITY_ID` (`entity_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Integer Attribute Backend Table' AUTO_INCREMENT=73 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Integer Attribute Backend Table' AUTO_INCREMENT=83 ;
 
 --
 -- Dumping data for table `catalog_product_entity_int`
@@ -2257,7 +2294,16 @@ INSERT INTO `catalog_product_entity_int` (`value_id`, `entity_type_id`, `attribu
 (69, 4, 96, 0, 18, 1),
 (70, 4, 102, 0, 18, 4),
 (71, 4, 121, 0, 18, 2),
-(72, 4, 100, 0, 18, 0);
+(72, 4, 100, 0, 18, 0),
+(73, 4, 134, 0, 19, 3),
+(74, 4, 96, 0, 19, 1),
+(75, 4, 102, 0, 19, 1),
+(76, 4, 121, 0, 19, 0),
+(77, 4, 100, 0, 19, 0),
+(78, 4, 96, 0, 20, 1),
+(79, 4, 102, 0, 20, 4),
+(80, 4, 121, 0, 20, 2),
+(81, 4, 134, 0, 20, NULL);
 
 -- --------------------------------------------------------
 
@@ -2327,7 +2373,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_text` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_TEXT_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_TEXT_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_TEXT_ENTITY_ID` (`entity_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Text Attribute Backend Table' AUTO_INCREMENT=98 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Text Attribute Backend Table' AUTO_INCREMENT=110 ;
 
 --
 -- Dumping data for table `catalog_product_entity_text`
@@ -2410,7 +2456,17 @@ INSERT INTO `catalog_product_entity_text` (`value_id`, `entity_type_id`, `attrib
 (88, 4, 133, 0, 2, 'Himalayan Dog Chews were born from an ancient recipe for a hard cheese snack chewed by the people of the Himalayas. In the mountains surrounding Mt. Everest at more than 15,000 feet, it is made using traditional methods with yak and/or cow milk, and all natural products with no preservatives or binding agents. They’re also gluten-free! Depending on the size and eating habits of the dog, this can be a very long-lasting dog chew. Dogs must work the end of the treat for hours, softening it with their mouths before small parts of it can be slowly chewed off. When you give this treat to your dog, you know that you are providing them with hours of high-quality eating entertainment.'),
 (91, 4, 133, 0, 3, 'Himalayan Dog Chews were born from an ancient recipe for a hard cheese snack chewed by the people of the Himalayas. In the mountains surrounding Mt. Everest at more than 15,000 feet, it is made using traditional methods with yak and/or cow milk, and all natural products with no preservatives or binding agents. They’re also gluten-free! Depending on the size and eating habits of the dog, this can be a very long-lasting dog chew. Dogs must work the end of the treat for hours, softening it with their mouths before small parts of it can be slowly chewed off. When you give this treat to your dog, you know that you are providing them with hours of high-quality eating entertainment.'),
 (94, 4, 133, 0, 4, 'Himalayan Dog Chews were born from an ancient recipe for a hard cheese snack chewed by the people of the Himalayas. In the mountains surrounding Mt. Everest at more than 15,000 feet, it is made using traditional methods with yak and/or cow milk, and all natural products with no preservatives or binding agents. They’re also gluten-free! Depending on the size and eating habits of the dog, this can be a very long-lasting dog chew. Dogs must work the end of the treat for hours, softening it with their mouths before small parts of it can be slowly chewed off. When you give this treat to your dog, you know that you are providing them with hours of high-quality eating entertainment.'),
-(97, 4, 133, 0, 5, 'Himalayan Dog Chews were born from an ancient recipe for a hard cheese snack chewed by the people of the Himalayas. In the mountains surrounding Mt. Everest at more than 15,000 feet, it is made using traditional methods with yak and/or cow milk, and all natural products with no preservatives or binding agents. They’re also gluten-free! Depending on the size and eating habits of the dog, this can be a very long-lasting dog chew. Dogs must work the end of the treat for hours, softening it with their mouths before small parts of it can be slowly chewed off. When you give this treat to your dog, you know that you are providing them with hours of high-quality eating entertainment.');
+(97, 4, 133, 0, 5, 'Himalayan Dog Chews were born from an ancient recipe for a hard cheese snack chewed by the people of the Himalayas. In the mountains surrounding Mt. Everest at more than 15,000 feet, it is made using traditional methods with yak and/or cow milk, and all natural products with no preservatives or binding agents. They’re also gluten-free! Depending on the size and eating habits of the dog, this can be a very long-lasting dog chew. Dogs must work the end of the treat for hours, softening it with their mouths before small parts of it can be slowly chewed off. When you give this treat to your dog, you know that you are providing them with hours of high-quality eating entertainment.'),
+(98, 4, 72, 0, 19, 'Yaky Yam Configurable 1'),
+(99, 4, 73, 0, 19, 'Yaky Yam Configurable 1'),
+(100, 4, 133, 0, 19, '4 oz box : 40-43 pieces'),
+(101, 4, 83, 0, 19, NULL),
+(102, 4, 106, 0, 19, NULL),
+(103, 4, 72, 0, 20, 'Test'),
+(104, 4, 73, 0, 20, 'Test'),
+(105, 4, 133, 0, 20, 'Test'),
+(106, 4, 83, 0, 20, NULL),
+(107, 4, 106, 0, 20, NULL);
 
 -- --------------------------------------------------------
 
@@ -2451,7 +2507,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_varchar` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_VARCHAR_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_VARCHAR_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_VARCHAR_ENTITY_ID` (`entity_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Varchar Attribute Backend Table' AUTO_INCREMENT=368 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Varchar Attribute Backend Table' AUTO_INCREMENT=406 ;
 
 --
 -- Dumping data for table `catalog_product_entity_varchar`
@@ -2751,7 +2807,39 @@ INSERT INTO `catalog_product_entity_varchar` (`value_id`, `entity_type_id`, `att
 (322, 4, 114, 0, 1, NULL),
 (365, 4, 112, 0, 3, NULL),
 (366, 4, 113, 0, 3, NULL),
-(367, 4, 114, 0, 3, NULL);
+(367, 4, 114, 0, 3, NULL),
+(368, 4, 71, 0, 19, 'Yaky Yam Configurable 1'),
+(369, 4, 97, 0, 19, 'yaky-yam-configurable-1'),
+(370, 4, 117, 0, 19, NULL),
+(371, 4, 118, 0, 19, '2'),
+(372, 4, 119, 0, 19, '4'),
+(373, 4, 82, 0, 19, NULL),
+(374, 4, 84, 0, 19, NULL),
+(375, 4, 85, 0, 19, 'no_selection'),
+(376, 4, 86, 0, 19, 'no_selection'),
+(377, 4, 87, 0, 19, 'no_selection'),
+(378, 4, 103, 0, 19, NULL),
+(379, 4, 107, 0, 19, NULL),
+(380, 4, 109, 0, 19, 'container2'),
+(381, 4, 122, 0, 19, NULL),
+(382, 4, 98, 1, 19, 'yaky-yam-configurable-1.html'),
+(383, 4, 98, 0, 19, 'yaky-yam-configurable-1.html'),
+(384, 4, 71, 0, 20, 'Yaky Yam Configurable Product Test'),
+(385, 4, 97, 0, 20, 'yaky-yam-configurable-product-test'),
+(386, 4, 117, 0, 20, NULL),
+(387, 4, 118, 0, 20, '2'),
+(388, 4, 119, 0, 20, '4'),
+(389, 4, 82, 0, 20, NULL),
+(390, 4, 84, 0, 20, NULL),
+(391, 4, 85, 0, 20, 'no_selection'),
+(392, 4, 86, 0, 20, 'no_selection'),
+(393, 4, 87, 0, 20, 'no_selection'),
+(394, 4, 103, 0, 20, NULL),
+(395, 4, 107, 0, 20, NULL),
+(396, 4, 109, 0, 20, 'container2'),
+(397, 4, 122, 0, 20, NULL),
+(398, 4, 98, 1, 20, 'yaky-yam-configurable-product-test.html'),
+(399, 4, 98, 0, 20, 'yaky-yam-configurable-product-test.html');
 
 -- --------------------------------------------------------
 
@@ -2847,7 +2935,9 @@ INSERT INTO `catalog_product_index_eav` (`entity_id`, `attribute_id`, `store_id`
 (14, 121, 1, 2),
 (15, 121, 1, 2),
 (16, 121, 1, 2),
-(17, 121, 1, 2);
+(17, 121, 1, 2),
+(20, 121, 1, 0),
+(20, 121, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -2939,6 +3029,14 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_eav_tmp` (
   KEY `IDX_CATALOG_PRODUCT_INDEX_EAV_TMP_VALUE` (`value`)
 ) ENGINE=MEMORY DEFAULT CHARSET=utf8 COMMENT='Catalog Product EAV Indexer Temp Table';
 
+--
+-- Dumping data for table `catalog_product_index_eav_tmp`
+--
+
+INSERT INTO `catalog_product_index_eav_tmp` (`entity_id`, `attribute_id`, `store_id`, `value`) VALUES
+(20, 121, 1, 2),
+(20, 121, 1, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -2960,7 +3058,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_group_price` (
 --
 
 INSERT INTO `catalog_product_index_group_price` (`entity_id`, `customer_group_id`, `website_id`, `price`) VALUES
-(3, 3, 1, '4.1500');
+(19, 3, 1, '1.8500');
 
 -- --------------------------------------------------------
 
@@ -3058,7 +3156,15 @@ INSERT INTO `catalog_product_index_price` (`entity_id`, `customer_group_id`, `we
 (17, 0, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
 (17, 1, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
 (17, 2, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(17, 3, 1, 2, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500');
+(17, 3, 1, 2, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
+(19, 0, 1, 0, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(19, 1, 1, 0, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(19, 2, 1, 0, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(19, 3, 1, 0, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
+(20, 0, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(20, 1, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(20, 2, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(20, 3, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -3452,6 +3558,20 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_price_tmp` (
   KEY `IDX_CATALOG_PRODUCT_INDEX_PRICE_TMP_MIN_PRICE` (`min_price`)
 ) ENGINE=MEMORY DEFAULT CHARSET=utf8 COMMENT='Catalog Product Price Indexer Temp Table';
 
+--
+-- Dumping data for table `catalog_product_index_price_tmp`
+--
+
+INSERT INTO `catalog_product_index_price_tmp` (`entity_id`, `customer_group_id`, `website_id`, `tax_class_id`, `price`, `final_price`, `min_price`, `max_price`, `tier_price`, `group_price`) VALUES
+(19, 0, 1, 0, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(19, 1, 1, 0, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(19, 2, 1, 0, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(19, 3, 1, 0, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
+(20, 0, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(20, 1, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(20, 2, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(20, 3, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -3487,7 +3607,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_website` (
 --
 
 INSERT INTO `catalog_product_index_website` (`website_id`, `website_date`, `rate`) VALUES
-(1, '2014-07-14', 1);
+(1, '2014-07-19', 1);
 
 -- --------------------------------------------------------
 
@@ -3725,6 +3845,13 @@ CREATE TABLE IF NOT EXISTS `catalog_product_relation` (
   KEY `IDX_CATALOG_PRODUCT_RELATION_CHILD_ID` (`child_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Catalog Product Relation Table';
 
+--
+-- Dumping data for table `catalog_product_relation`
+--
+
+INSERT INTO `catalog_product_relation` (`parent_id`, `child_id`) VALUES
+(20, 19);
+
 -- --------------------------------------------------------
 
 --
@@ -3739,7 +3866,14 @@ CREATE TABLE IF NOT EXISTS `catalog_product_super_attribute` (
   PRIMARY KEY (`product_super_attribute_id`),
   UNIQUE KEY `UNQ_CATALOG_PRODUCT_SUPER_ATTRIBUTE_PRODUCT_ID_ATTRIBUTE_ID` (`product_id`,`attribute_id`),
   KEY `IDX_CATALOG_PRODUCT_SUPER_ATTRIBUTE_PRODUCT_ID` (`product_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Catalog Product Super Attribute Table' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Super Attribute Table' AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `catalog_product_super_attribute`
+--
+
+INSERT INTO `catalog_product_super_attribute` (`product_super_attribute_id`, `product_id`, `attribute_id`, `position`) VALUES
+(1, 20, 134, 0);
 
 -- --------------------------------------------------------
 
@@ -3757,7 +3891,14 @@ CREATE TABLE IF NOT EXISTS `catalog_product_super_attribute_label` (
   UNIQUE KEY `UNQ_CAT_PRD_SPR_ATTR_LBL_PRD_SPR_ATTR_ID_STORE_ID` (`product_super_attribute_id`,`store_id`),
   KEY `IDX_CAT_PRD_SPR_ATTR_LBL_PRD_SPR_ATTR_ID` (`product_super_attribute_id`),
   KEY `IDX_CATALOG_PRODUCT_SUPER_ATTRIBUTE_LABEL_STORE_ID` (`store_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Catalog Product Super Attribute Label Table' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Super Attribute Label Table' AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `catalog_product_super_attribute_label`
+--
+
+INSERT INTO `catalog_product_super_attribute_label` (`value_id`, `product_super_attribute_id`, `store_id`, `use_default`, `value`) VALUES
+(1, 1, 0, 0, 'Box Size');
 
 -- --------------------------------------------------------
 
@@ -3792,7 +3933,14 @@ CREATE TABLE IF NOT EXISTS `catalog_product_super_link` (
   UNIQUE KEY `UNQ_CATALOG_PRODUCT_SUPER_LINK_PRODUCT_ID_PARENT_ID` (`product_id`,`parent_id`),
   KEY `IDX_CATALOG_PRODUCT_SUPER_LINK_PARENT_ID` (`parent_id`),
   KEY `IDX_CATALOG_PRODUCT_SUPER_LINK_PRODUCT_ID` (`product_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Catalog Product Super Link Table' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Super Link Table' AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `catalog_product_super_link`
+--
+
+INSERT INTO `catalog_product_super_link` (`link_id`, `product_id`, `parent_id`) VALUES
+(1, 19, 20);
 
 -- --------------------------------------------------------
 
@@ -3829,7 +3977,9 @@ INSERT INTO `catalog_product_website` (`product_id`, `website_id`) VALUES
 (15, 1),
 (16, 1),
 (17, 1),
-(18, 1);
+(18, 1),
+(19, 1),
+(20, 1);
 
 -- --------------------------------------------------------
 
@@ -4460,7 +4610,7 @@ CREATE TABLE IF NOT EXISTS `core_url_rewrite` (
   KEY `IDX_CORE_URL_REWRITE_STORE_ID` (`store_id`),
   KEY `FK_CORE_URL_REWRITE_CTGR_ID_CAT_CTGR_ENTT_ENTT_ID` (`category_id`),
   KEY `FK_CORE_URL_REWRITE_PRODUCT_ID_CATALOG_CATEGORY_ENTITY_ENTITY_ID` (`product_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Url Rewrites' AUTO_INCREMENT=45 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Url Rewrites' AUTO_INCREMENT=49 ;
 
 --
 -- Dumping data for table `core_url_rewrite`
@@ -4509,7 +4659,11 @@ INSERT INTO `core_url_rewrite` (`url_rewrite_id`, `store_id`, `id_path`, `reques
 (41, 1, 'product/17', 'yaky-yam-very-veggy.html', 'catalog/product/view/id/17', 1, NULL, NULL, NULL, 17),
 (42, 1, 'product/18/8', 'our-creations/yaky-yams/yaky-yam-very-veggy-18.html', 'catalog/product/view/id/18/category/8', 1, NULL, NULL, 8, 18),
 (43, 1, 'product/18', 'yaky-yam-very-veggy-18.html', 'catalog/product/view/id/18', 1, NULL, NULL, NULL, 18),
-(44, 1, 'product/6/5', 'our-creations/yaky-nugget/yaky-nugget.html', 'catalog/product/view/id/6/category/5', 1, NULL, NULL, 5, 6);
+(44, 1, 'product/6/5', 'our-creations/yaky-nugget/yaky-nugget.html', 'catalog/product/view/id/6/category/5', 1, NULL, NULL, 5, 6),
+(45, 1, 'product/19/8', 'our-creations/yaky-yams/yaky-yam-configurable-1.html', 'catalog/product/view/id/19/category/8', 1, NULL, NULL, 8, 19),
+(46, 1, 'product/19', 'yaky-yam-configurable-1.html', 'catalog/product/view/id/19', 1, NULL, NULL, NULL, 19),
+(47, 1, 'product/20/8', 'our-creations/yaky-yams/yaky-yam-configurable-product-test.html', 'catalog/product/view/id/20/category/8', 1, NULL, NULL, 8, 20),
+(48, 1, 'product/20', 'yaky-yam-configurable-product-test.html', 'catalog/product/view/id/20', 1, NULL, NULL, NULL, 20);
 
 -- --------------------------------------------------------
 
@@ -6787,7 +6941,7 @@ CREATE TABLE IF NOT EXISTS `eav_attribute` (
   PRIMARY KEY (`attribute_id`),
   UNIQUE KEY `UNQ_EAV_ATTRIBUTE_ENTITY_TYPE_ID_ATTRIBUTE_CODE` (`entity_type_id`,`attribute_code`),
   KEY `IDX_EAV_ATTRIBUTE_ENTITY_TYPE_ID` (`entity_type_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Eav Attribute' AUTO_INCREMENT=134 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Eav Attribute' AUTO_INCREMENT=135 ;
 
 --
 -- Dumping data for table `eav_attribute`
@@ -6926,7 +7080,8 @@ INSERT INTO `eav_attribute` (`attribute_id`, `entity_type_id`, `attribute_code`,
 (130, 4, 'links_title', NULL, NULL, 'varchar', NULL, NULL, NULL, 'Links title', NULL, NULL, 1, 0, NULL, 0, NULL),
 (131, 4, 'links_exist', NULL, NULL, 'int', NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, '0', 0, NULL),
 (132, 3, 'thumbnail', NULL, 'catalog/category_attribute_backend_image', 'varchar', NULL, NULL, 'image', 'Thumbnail Image', NULL, NULL, 0, 0, NULL, 0, NULL),
-(133, 4, 'detail_description', NULL, NULL, 'text', NULL, NULL, 'textarea', 'Detail Description', NULL, NULL, 0, 1, NULL, 0, NULL);
+(133, 4, 'detail_description', NULL, NULL, 'text', NULL, NULL, 'textarea', 'Detail Description', NULL, NULL, 0, 1, NULL, 0, NULL),
+(134, 4, 'box_size', NULL, NULL, 'int', NULL, NULL, 'select', 'Box Size', NULL, 'eav/entity_attribute_source_table', 0, 1, '', 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -6997,7 +7152,7 @@ CREATE TABLE IF NOT EXISTS `eav_attribute_option` (
   `sort_order` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Sort Order',
   PRIMARY KEY (`option_id`),
   KEY `IDX_EAV_ATTRIBUTE_OPTION_ATTRIBUTE_ID` (`attribute_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Eav Attribute Option' AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Eav Attribute Option' AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `eav_attribute_option`
@@ -7005,7 +7160,8 @@ CREATE TABLE IF NOT EXISTS `eav_attribute_option` (
 
 INSERT INTO `eav_attribute_option` (`option_id`, `attribute_id`, `sort_order`) VALUES
 (1, 18, 0),
-(2, 18, 1);
+(2, 18, 1),
+(3, 134, 0);
 
 -- --------------------------------------------------------
 
@@ -7021,7 +7177,7 @@ CREATE TABLE IF NOT EXISTS `eav_attribute_option_value` (
   PRIMARY KEY (`value_id`),
   KEY `IDX_EAV_ATTRIBUTE_OPTION_VALUE_OPTION_ID` (`option_id`),
   KEY `IDX_EAV_ATTRIBUTE_OPTION_VALUE_STORE_ID` (`store_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Eav Attribute Option Value' AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Eav Attribute Option Value' AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `eav_attribute_option_value`
@@ -7029,7 +7185,8 @@ CREATE TABLE IF NOT EXISTS `eav_attribute_option_value` (
 
 INSERT INTO `eav_attribute_option_value` (`value_id`, `option_id`, `store_id`, `value`) VALUES
 (1, 1, 0, 'Male'),
-(2, 2, 0, 'Female');
+(2, 2, 0, 'Female'),
+(4, 3, 0, '4 oz');
 
 -- --------------------------------------------------------
 
@@ -7100,7 +7257,7 @@ CREATE TABLE IF NOT EXISTS `eav_entity_attribute` (
   UNIQUE KEY `UNQ_EAV_ENTITY_ATTRIBUTE_ATTRIBUTE_GROUP_ID_ATTRIBUTE_ID` (`attribute_group_id`,`attribute_id`),
   KEY `IDX_EAV_ENTITY_ATTRIBUTE_ATTRIBUTE_SET_ID_SORT_ORDER` (`attribute_set_id`,`sort_order`),
   KEY `IDX_EAV_ENTITY_ATTRIBUTE_ATTRIBUTE_ID` (`attribute_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Eav Entity Attributes' AUTO_INCREMENT=213 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Eav Entity Attributes' AUTO_INCREMENT=297 ;
 
 --
 -- Dumping data for table `eav_entity_attribute`
@@ -7197,47 +7354,48 @@ INSERT INTO `eav_entity_attribute` (`entity_attribute_id`, `entity_type_id`, `at
 (128, 4, 4, 7, 130, 28),
 (129, 4, 4, 7, 131, 29),
 (130, 3, 3, 4, 132, 4),
-(132, 4, 4, 7, 71, 1),
-(134, 4, 4, 7, 72, 2),
-(136, 4, 4, 7, 73, 3),
-(138, 4, 4, 7, 74, 5),
-(140, 4, 4, 7, 80, 6),
-(142, 4, 4, 7, 93, 7),
-(144, 4, 4, 7, 94, 8),
-(146, 4, 4, 7, 96, 9),
-(148, 4, 4, 7, 97, 10),
-(150, 4, 4, 7, 102, 11),
-(152, 4, 4, 7, 117, 12),
-(154, 4, 4, 7, 133, 4),
-(156, 4, 4, 8, 75, 1),
-(158, 4, 4, 8, 76, 3),
-(160, 4, 4, 8, 77, 4),
-(162, 4, 4, 8, 78, 5),
-(164, 4, 4, 8, 79, 6),
-(166, 4, 4, 8, 90, 2),
-(168, 4, 4, 8, 91, 7),
-(170, 4, 4, 8, 118, 8),
-(172, 4, 4, 8, 119, 9),
-(174, 4, 4, 8, 120, 10),
-(176, 4, 4, 8, 121, 11),
-(178, 4, 4, 8, 126, 12),
-(180, 4, 4, 9, 82, 1),
-(182, 4, 4, 9, 83, 2),
-(184, 4, 4, 9, 84, 3),
-(186, 4, 4, 10, 85, 1),
-(188, 4, 4, 10, 86, 2),
-(190, 4, 4, 10, 87, 3),
-(192, 4, 4, 10, 88, 4),
-(194, 4, 4, 10, 95, 5),
-(196, 4, 4, 11, 100, 1),
-(198, 4, 4, 11, 101, 2),
-(200, 4, 4, 12, 103, 1),
-(202, 4, 4, 12, 104, 2),
-(204, 4, 4, 12, 105, 3),
-(206, 4, 4, 12, 106, 4),
-(208, 4, 4, 12, 107, 5),
-(210, 4, 4, 12, 109, 6),
-(212, 4, 4, 17, 122, 1);
+(214, 4, 4, 7, 71, 1),
+(216, 4, 4, 7, 72, 2),
+(218, 4, 4, 7, 73, 3),
+(220, 4, 4, 7, 74, 6),
+(222, 4, 4, 7, 80, 7),
+(224, 4, 4, 7, 93, 8),
+(226, 4, 4, 7, 94, 9),
+(228, 4, 4, 7, 96, 10),
+(230, 4, 4, 7, 97, 11),
+(232, 4, 4, 7, 102, 12),
+(234, 4, 4, 7, 117, 13),
+(236, 4, 4, 7, 133, 4),
+(238, 4, 4, 7, 134, 5),
+(240, 4, 4, 8, 75, 1),
+(242, 4, 4, 8, 76, 3),
+(244, 4, 4, 8, 77, 4),
+(246, 4, 4, 8, 78, 5),
+(248, 4, 4, 8, 79, 6),
+(250, 4, 4, 8, 90, 2),
+(252, 4, 4, 8, 91, 7),
+(254, 4, 4, 8, 118, 8),
+(256, 4, 4, 8, 119, 9),
+(258, 4, 4, 8, 120, 10),
+(260, 4, 4, 8, 121, 11),
+(262, 4, 4, 8, 126, 12),
+(264, 4, 4, 9, 82, 1),
+(266, 4, 4, 9, 83, 2),
+(268, 4, 4, 9, 84, 3),
+(270, 4, 4, 10, 85, 1),
+(272, 4, 4, 10, 86, 2),
+(274, 4, 4, 10, 87, 3),
+(276, 4, 4, 10, 88, 4),
+(278, 4, 4, 10, 95, 5),
+(280, 4, 4, 11, 100, 1),
+(282, 4, 4, 11, 101, 2),
+(284, 4, 4, 12, 103, 1),
+(286, 4, 4, 12, 104, 2),
+(288, 4, 4, 12, 105, 3),
+(290, 4, 4, 12, 106, 4),
+(292, 4, 4, 12, 107, 5),
+(294, 4, 4, 12, 109, 6),
+(296, 4, 4, 17, 122, 1);
 
 -- --------------------------------------------------------
 
@@ -7744,7 +7902,7 @@ CREATE TABLE IF NOT EXISTS `index_event` (
   `new_data` mediumtext COMMENT 'New Data',
   PRIMARY KEY (`event_id`),
   UNIQUE KEY `UNQ_INDEX_EVENT_TYPE_ENTITY_ENTITY_PK` (`type`,`entity`,`entity_pk`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Index Event' AUTO_INCREMENT=67 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Index Event' AUTO_INCREMENT=74 ;
 
 --
 -- Dumping data for table `index_event`
@@ -7816,7 +7974,14 @@ INSERT INTO `index_event` (`event_id`, `type`, `entity`, `entity_pk`, `created_a
 (63, 'save', 'catalog_product', 18, '2014-07-11 03:42:38', NULL, 'a:5:{s:35:"cataloginventory_stock_match_result";b:1;s:34:"catalog_product_price_match_result";b:1;s:24:"catalog_url_match_result";b:1;s:37:"catalog_category_product_match_result";b:1;s:35:"catalogsearch_fulltext_match_result";b:1;}'),
 (64, 'catalog_reindex_price', 'catalog_product', 18, '2014-07-11 03:42:39', NULL, 'a:5:{s:35:"cataloginventory_stock_match_result";b:0;s:34:"catalog_product_price_match_result";b:1;s:24:"catalog_url_match_result";b:0;s:37:"catalog_category_product_match_result";b:0;s:35:"catalogsearch_fulltext_match_result";b:0;}'),
 (65, 'save', 'catalog_eav_attribute', 72, '2014-07-14 22:02:06', NULL, 'a:5:{s:35:"cataloginventory_stock_match_result";b:0;s:34:"catalog_product_price_match_result";b:0;s:24:"catalog_url_match_result";b:0;s:37:"catalog_category_product_match_result";b:0;s:35:"catalogsearch_fulltext_match_result";b:0;}'),
-(66, 'save', 'catalog_eav_attribute', 133, '2014-07-14 22:03:53', NULL, 'a:5:{s:35:"cataloginventory_stock_match_result";b:0;s:34:"catalog_product_price_match_result";b:0;s:24:"catalog_url_match_result";b:0;s:37:"catalog_category_product_match_result";b:0;s:35:"catalogsearch_fulltext_match_result";b:1;}');
+(66, 'save', 'catalog_eav_attribute', 133, '2014-07-14 22:03:53', NULL, 'a:5:{s:35:"cataloginventory_stock_match_result";b:0;s:34:"catalog_product_price_match_result";b:0;s:24:"catalog_url_match_result";b:0;s:37:"catalog_category_product_match_result";b:0;s:35:"catalogsearch_fulltext_match_result";b:1;}'),
+(67, 'save', 'catalog_eav_attribute', 134, '2014-07-19 23:02:56', NULL, 'a:5:{s:35:"cataloginventory_stock_match_result";b:0;s:34:"catalog_product_price_match_result";b:0;s:24:"catalog_url_match_result";b:0;s:37:"catalog_category_product_match_result";b:0;s:35:"catalogsearch_fulltext_match_result";b:0;}'),
+(68, 'save', 'cataloginventory_stock_item', 19, '2014-07-19 23:08:04', NULL, 'a:5:{s:35:"cataloginventory_stock_match_result";b:1;s:34:"catalog_product_price_match_result";b:0;s:24:"catalog_url_match_result";b:0;s:37:"catalog_category_product_match_result";b:0;s:35:"catalogsearch_fulltext_match_result";b:0;}'),
+(69, 'save', 'catalog_product', 19, '2014-07-19 23:08:07', NULL, 'a:5:{s:35:"cataloginventory_stock_match_result";b:1;s:34:"catalog_product_price_match_result";b:1;s:24:"catalog_url_match_result";b:1;s:37:"catalog_category_product_match_result";b:1;s:35:"catalogsearch_fulltext_match_result";b:1;}'),
+(70, 'catalog_reindex_price', 'catalog_product', 19, '2014-07-19 23:08:08', NULL, 'a:5:{s:35:"cataloginventory_stock_match_result";b:0;s:34:"catalog_product_price_match_result";b:1;s:24:"catalog_url_match_result";b:0;s:37:"catalog_category_product_match_result";b:0;s:35:"catalogsearch_fulltext_match_result";b:0;}'),
+(71, 'save', 'cataloginventory_stock_item', 20, '2014-07-19 23:08:24', NULL, 'a:5:{s:35:"cataloginventory_stock_match_result";b:1;s:34:"catalog_product_price_match_result";b:0;s:24:"catalog_url_match_result";b:0;s:37:"catalog_category_product_match_result";b:0;s:35:"catalogsearch_fulltext_match_result";b:0;}'),
+(72, 'save', 'catalog_product', 20, '2014-07-19 23:08:27', NULL, 'a:5:{s:35:"cataloginventory_stock_match_result";b:1;s:34:"catalog_product_price_match_result";b:1;s:24:"catalog_url_match_result";b:1;s:37:"catalog_category_product_match_result";b:1;s:35:"catalogsearch_fulltext_match_result";b:1;}'),
+(73, 'catalog_reindex_price', 'catalog_product', 20, '2014-07-19 23:08:27', NULL, 'a:5:{s:35:"cataloginventory_stock_match_result";b:0;s:34:"catalog_product_price_match_result";b:1;s:24:"catalog_url_match_result";b:0;s:37:"catalog_category_product_match_result";b:0;s:35:"catalogsearch_fulltext_match_result";b:0;}');
 
 -- --------------------------------------------------------
 
@@ -7840,15 +8005,15 @@ CREATE TABLE IF NOT EXISTS `index_process` (
 --
 
 INSERT INTO `index_process` (`process_id`, `indexer_code`, `status`, `started_at`, `ended_at`, `mode`) VALUES
-(1, 'catalog_product_attribute', 'pending', '2014-07-14 22:17:47', '2014-07-14 22:17:47', 'real_time'),
-(2, 'catalog_product_price', 'pending', '2014-07-14 22:17:48', '2014-07-14 22:17:48', 'real_time'),
-(3, 'catalog_url', 'pending', '2014-07-14 22:17:47', '2014-07-14 22:17:47', 'real_time'),
+(1, 'catalog_product_attribute', 'pending', '2014-07-19 23:29:29', '2014-07-19 23:29:29', 'real_time'),
+(2, 'catalog_product_price', 'pending', '2014-07-19 23:29:35', '2014-07-19 23:29:36', 'real_time'),
+(3, 'catalog_url', 'pending', '2014-07-19 23:29:32', '2014-07-19 23:29:32', 'real_time'),
 (4, 'catalog_product_flat', 'pending', '2014-06-28 09:52:40', '2014-06-28 09:52:40', 'real_time'),
 (5, 'catalog_category_flat', 'pending', '2014-06-28 09:52:40', '2014-06-28 09:52:41', 'real_time'),
-(6, 'catalog_category_product', 'pending', '2014-07-14 22:17:47', '2014-07-14 22:17:47', 'real_time'),
-(7, 'catalogsearch_fulltext', 'require_reindex', '2014-07-14 22:17:47', '2014-07-14 22:17:47', 'real_time'),
-(8, 'cataloginventory_stock', 'pending', '2014-07-14 22:17:47', '2014-07-14 22:17:47', 'real_time'),
-(9, 'tag_summary', 'pending', '2014-07-14 22:17:47', '2014-07-14 22:17:47', 'real_time');
+(6, 'catalog_category_product', 'pending', '2014-07-19 23:29:32', '2014-07-19 23:29:32', 'real_time'),
+(7, 'catalogsearch_fulltext', 'require_reindex', '2014-07-19 23:29:32', '2014-07-19 23:29:34', 'real_time'),
+(8, 'cataloginventory_stock', 'pending', '2014-07-19 23:29:29', '2014-07-19 23:29:29', 'real_time'),
+(9, 'tag_summary', 'pending', '2014-07-19 23:29:34', '2014-07-19 23:29:34', 'real_time');
 
 -- --------------------------------------------------------
 
@@ -7879,7 +8044,7 @@ CREATE TABLE IF NOT EXISTS `log_customer` (
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`log_id`),
   KEY `IDX_LOG_CUSTOMER_VISITOR_ID` (`visitor_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Customers Table' AUTO_INCREMENT=51 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Customers Table' AUTO_INCREMENT=52 ;
 
 --
 -- Dumping data for table `log_customer`
@@ -7935,7 +8100,8 @@ INSERT INTO `log_customer` (`log_id`, `visitor_id`, `customer_id`, `login_at`, `
 (47, 35, 1, '2014-07-18 08:52:28', '2014-07-18 08:52:50', 1),
 (48, 35, 1, '2014-07-18 08:53:06', '2014-07-18 08:54:04', 1),
 (49, 35, 1, '2014-07-18 08:54:46', '2014-07-18 08:59:29', 1),
-(50, 35, 1, '2014-07-18 08:59:42', NULL, 1);
+(50, 35, 1, '2014-07-18 08:59:42', NULL, 1),
+(51, 37, 1, '2014-07-19 22:56:00', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -9796,7 +9962,26 @@ INSERT INTO `log_url` (`url_id`, `visitor_id`, `visit_time`) VALUES
 (1778, 36, '2014-07-19 02:29:39'),
 (1779, 36, '2014-07-19 02:29:41'),
 (1780, 36, '2014-07-19 02:29:46'),
-(1781, 36, '2014-07-19 02:30:01');
+(1781, 36, '2014-07-19 02:30:01'),
+(1782, 37, '2014-07-19 22:53:59'),
+(1783, 37, '2014-07-19 22:54:03'),
+(1784, 37, '2014-07-19 22:54:05'),
+(1785, 37, '2014-07-19 22:54:08'),
+(1786, 37, '2014-07-19 22:55:23'),
+(1787, 37, '2014-07-19 22:55:30'),
+(1788, 37, '2014-07-19 22:55:36'),
+(1789, 37, '2014-07-19 22:55:53'),
+(1790, 37, '2014-07-19 22:56:00'),
+(1791, 37, '2014-07-19 22:56:04'),
+(1792, 37, '2014-07-19 22:56:11'),
+(1793, 37, '2014-07-19 22:56:25'),
+(1794, 37, '2014-07-19 22:56:41'),
+(1795, 37, '2014-07-19 23:08:40'),
+(1796, 37, '2014-07-19 23:08:44'),
+(1797, 37, '2014-07-19 23:29:41'),
+(1798, 37, '2014-07-19 23:31:15'),
+(1799, 37, '2014-07-19 23:31:51'),
+(1800, 37, '2014-07-19 23:33:22');
 
 -- --------------------------------------------------------
 
@@ -9809,7 +9994,7 @@ CREATE TABLE IF NOT EXISTS `log_url_info` (
   `url` varchar(255) DEFAULT NULL COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=1782 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=1801 ;
 
 --
 -- Dumping data for table `log_url_info`
@@ -11599,7 +11784,26 @@ INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
 (1778, 'http://192.168.0.107/hdc/index.php/testimonials/index/formpost/', 'http://192.168.0.107/hdc/index.php/testimonials/'),
 (1779, 'http://192.168.0.107/hdc/index.php/testimonials/', 'http://192.168.0.107/hdc/index.php/testimonials/'),
 (1780, 'http://192.168.0.107/hdc/index.php/testimonials/?p=2', 'http://192.168.0.107/hdc/index.php/testimonials/'),
-(1781, 'http://192.168.0.107/hdc/index.php/testimonials/?p=2', 'http://192.168.0.107/hdc/index.php/testimonials/');
+(1781, 'http://192.168.0.107/hdc/index.php/testimonials/?p=2', 'http://192.168.0.107/hdc/index.php/testimonials/'),
+(1782, 'http://192.168.0.107/hdc/index.php/', NULL),
+(1783, 'http://192.168.0.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.107/hdc/index.php/'),
+(1784, 'http://192.168.0.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.107/hdc/index.php/'),
+(1785, 'http://192.168.0.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.107/hdc/index.php/'),
+(1786, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.107/hdc/index.php/'),
+(1787, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
+(1788, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/5', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
+(1789, 'http://192.168.0.107/hdc/index.php/customer/account/login/', 'http://192.168.0.107/hdc/index.php/our-creations/chews.html'),
+(1790, 'http://192.168.0.107/hdc/index.php/customer/account/loginPost/', 'http://192.168.0.107/hdc/index.php/customer/account/login/'),
+(1791, 'http://192.168.0.107/hdc/index.php/customer/account/', 'http://192.168.0.107/hdc/index.php/customer/account/login/'),
+(1792, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.107/hdc/index.php/customer/account/'),
+(1793, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/?p=2', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/'),
+(1794, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
+(1795, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/5', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
+(1796, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
+(1797, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
+(1798, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
+(1799, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
+(1800, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.107/hdc/index.php/our-creations.html');
 
 -- --------------------------------------------------------
 
@@ -11615,7 +11819,7 @@ CREATE TABLE IF NOT EXISTS `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=37 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=38 ;
 
 --
 -- Dumping data for table `log_visitor`
@@ -11657,7 +11861,8 @@ INSERT INTO `log_visitor` (`visitor_id`, `session_id`, `first_visit_at`, `last_v
 (33, 'd6jtrn59spmtf4pc5f2tqk4th1', '2014-07-18 08:51:08', '2014-07-18 08:52:20', 1677, 1),
 (34, 'g0tj8tlq6563jdq4991nvh5225', '2014-07-18 08:52:21', '2014-07-18 08:52:21', 0, 1),
 (35, 'p3235898v72bat8h3p4jue6ek6', '2014-07-18 08:52:22', '2014-07-18 08:59:44', 1710, 1),
-(36, 'is5dvdcmdo924qjm2041nta8j2', '2014-07-19 01:17:58', '2014-07-19 02:30:01', 1781, 1);
+(36, 'is5dvdcmdo924qjm2041nta8j2', '2014-07-19 01:17:58', '2014-07-19 02:30:01', 1781, 1),
+(37, 'dukqikqjsvtstgeb218gr14893', '2014-07-19 22:53:50', '2014-07-19 23:33:22', 1800, 1);
 
 -- --------------------------------------------------------
 
@@ -11716,7 +11921,8 @@ INSERT INTO `log_visitor_info` (`visitor_id`, `http_referer`, `http_user_agent`,
 (33, 'http://192.168.0.107/hdc/index.php/customer/account/login/', 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (34, 'http://192.168.0.107/hdc/index.php/customer/account/login/', 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (35, 'http://192.168.0.107/hdc/index.php/customer/account/login/', 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
-(36, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669);
+(36, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
+(37, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669);
 
 -- --------------------------------------------------------
 
