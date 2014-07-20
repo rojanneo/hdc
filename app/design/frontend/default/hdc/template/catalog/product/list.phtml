@@ -47,7 +47,8 @@
     <ul class="product-desc-list">
     <?php foreach($_productCollection as $_product):?>
         <li class="desc-<?php echo $count++?> product-desc" style="display:none">
-		<?php if($_product->getTypeId()!="configurable"):?>
+		<p><?php echo $_helper->productAttribute($_product, $_product->getDetailDescription(), 'description') ?></p>
+		<!--<?php if($_product->getTypeId()!="configurable"):?>
             <p><?php echo $_helper->productAttribute($_product, $_product->getDetailDescription(), 'description') ?></p>
 		<?php else:?>
 			<?php
@@ -58,7 +59,7 @@
 		echo $_helper->productAttribute($product, $product->getDetailDescription(), 'description');
     }
 			?>
-		<?php endif;?>
+		<?php endif;?>-->
         </li>
     <?php endforeach;?>
     </ul>
@@ -90,6 +91,8 @@
     <?php foreach($_productCollection as $_product):?>
         <li class="image-<?php echo $count++?> product-image"  style="display:none">
             <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>" width="135" height="135" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+			<p><?php echo $_helper->productAttribute($_product, $_product->getIngridients(), 'ingridients') ?></p>
+			<p><?php echo $_helper->productAttribute($_product, $_product->getGuarnateedAnalysis(), 'guaranteed_analysis') ?></p>			
         </li>
     <?php endforeach;?>
     </ul>
