@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 20, 2014 at 07:31 AM
+-- Generation Time: Jul 20, 2014 at 08:25 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `adminnotification_inbox` (
   KEY `IDX_ADMINNOTIFICATION_INBOX_SEVERITY` (`severity`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_READ` (`is_read`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_REMOVE` (`is_remove`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=103 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=110 ;
 
 --
 -- Dumping data for table `adminnotification_inbox`
@@ -148,7 +148,14 @@ INSERT INTO `adminnotification_inbox` (`notification_id`, `severity`, `date_adde
 (99, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (100, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (101, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
-(102, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
+(102, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(103, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(104, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(105, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(106, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(107, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(108, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(109, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -690,6 +697,32 @@ CREATE TABLE IF NOT EXISTS `cataloginventory_stock_status_idx` (
   KEY `IDX_CATALOGINVENTORY_STOCK_STATUS_IDX_WEBSITE_ID` (`website_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Cataloginventory Stock Status Indexer Idx';
 
+--
+-- Dumping data for table `cataloginventory_stock_status_idx`
+--
+
+INSERT INTO `cataloginventory_stock_status_idx` (`product_id`, `website_id`, `stock_id`, `qty`, `stock_status`) VALUES
+(1, 1, 1, '100.0000', 1),
+(2, 1, 1, '100.0000', 1),
+(3, 1, 1, '100.0000', 1),
+(4, 1, 1, '100.0000', 1),
+(5, 1, 1, '100.0000', 1),
+(6, 1, 1, '100.0000', 1),
+(7, 1, 1, '100.0000', 1),
+(8, 1, 1, '100.0000', 1),
+(9, 1, 1, '100.0000', 1),
+(10, 1, 1, '100.0000', 1),
+(11, 1, 1, '100.0000', 1),
+(12, 1, 1, '100.0000', 1),
+(13, 1, 1, '100.0000', 1),
+(14, 1, 1, '100.0000', 1),
+(15, 1, 1, '100.0000', 1),
+(16, 1, 1, '100.0000', 1),
+(17, 1, 1, '100.0000', 1),
+(18, 1, 1, '100.0000', 0),
+(19, 1, 1, '100.0000', 1),
+(20, 1, 1, '0.0000', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -854,32 +887,32 @@ CREATE TABLE IF NOT EXISTS `catalogsearch_fulltext` (
   PRIMARY KEY (`fulltext_id`),
   UNIQUE KEY `UNQ_CATALOGSEARCH_FULLTEXT_PRODUCT_ID_STORE_ID` (`product_id`,`store_id`),
   FULLTEXT KEY `FTI_CATALOGSEARCH_FULLTEXT_DATA_INDEX` (`data_index`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Catalog search result table' AUTO_INCREMENT=38 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Catalog search result table' AUTO_INCREMENT=57 ;
 
 --
 -- Dumping data for table `catalogsearch_fulltext`
 --
 
 INSERT INTO `catalogsearch_fulltext` (`fulltext_id`, `product_id`, `store_id`, `data_index`) VALUES
-(29, 1, 1, '15 lbs|Taxable Goods|HDC Blue|3 - 4 piece | 359 cal|For Dogs Under 15 lbs|9.99|1'),
-(30, 2, 1, '70 lbs|Taxable Goods|HDC Gray|1 piece | 614 cal|For dogs under 70 lbs|17.99|1'),
-(34, 3, 1, '35 lbs|Taxable Goods|HDC Green|1 piece | 256 cal|For dogs under 35 lbs|7.99|1'),
-(32, 4, 1, '55 lbs|Taxable Goods|HDC Red|1 piece | 359 cal|For dogs under 55 lbs|9.99|1'),
-(33, 5, 1, '65 lbs|Taxable Goods|HDC Yellow|3 piece | 1,179 cal|For dogs under 65 lbs|27.99|1'),
-(24, 6, 1, 'nuggets|Taxable Goods|Yaky Nugget|21 - 24 pieces | 17 - 20 cal per treat|For all dog sizes|4.99|1'),
-(11, 7, 1, 'seasoning|Taxable Goods|HDC Seasoning|2 oz bottle : 204 cal per bottle|For all dog sizes|3.99|1'),
-(12, 8, 1, 'crunch-125|Taxable Goods|Yaky Crunch|1.25 oz box : 75 - 80 pieces | 1.5 - 2 cal per treat|For all dog sizes|4.99|1'),
-(13, 9, 1, 'crunch-3|Taxable Goods|Yaky Crunch|3 oz box : 200 - 220 pieces | 1.5 - 2 cal per treat|For all dog sizes|4.99|1'),
-(14, 10, 1, 'puff|Taxable Goods|Yaky Puff|12 - 13 pieces | 16 - 18 cal per treat|For all dog sizes|4.99|1'),
-(27, 11, 1, 'stick-12|Taxable Goods|Yaky Sticks|box of 12 pieces : 304 cal per stick|For dogs under 50 lbs|11.99|1'),
-(26, 12, 1, 'sticks-6|Taxable Goods|Yaky Sticks|box of 12 pieces : 152 cal per stick|For dogs under 25 lbs|7.99|1'),
-(18, 13, 1, 'fruity-fruit-4|Taxable Goods|Yaky Yam Fruity Fruit|4 box : 40 - 43 pieces | 8 - 11 cal per treat|For all dog sizes|3.99|1'),
-(19, 14, 1, 'fruity-fruit-14|Taxable Goods|Yaky Yam Fruity Fruit|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|9.99|1'),
-(20, 15, 1, 'lotsa-chicken-4|Taxable Goods|Yaky Yam Lotsa Chicken|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|For all dog sizes|3.99|1'),
-(21, 16, 1, 'lotsa-chicken-14|Taxable Goods|Yaky Yam Lotsa Chicken|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|9.99|1'),
-(22, 17, 1, 'very-veggy-4|Taxable Goods|Yaky Yam Very Veggy|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|For all dog sizes|3.99|1'),
-(23, 18, 1, 'very-veggy-14|Taxable Goods|Yaky Yam Very Veggy|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|9.99|0'),
-(37, 20, 1, 'yaky-yam-configurable|Taxable Goods|None|Yaky Yam Configurable Product Test|Yaky Yam Configurable 1|Test|Yaky Yam Configurable 1|Test|Yaky Yam Configurable 1|0|3.99|1');
+(55, 18, 1, 'very-veggy-14|Taxable Goods|Yaky Yam Very Veggy|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|9.99|0'),
+(54, 17, 1, 'very-veggy-4|Taxable Goods|Yaky Yam Very Veggy|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|For all dog sizes|3.99|1'),
+(53, 16, 1, 'lotsa-chicken-14|Taxable Goods|Yaky Yam Lotsa Chicken|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|9.99|1'),
+(52, 15, 1, 'lotsa-chicken-4|Taxable Goods|Yaky Yam Lotsa Chicken|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|For all dog sizes|3.99|1'),
+(51, 14, 1, 'fruity-fruit-14|Taxable Goods|Yaky Yam Fruity Fruit|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|9.99|1'),
+(50, 13, 1, 'fruity-fruit-4|Taxable Goods|Yaky Yam Fruity Fruit|4 box : 40 - 43 pieces | 8 - 11 cal per treat|For all dog sizes|3.99|1'),
+(49, 12, 1, 'sticks-6|Taxable Goods|Yaky Sticks|box of 12 pieces : 152 cal per stick|For dogs under 25 lbs|7.99|1'),
+(48, 11, 1, 'stick-12|Taxable Goods|Yaky Sticks|box of 12 pieces : 304 cal per stick|For dogs under 50 lbs|11.99|1'),
+(47, 10, 1, 'puff|Taxable Goods|Yaky Puff|12 - 13 pieces | 16 - 18 cal per treat|For all dog sizes|4.99|1'),
+(46, 9, 1, 'crunch-3|Taxable Goods|Yaky Crunch|3 oz box : 200 - 220 pieces | 1.5 - 2 cal per treat|For all dog sizes|4.99|1'),
+(45, 8, 1, 'crunch-125|Taxable Goods|Yaky Crunch|1.25 oz box : 75 - 80 pieces | 1.5 - 2 cal per treat|For all dog sizes|4.99|1'),
+(44, 7, 1, 'seasoning|Taxable Goods|HDC Seasoning|2 oz bottle : 204 cal per bottle|For all dog sizes|3.99|1'),
+(43, 6, 1, 'nuggets|Taxable Goods|Yaky Nugget|21 - 24 pieces | 17 - 20 cal per treat|For all dog sizes|4.99|1'),
+(42, 5, 1, '65 lbs|Taxable Goods|HDC Yellow|3 piece | 1,179 cal|For dogs under 65 lbs|27.99|1'),
+(40, 3, 1, '35 lbs|Taxable Goods|HDC Green|1 piece | 256 cal|For dogs under 35 lbs|7.99|1'),
+(41, 4, 1, '55 lbs|Taxable Goods|HDC Red|1 piece | 359 cal|For dogs under 55 lbs|9.99|1'),
+(38, 1, 1, '15 lbs|Taxable Goods|HDC Blue|3 - 4 piece | 359 cal|For Dogs Under 15 lbs|9.99|1'),
+(39, 2, 1, '70 lbs|Taxable Goods|HDC Gray|1 piece | 614 cal|For dogs under 70 lbs|17.99|1'),
+(56, 20, 1, 'yaky-yam-configurable|Taxable Goods|None|Yaky Yam Configurable Product Test|Yaky Yam Configurable 1|Test|Yaky Yam Configurable 1|Test|Yaky Yam Configurable 1|0|3.99|1');
 
 -- --------------------------------------------------------
 
@@ -1453,45 +1486,45 @@ CREATE TABLE IF NOT EXISTS `catalog_category_product_index` (
 --
 
 INSERT INTO `catalog_category_product_index` (`category_id`, `product_id`, `position`, `is_parent`, `store_id`, `visibility`) VALUES
-(2, 19, 240001, 0, 1, 1),
-(2, 15, 0, 0, 1, 4),
-(2, 1, 80001, 0, 1, 4),
-(2, 2, 80001, 0, 1, 4),
-(2, 3, 80001, 0, 1, 4),
-(2, 4, 80001, 0, 1, 4),
-(2, 5, 80001, 0, 1, 4),
-(2, 6, 120001, 0, 1, 4),
-(2, 10, 160001, 0, 1, 4),
-(2, 11, 200001, 0, 1, 4),
-(2, 12, 200001, 0, 1, 4),
-(2, 13, 240001, 0, 1, 4),
-(2, 14, 240001, 0, 1, 4),
-(2, 16, 240001, 0, 1, 4),
-(2, 17, 240001, 0, 1, 4),
-(2, 18, 240001, 0, 1, 4),
-(2, 20, 240001, 0, 1, 4),
-(2, 8, 280001, 0, 1, 4),
-(2, 9, 280001, 0, 1, 4),
-(2, 7, 320001, 0, 1, 4),
-(3, 19, 240001, 0, 1, 1),
-(3, 1, 80001, 0, 1, 4),
-(3, 2, 80001, 0, 1, 4),
-(3, 3, 80001, 0, 1, 4),
-(3, 4, 80001, 0, 1, 4),
-(3, 5, 80001, 0, 1, 4),
-(3, 6, 120001, 0, 1, 4),
-(3, 10, 160001, 0, 1, 4),
-(3, 11, 200001, 0, 1, 4),
-(3, 12, 200001, 0, 1, 4),
-(3, 13, 240001, 0, 1, 4),
-(3, 14, 240001, 0, 1, 4),
-(3, 16, 240001, 0, 1, 4),
-(3, 17, 240001, 0, 1, 4),
-(3, 18, 240001, 0, 1, 4),
-(3, 20, 240001, 0, 1, 4),
-(3, 8, 280001, 0, 1, 4),
-(3, 9, 280001, 0, 1, 4),
-(3, 7, 320001, 0, 1, 4),
+(2, 19, 60019, 0, 1, 1),
+(2, 1, 20007, 0, 1, 4),
+(2, 2, 20007, 0, 1, 4),
+(2, 3, 20007, 0, 1, 4),
+(2, 4, 20007, 0, 1, 4),
+(2, 5, 20007, 0, 1, 4),
+(2, 6, 30010, 0, 1, 4),
+(2, 10, 40013, 0, 1, 4),
+(2, 11, 50016, 0, 1, 4),
+(2, 12, 50016, 0, 1, 4),
+(2, 13, 60019, 0, 1, 4),
+(2, 14, 60019, 0, 1, 4),
+(2, 16, 60019, 0, 1, 4),
+(2, 17, 60019, 0, 1, 4),
+(2, 18, 60019, 0, 1, 4),
+(2, 20, 60019, 0, 1, 4),
+(2, 8, 70022, 0, 1, 4),
+(2, 9, 70022, 0, 1, 4),
+(2, 7, 80025, 0, 1, 4),
+(2, 15, 0, 1, 1, 4),
+(3, 19, 60019, 0, 1, 1),
+(3, 1, 20007, 0, 1, 4),
+(3, 2, 20007, 0, 1, 4),
+(3, 3, 20007, 0, 1, 4),
+(3, 4, 20007, 0, 1, 4),
+(3, 5, 20007, 0, 1, 4),
+(3, 6, 30010, 0, 1, 4),
+(3, 10, 40013, 0, 1, 4),
+(3, 11, 50016, 0, 1, 4),
+(3, 12, 50016, 0, 1, 4),
+(3, 13, 60019, 0, 1, 4),
+(3, 14, 60019, 0, 1, 4),
+(3, 16, 60019, 0, 1, 4),
+(3, 17, 60019, 0, 1, 4),
+(3, 18, 60019, 0, 1, 4),
+(3, 20, 60019, 0, 1, 4),
+(3, 8, 70022, 0, 1, 4),
+(3, 9, 70022, 0, 1, 4),
+(3, 7, 80025, 0, 1, 4),
 (4, 1, 1, 1, 1, 4),
 (4, 2, 1, 1, 1, 4),
 (4, 3, 1, 1, 1, 4),
@@ -2656,8 +2689,8 @@ INSERT INTO `catalog_product_entity_varchar` (`value_id`, `entity_type_id`, `att
 (164, 4, 107, 0, 9, NULL),
 (165, 4, 109, 0, 9, 'container2'),
 (166, 4, 122, 0, 9, NULL),
-(167, 4, 98, 1, 9, 'yaky-crunch-9.html'),
-(168, 4, 98, 0, 9, 'yaky-crunch-9.html'),
+(167, 4, 98, 1, 9, 'yaky-crunch-10.html'),
+(168, 4, 98, 0, 9, 'yaky-crunch-10.html'),
 (169, 4, 71, 0, 10, 'Yaky Puff'),
 (170, 4, 97, 0, 10, 'yaky-puff'),
 (171, 4, 117, 0, 10, NULL),
@@ -2704,8 +2737,8 @@ INSERT INTO `catalog_product_entity_varchar` (`value_id`, `entity_type_id`, `att
 (219, 4, 107, 0, 12, NULL),
 (220, 4, 109, 0, 12, 'container2'),
 (221, 4, 122, 0, 12, NULL),
-(222, 4, 98, 1, 12, 'yaky-sticks-6-12.html'),
-(223, 4, 98, 0, 12, 'yaky-sticks-6-12.html'),
+(222, 4, 98, 1, 12, 'yaky-sticks-7.html'),
+(223, 4, 98, 0, 12, 'yaky-sticks-7.html'),
 (224, 4, 71, 0, 13, 'Yaky Yam Fruity Fruit'),
 (225, 4, 97, 0, 13, 'yaky-yam-fruity-fruit'),
 (226, 4, 117, 0, 13, NULL),
@@ -2736,8 +2769,8 @@ INSERT INTO `catalog_product_entity_varchar` (`value_id`, `entity_type_id`, `att
 (251, 4, 107, 0, 14, NULL),
 (252, 4, 109, 0, 14, 'container2'),
 (253, 4, 122, 0, 14, NULL),
-(254, 4, 98, 1, 14, 'yaky-yam-fruity-fruit-14.html'),
-(255, 4, 98, 0, 14, 'yaky-yam-fruity-fruit-14.html'),
+(254, 4, 98, 1, 14, 'yaky-yam-fruity-fruit-15.html'),
+(255, 4, 98, 0, 14, 'yaky-yam-fruity-fruit-15.html'),
 (256, 4, 71, 0, 15, 'Yaky Yam Lotsa Chicken'),
 (257, 4, 97, 0, 15, 'yaky-yam-lotsa-chicken'),
 (258, 4, 117, 0, 15, NULL),
@@ -2768,8 +2801,8 @@ INSERT INTO `catalog_product_entity_varchar` (`value_id`, `entity_type_id`, `att
 (283, 4, 107, 0, 16, NULL),
 (284, 4, 109, 0, 16, 'container2'),
 (285, 4, 122, 0, 16, NULL),
-(286, 4, 98, 1, 16, 'yaky-yam-lotsa-chicken-16.html'),
-(287, 4, 98, 0, 16, 'yaky-yam-lotsa-chicken-16.html'),
+(286, 4, 98, 1, 16, 'yaky-yam-lotsa-chicken-17.html'),
+(287, 4, 98, 0, 16, 'yaky-yam-lotsa-chicken-17.html'),
 (288, 4, 71, 0, 17, 'Yaky Yam Very Veggy'),
 (289, 4, 97, 0, 17, 'yaky-yam-very-veggy'),
 (290, 4, 117, 0, 17, NULL),
@@ -2800,8 +2833,8 @@ INSERT INTO `catalog_product_entity_varchar` (`value_id`, `entity_type_id`, `att
 (315, 4, 107, 0, 18, NULL),
 (316, 4, 109, 0, 18, 'container2'),
 (317, 4, 122, 0, 18, NULL),
-(318, 4, 98, 1, 18, 'yaky-yam-very-veggy-18.html'),
-(319, 4, 98, 0, 18, 'yaky-yam-very-veggy-18.html'),
+(318, 4, 98, 1, 18, 'yaky-yam-very-veggy-19.html'),
+(319, 4, 98, 0, 18, 'yaky-yam-very-veggy-19.html'),
 (320, 4, 112, 0, 1, NULL),
 (321, 4, 113, 0, 1, NULL),
 (322, 4, 114, 0, 1, NULL),
@@ -3011,6 +3044,31 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_eav_idx` (
   KEY `IDX_CATALOG_PRODUCT_INDEX_EAV_IDX_VALUE` (`value`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Catalog Product EAV Indexer Index Table';
 
+--
+-- Dumping data for table `catalog_product_index_eav_idx`
+--
+
+INSERT INTO `catalog_product_index_eav_idx` (`entity_id`, `attribute_id`, `store_id`, `value`) VALUES
+(1, 121, 1, 2),
+(2, 121, 1, 2),
+(3, 121, 1, 2),
+(4, 121, 1, 2),
+(5, 121, 1, 2),
+(6, 121, 1, 2),
+(7, 121, 1, 2),
+(8, 121, 1, 2),
+(9, 121, 1, 2),
+(10, 121, 1, 2),
+(11, 121, 1, 2),
+(12, 121, 1, 2),
+(13, 121, 1, 2),
+(14, 121, 1, 2),
+(15, 121, 1, 2),
+(16, 121, 1, 2),
+(17, 121, 1, 2),
+(20, 121, 1, 0),
+(20, 121, 1, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -3058,6 +3116,24 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_group_price` (
 --
 
 INSERT INTO `catalog_product_index_group_price` (`entity_id`, `customer_group_id`, `website_id`, `price`) VALUES
+(1, 3, 1, '5.1500'),
+(2, 3, 1, '8.8000'),
+(3, 3, 1, '4.1500'),
+(4, 3, 1, '5.1500'),
+(5, 3, 1, '16.7500'),
+(6, 3, 1, '2.6500'),
+(7, 3, 1, '1.8500'),
+(8, 3, 1, '2.6500'),
+(9, 3, 1, '2.6500'),
+(10, 3, 1, '2.6500'),
+(11, 3, 1, '5.9500'),
+(12, 3, 1, '3.5000'),
+(13, 3, 1, '1.8500'),
+(14, 3, 1, '4.8500'),
+(15, 3, 1, '1.8500'),
+(16, 3, 1, '4.8500'),
+(17, 3, 1, '1.8500'),
+(18, 3, 1, '4.8500'),
 (19, 3, 1, '1.8500');
 
 -- --------------------------------------------------------
@@ -3464,6 +3540,88 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_price_idx` (
   KEY `IDX_CATALOG_PRODUCT_INDEX_PRICE_IDX_WEBSITE_ID` (`website_id`),
   KEY `IDX_CATALOG_PRODUCT_INDEX_PRICE_IDX_MIN_PRICE` (`min_price`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Catalog Product Price Indexer Index Table';
+
+--
+-- Dumping data for table `catalog_product_index_price_idx`
+--
+
+INSERT INTO `catalog_product_index_price_idx` (`entity_id`, `customer_group_id`, `website_id`, `tax_class_id`, `price`, `final_price`, `min_price`, `max_price`, `tier_price`, `group_price`) VALUES
+(1, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(1, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(1, 2, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(1, 3, 1, 2, '9.9900', '5.1500', '5.1500', '5.1500', NULL, '5.1500'),
+(2, 0, 1, 2, '17.9900', '17.9900', '17.9900', '17.9900', NULL, NULL),
+(2, 1, 1, 2, '17.9900', '17.9900', '17.9900', '17.9900', NULL, NULL),
+(2, 2, 1, 2, '17.9900', '17.9900', '17.9900', '17.9900', NULL, NULL),
+(2, 3, 1, 2, '17.9900', '8.8000', '8.8000', '8.8000', NULL, '8.8000'),
+(3, 0, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
+(3, 1, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
+(3, 2, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
+(3, 3, 1, 2, '7.9900', '4.1500', '4.1500', '4.1500', NULL, '4.1500'),
+(4, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(4, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(4, 2, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(4, 3, 1, 2, '9.9900', '5.1500', '5.1500', '5.1500', NULL, '5.1500'),
+(5, 0, 1, 2, '27.9900', '27.9900', '27.9900', '27.9900', NULL, NULL),
+(5, 1, 1, 2, '27.9900', '27.9900', '27.9900', '27.9900', NULL, NULL),
+(5, 2, 1, 2, '27.9900', '27.9900', '27.9900', '27.9900', NULL, NULL),
+(5, 3, 1, 2, '27.9900', '16.7500', '16.7500', '16.7500', NULL, '16.7500'),
+(6, 0, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(6, 1, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(6, 2, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(6, 3, 1, 2, '4.9900', '2.6500', '2.6500', '2.6500', NULL, '2.6500'),
+(7, 0, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(7, 1, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(7, 2, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(7, 3, 1, 2, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
+(8, 0, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(8, 1, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(8, 2, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(8, 3, 1, 2, '4.9900', '2.6500', '2.6500', '2.6500', NULL, '2.6500'),
+(9, 0, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(9, 1, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(9, 2, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(9, 3, 1, 2, '4.9900', '2.6500', '2.6500', '2.6500', NULL, '2.6500'),
+(10, 0, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(10, 1, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(10, 2, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(10, 3, 1, 2, '4.9900', '2.6500', '2.6500', '2.6500', NULL, '2.6500'),
+(11, 0, 1, 2, '11.9900', '11.9900', '11.9900', '11.9900', NULL, NULL),
+(11, 1, 1, 2, '11.9900', '11.9900', '11.9900', '11.9900', NULL, NULL),
+(11, 2, 1, 2, '11.9900', '11.9900', '11.9900', '11.9900', NULL, NULL),
+(11, 3, 1, 2, '11.9900', '5.9500', '5.9500', '5.9500', NULL, '5.9500'),
+(12, 0, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
+(12, 1, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
+(12, 2, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
+(12, 3, 1, 2, '7.9900', '3.5000', '3.5000', '3.5000', NULL, '3.5000'),
+(13, 0, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(13, 1, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(13, 2, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(13, 3, 1, 2, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
+(14, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(14, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(14, 2, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(14, 3, 1, 2, '9.9900', '4.8500', '4.8500', '4.8500', NULL, '4.8500'),
+(15, 0, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(15, 1, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(15, 2, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(15, 3, 1, 2, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
+(16, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(16, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(16, 2, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(16, 3, 1, 2, '9.9900', '4.8500', '4.8500', '4.8500', NULL, '4.8500'),
+(17, 0, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(17, 1, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(17, 2, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(17, 3, 1, 2, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
+(19, 0, 1, 0, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(19, 1, 1, 0, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(19, 2, 1, 0, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(19, 3, 1, 0, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
+(20, 0, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(20, 1, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(20, 2, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(20, 3, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -4465,6 +4623,7 @@ INSERT INTO `core_resource` (`code`, `version`, `data_version`) VALUES
 ('eav_setup', '1.6.0.1', '1.6.0.1'),
 ('events_setup', '0.1.0', '0.1.0'),
 ('faq_setup', '0.1.0', '0.1.0'),
+('forms_setup', '0.1.0', '0.1.0'),
 ('giftmessage_setup', '1.6.0.0', '1.6.0.0'),
 ('ibanners_setup', '1.2.4.0', '1.2.4.0'),
 ('importexport_setup', '1.6.0.2', '1.6.0.2'),
@@ -4610,7 +4769,7 @@ CREATE TABLE IF NOT EXISTS `core_url_rewrite` (
   KEY `IDX_CORE_URL_REWRITE_STORE_ID` (`store_id`),
   KEY `FK_CORE_URL_REWRITE_CTGR_ID_CAT_CTGR_ENTT_ENTT_ID` (`category_id`),
   KEY `FK_CORE_URL_REWRITE_PRODUCT_ID_CATALOG_CATEGORY_ENTITY_ENTITY_ID` (`product_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Url Rewrites' AUTO_INCREMENT=49 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Url Rewrites' AUTO_INCREMENT=105 ;
 
 --
 -- Dumping data for table `core_url_rewrite`
@@ -4640,30 +4799,39 @@ INSERT INTO `core_url_rewrite` (`url_rewrite_id`, `store_id`, `id_path`, `reques
 (22, 1, 'product/7', 'hdc-seasoning.html', 'catalog/product/view/id/7', 1, NULL, NULL, NULL, 7),
 (23, 1, 'product/8/9', 'our-creations/yaky-crunch/yaky-crunch.html', 'catalog/product/view/id/8/category/9', 1, NULL, NULL, 9, 8),
 (24, 1, 'product/8', 'yaky-crunch.html', 'catalog/product/view/id/8', 1, NULL, NULL, NULL, 8),
-(25, 1, 'product/9/9', 'our-creations/yaky-crunch/yaky-crunch-9.html', 'catalog/product/view/id/9/category/9', 1, NULL, NULL, 9, 9),
-(26, 1, 'product/9', 'yaky-crunch-9.html', 'catalog/product/view/id/9', 1, NULL, NULL, NULL, 9),
+(25, 1, 'product/9/9', 'our-creations/yaky-crunch/yaky-crunch-10.html', 'catalog/product/view/id/9/category/9', 1, NULL, NULL, 9, 9),
+(26, 1, 'product/9', 'yaky-crunch-10.html', 'catalog/product/view/id/9', 1, NULL, NULL, NULL, 9),
 (27, 1, 'product/10/6', 'our-creations/yaky-puff/yaky-puff.html', 'catalog/product/view/id/10/category/6', 1, NULL, NULL, 6, 10),
 (28, 1, 'product/10', 'yaky-puff.html', 'catalog/product/view/id/10', 1, NULL, NULL, NULL, 10),
 (29, 1, 'product/11/7', 'our-creations/yaky-stick/yaky-sticks-6.html', 'catalog/product/view/id/11/category/7', 1, NULL, NULL, 7, 11),
 (30, 1, 'product/11', 'yaky-sticks-6.html', 'catalog/product/view/id/11', 1, NULL, NULL, NULL, 11),
-(31, 1, 'product/12/7', 'our-creations/yaky-stick/yaky-sticks-6-12.html', 'catalog/product/view/id/12/category/7', 1, NULL, NULL, 7, 12),
-(32, 1, 'product/12', 'yaky-sticks-6-12.html', 'catalog/product/view/id/12', 1, NULL, NULL, NULL, 12),
+(31, 1, 'product/12/7', 'our-creations/yaky-stick/yaky-sticks-7.html', 'catalog/product/view/id/12/category/7', 1, NULL, NULL, 7, 12),
+(32, 1, 'product/12', 'yaky-sticks-7.html', 'catalog/product/view/id/12', 1, NULL, NULL, NULL, 12),
 (33, 1, 'product/13/8', 'our-creations/yaky-yams/yaky-yam-fruity-fruit.html', 'catalog/product/view/id/13/category/8', 1, NULL, NULL, 8, 13),
 (34, 1, 'product/13', 'yaky-yam-fruity-fruit.html', 'catalog/product/view/id/13', 1, NULL, NULL, NULL, 13),
-(35, 1, 'product/14/8', 'our-creations/yaky-yams/yaky-yam-fruity-fruit-14.html', 'catalog/product/view/id/14/category/8', 1, NULL, NULL, 8, 14),
-(36, 1, 'product/14', 'yaky-yam-fruity-fruit-14.html', 'catalog/product/view/id/14', 1, NULL, NULL, NULL, 14),
+(35, 1, 'product/14/8', 'our-creations/yaky-yams/yaky-yam-fruity-fruit-15.html', 'catalog/product/view/id/14/category/8', 1, NULL, NULL, 8, 14),
+(36, 1, 'product/14', 'yaky-yam-fruity-fruit-15.html', 'catalog/product/view/id/14', 1, NULL, NULL, NULL, 14),
 (37, 1, 'product/15', 'yaky-yam-lotsa-chicken.html', 'catalog/product/view/id/15', 1, NULL, NULL, NULL, 15),
 (38, 1, 'product/16/8', 'our-creations/yaky-yams/yaky-yam-lotsa-chicken.html', 'catalog/product/view/id/16/category/8', 1, NULL, NULL, 8, 16),
-(39, 1, 'product/16', 'yaky-yam-lotsa-chicken-16.html', 'catalog/product/view/id/16', 1, NULL, NULL, NULL, 16),
+(39, 1, 'product/16', 'yaky-yam-lotsa-chicken-17.html', 'catalog/product/view/id/16', 1, NULL, NULL, NULL, 16),
 (40, 1, 'product/17/8', 'our-creations/yaky-yams/yaky-yam-very-veggy.html', 'catalog/product/view/id/17/category/8', 1, NULL, NULL, 8, 17),
 (41, 1, 'product/17', 'yaky-yam-very-veggy.html', 'catalog/product/view/id/17', 1, NULL, NULL, NULL, 17),
-(42, 1, 'product/18/8', 'our-creations/yaky-yams/yaky-yam-very-veggy-18.html', 'catalog/product/view/id/18/category/8', 1, NULL, NULL, 8, 18),
-(43, 1, 'product/18', 'yaky-yam-very-veggy-18.html', 'catalog/product/view/id/18', 1, NULL, NULL, NULL, 18),
+(42, 1, 'product/18/8', 'our-creations/yaky-yams/yaky-yam-very-veggy-19.html', 'catalog/product/view/id/18/category/8', 1, NULL, NULL, 8, 18),
+(43, 1, 'product/18', 'yaky-yam-very-veggy-19.html', 'catalog/product/view/id/18', 1, NULL, NULL, NULL, 18),
 (44, 1, 'product/6/5', 'our-creations/yaky-nugget/yaky-nugget.html', 'catalog/product/view/id/6/category/5', 1, NULL, NULL, 5, 6),
 (45, 1, 'product/19/8', 'our-creations/yaky-yams/yaky-yam-configurable-1.html', 'catalog/product/view/id/19/category/8', 1, NULL, NULL, 8, 19),
 (46, 1, 'product/19', 'yaky-yam-configurable-1.html', 'catalog/product/view/id/19', 1, NULL, NULL, NULL, 19),
 (47, 1, 'product/20/8', 'our-creations/yaky-yams/yaky-yam-configurable-product-test.html', 'catalog/product/view/id/20/category/8', 1, NULL, NULL, 8, 20),
-(48, 1, 'product/20', 'yaky-yam-configurable-product-test.html', 'catalog/product/view/id/20', 1, NULL, NULL, NULL, 20);
+(48, 1, 'product/20', 'yaky-yam-configurable-product-test.html', 'catalog/product/view/id/20', 1, NULL, NULL, NULL, 20),
+(74, 1, '14658000_1405836410', 'yaky-crunch-9.html', 'yaky-crunch-10.html', 0, 'RP', NULL, NULL, 9),
+(76, 1, '16792600_1405836410', 'our-creations/yaky-crunch/yaky-crunch-9.html', 'our-creations/yaky-crunch/yaky-crunch-10.html', 0, 'RP', NULL, 9, 9),
+(82, 1, '38593100_1405836410', 'yaky-sticks-6-12.html', 'yaky-sticks-7.html', 0, 'RP', NULL, NULL, 12),
+(84, 1, '40827000_1405836410', 'our-creations/yaky-stick/yaky-sticks-6-12.html', 'our-creations/yaky-stick/yaky-sticks-7.html', 0, 'RP', NULL, 7, 12),
+(88, 1, '43346200_1405836410', 'yaky-yam-fruity-fruit-14.html', 'yaky-yam-fruity-fruit-15.html', 0, 'RP', NULL, NULL, 14),
+(90, 1, '45735700_1405836410', 'our-creations/yaky-yams/yaky-yam-fruity-fruit-14.html', 'our-creations/yaky-yams/yaky-yam-fruity-fruit-15.html', 0, 'RP', NULL, 8, 14),
+(93, 1, '47863800_1405836410', 'yaky-yam-lotsa-chicken-16.html', 'yaky-yam-lotsa-chicken-17.html', 0, 'RP', NULL, NULL, 16),
+(98, 1, '51268900_1405836410', 'yaky-yam-very-veggy-18.html', 'yaky-yam-very-veggy-19.html', 0, 'RP', NULL, NULL, 18),
+(100, 1, '53529900_1405836410', 'our-creations/yaky-yams/yaky-yam-very-veggy-18.html', 'our-creations/yaky-yams/yaky-yam-very-veggy-19.html', 0, 'RP', NULL, 8, 18);
 
 -- --------------------------------------------------------
 
@@ -7797,6 +7965,32 @@ INSERT INTO `faq` (`faq_id`, `faq_question`, `faq_answer`, `faq_keywords`) VALUE
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `forms`
+--
+
+CREATE TABLE IF NOT EXISTS `forms` (
+  `form_id` int(11) NOT NULL AUTO_INCREMENT,
+  `form_name` text,
+  `form_file` longtext,
+  PRIMARY KEY (`form_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `forms`
+--
+
+INSERT INTO `forms` (`form_id`, `form_name`, `form_file`) VALUES
+(1, 'Form 1', 'forms/form/20_recipes_for_programming_phonegap.pdf'),
+(2, 'FOrm 2', 'forms/form/20_recipes_for_programming_phonegap_1.pdf'),
+(3, 'Form 3', 'forms/form/Last_Presentation_with_Bibhu_Sir.jpg'),
+(4, 'Form 4', 'forms/form/Expert_PHP_and_MySQL.pdf'),
+(5, 'Form 5', 'forms/form/Expert_PHP_and_MySQL_1.pdf'),
+(6, 'Form 6', 'forms/form/Beginning_3D_Game_Development_with_Unity_4_2nd_Edition.pdf'),
+(7, 'Form 7', 'forms/form/Beginning_3D_Game_Development_with_Unity_4_2nd_Edition_1.pdf');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `gift_message`
 --
 
@@ -8005,15 +8199,15 @@ CREATE TABLE IF NOT EXISTS `index_process` (
 --
 
 INSERT INTO `index_process` (`process_id`, `indexer_code`, `status`, `started_at`, `ended_at`, `mode`) VALUES
-(1, 'catalog_product_attribute', 'pending', '2014-07-19 23:29:29', '2014-07-19 23:29:29', 'real_time'),
-(2, 'catalog_product_price', 'pending', '2014-07-19 23:29:35', '2014-07-19 23:29:36', 'real_time'),
-(3, 'catalog_url', 'pending', '2014-07-19 23:29:32', '2014-07-19 23:29:32', 'real_time'),
+(1, 'catalog_product_attribute', 'pending', '2014-07-20 00:21:45', '2014-07-20 00:21:45', 'real_time'),
+(2, 'catalog_product_price', 'pending', '2014-07-20 00:21:45', '2014-07-20 00:21:49', 'real_time'),
+(3, 'catalog_url', 'pending', '2014-07-20 00:21:49', '2014-07-20 00:21:50', 'real_time'),
 (4, 'catalog_product_flat', 'pending', '2014-06-28 09:52:40', '2014-06-28 09:52:40', 'real_time'),
 (5, 'catalog_category_flat', 'pending', '2014-06-28 09:52:40', '2014-06-28 09:52:41', 'real_time'),
-(6, 'catalog_category_product', 'pending', '2014-07-19 23:29:32', '2014-07-19 23:29:32', 'real_time'),
-(7, 'catalogsearch_fulltext', 'require_reindex', '2014-07-19 23:29:32', '2014-07-19 23:29:34', 'real_time'),
-(8, 'cataloginventory_stock', 'pending', '2014-07-19 23:29:29', '2014-07-19 23:29:29', 'real_time'),
-(9, 'tag_summary', 'pending', '2014-07-19 23:29:34', '2014-07-19 23:29:34', 'real_time');
+(6, 'catalog_category_product', 'pending', '2014-07-20 00:21:50', '2014-07-20 00:21:51', 'real_time'),
+(7, 'catalogsearch_fulltext', 'pending', '2014-07-20 00:21:51', '2014-07-20 00:21:51', 'real_time'),
+(8, 'cataloginventory_stock', 'pending', '2014-07-20 00:21:44', '2014-07-20 00:21:44', 'real_time'),
+(9, 'tag_summary', 'pending', '2014-07-20 00:21:51', '2014-07-20 00:21:51', 'real_time');
 
 -- --------------------------------------------------------
 
@@ -9981,7 +10175,27 @@ INSERT INTO `log_url` (`url_id`, `visitor_id`, `visit_time`) VALUES
 (1797, 37, '2014-07-19 23:29:41'),
 (1798, 37, '2014-07-19 23:31:15'),
 (1799, 37, '2014-07-19 23:31:51'),
-(1800, 37, '2014-07-19 23:33:22');
+(1800, 37, '2014-07-19 23:33:22'),
+(1801, 37, '2014-07-20 00:10:58'),
+(1802, 37, '2014-07-20 00:12:27'),
+(1803, 37, '2014-07-20 00:13:03'),
+(1804, 37, '2014-07-20 00:13:05'),
+(1805, 37, '2014-07-20 00:13:31'),
+(1806, 37, '2014-07-20 00:13:37'),
+(1807, 37, '2014-07-20 00:14:10'),
+(1808, 37, '2014-07-20 00:14:23'),
+(1809, 37, '2014-07-20 00:14:48'),
+(1810, 37, '2014-07-20 00:14:57'),
+(1811, 37, '2014-07-20 00:15:15'),
+(1812, 37, '2014-07-20 00:15:28'),
+(1813, 37, '2014-07-20 00:15:55'),
+(1814, 37, '2014-07-20 00:16:05'),
+(1815, 37, '2014-07-20 00:16:08'),
+(1816, 37, '2014-07-20 00:16:18'),
+(1817, 37, '2014-07-20 00:16:40'),
+(1818, 37, '2014-07-20 00:17:33'),
+(1819, 37, '2014-07-20 00:22:57'),
+(1820, 37, '2014-07-20 00:40:03');
 
 -- --------------------------------------------------------
 
@@ -9994,7 +10208,7 @@ CREATE TABLE IF NOT EXISTS `log_url_info` (
   `url` varchar(255) DEFAULT NULL COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=1801 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=1821 ;
 
 --
 -- Dumping data for table `log_url_info`
@@ -11803,7 +12017,27 @@ INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
 (1797, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
 (1798, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
 (1799, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
-(1800, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.107/hdc/index.php/our-creations.html');
+(1800, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
+(1801, 'http://192.168.0.107/hdc/index.php/forms', NULL),
+(1802, 'http://192.168.0.107/hdc/index.php/forms', NULL),
+(1803, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1804, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1805, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1806, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing'),
+(1807, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing'),
+(1808, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing'),
+(1809, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing'),
+(1810, 'http://192.168.0.107/hdc/index.php/forms/', NULL),
+(1811, 'http://192.168.0.107/hdc/index.php/forms/', NULL),
+(1812, 'http://192.168.0.107/hdc/index.php/forms/', NULL),
+(1813, 'http://192.168.0.107/hdc/index.php/forms/', NULL),
+(1814, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1815, 'http://192.168.0.107/hdc/index.php/hdccustomer/', NULL),
+(1816, 'http://192.168.0.107/hdc/index.php/customer/account/index/', NULL),
+(1817, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.107/hdc/index.php/customer/account/index/'),
+(1818, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/'),
+(1819, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/'),
+(1820, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/');
 
 -- --------------------------------------------------------
 
@@ -11862,7 +12096,7 @@ INSERT INTO `log_visitor` (`visitor_id`, `session_id`, `first_visit_at`, `last_v
 (34, 'g0tj8tlq6563jdq4991nvh5225', '2014-07-18 08:52:21', '2014-07-18 08:52:21', 0, 1),
 (35, 'p3235898v72bat8h3p4jue6ek6', '2014-07-18 08:52:22', '2014-07-18 08:59:44', 1710, 1),
 (36, 'is5dvdcmdo924qjm2041nta8j2', '2014-07-19 01:17:58', '2014-07-19 02:30:01', 1781, 1),
-(37, 'dukqikqjsvtstgeb218gr14893', '2014-07-19 22:53:50', '2014-07-19 23:33:22', 1800, 1);
+(37, 'dukqikqjsvtstgeb218gr14893', '2014-07-19 22:53:50', '2014-07-20 00:40:03', 1820, 1);
 
 -- --------------------------------------------------------
 

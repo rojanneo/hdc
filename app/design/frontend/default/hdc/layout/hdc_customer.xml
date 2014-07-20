@@ -30,6 +30,15 @@
                     <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
                 </block>
   	</reference>
-  </hdccustomer_index_pricing>   
+  </hdccustomer_index_pricing>
+  <hdccustomer_index_forms>
+  <reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference>
+	<reference name="content"> 
+	<block type="core/template" name="customer_header_pricing" template="hdc/customer/account/header.phtml"/>
+		<block type="forms/index" name="forms_index" template="forms/index.phtml"/>   
+	</reference>
+  </hdccustomer_index_forms>
 </layout>   
 	

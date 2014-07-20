@@ -1,0 +1,14 @@
+<?php
+$forms = $this->getDataset();
+?>
+
+<div class="forms">
+<ul>
+<?php foreach($forms as $form):?>
+<?php $filename = explode('/',$form->getFormFile());
+$filename = $filename[2];
+?>
+<li><a href="<?php echo Mage::getBaseUrl('media').'forms/form/'.$filename;?>"><?php echo $form->getFormName();?></a></li>
+<?php endforeach;?>
+</ul>
+</div>

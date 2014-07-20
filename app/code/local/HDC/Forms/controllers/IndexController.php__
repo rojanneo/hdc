@@ -1,0 +1,19 @@
+<?php
+class HDC_Forms_IndexController extends Mage_Core_Controller_Front_Action{
+    public function IndexAction() {
+      
+	  $this->loadLayout();   
+	  $this->getLayout()->getBlock("head")->setTitle($this->__("Titlename"));
+	       
+      $this->renderLayout(); 
+	  
+    }
+	
+	public function downloadAction()
+	{
+		$filename = $this->getRequest()->getParam('filename');
+		$url = Mage::getBaseUrl('media').'forms/form/'.$filename;
+		
+		$this->_prepareDownloadResponse($filename, $url);
+	}
+}

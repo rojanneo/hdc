@@ -34,4 +34,15 @@ class HDC_Customer_IndexController extends Mage_Core_Controller_Front_Action{
       $this->loadLayout();
       $this->renderLayout();
     }
+	
+	public function formsAction()
+    {
+	  if(!Mage::getSingleton('customer/session')->isLoggedIn())
+	  {
+		//Mage::getSingleton('core/session')->addError('You need to be logged in to view this page');
+		$this->_redirect('');
+	  }
+      $this->loadLayout();
+      $this->renderLayout();
+    }
 }
