@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 20, 2014 at 08:25 AM
+-- Generation Time: Jul 20, 2014 at 08:27 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -7975,19 +7975,6 @@ CREATE TABLE IF NOT EXISTS `forms` (
   PRIMARY KEY (`form_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
---
--- Dumping data for table `forms`
---
-
-INSERT INTO `forms` (`form_id`, `form_name`, `form_file`) VALUES
-(1, 'Form 1', 'forms/form/20_recipes_for_programming_phonegap.pdf'),
-(2, 'FOrm 2', 'forms/form/20_recipes_for_programming_phonegap_1.pdf'),
-(3, 'Form 3', 'forms/form/Last_Presentation_with_Bibhu_Sir.jpg'),
-(4, 'Form 4', 'forms/form/Expert_PHP_and_MySQL.pdf'),
-(5, 'Form 5', 'forms/form/Expert_PHP_and_MySQL_1.pdf'),
-(6, 'Form 6', 'forms/form/Beginning_3D_Game_Development_with_Unity_4_2nd_Edition.pdf'),
-(7, 'Form 7', 'forms/form/Beginning_3D_Game_Development_with_Unity_4_2nd_Edition_1.pdf');
-
 -- --------------------------------------------------------
 
 --
@@ -10195,7 +10182,9 @@ INSERT INTO `log_url` (`url_id`, `visitor_id`, `visit_time`) VALUES
 (1817, 37, '2014-07-20 00:16:40'),
 (1818, 37, '2014-07-20 00:17:33'),
 (1819, 37, '2014-07-20 00:22:57'),
-(1820, 37, '2014-07-20 00:40:03');
+(1820, 37, '2014-07-20 00:40:03'),
+(1821, 37, '2014-07-20 00:41:21'),
+(1822, 37, '2014-07-20 00:41:27');
 
 -- --------------------------------------------------------
 
@@ -10208,7 +10197,7 @@ CREATE TABLE IF NOT EXISTS `log_url_info` (
   `url` varchar(255) DEFAULT NULL COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=1821 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=1823 ;
 
 --
 -- Dumping data for table `log_url_info`
@@ -12037,7 +12026,9 @@ INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
 (1817, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.107/hdc/index.php/customer/account/index/'),
 (1818, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/'),
 (1819, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/'),
-(1820, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/');
+(1820, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/'),
+(1821, 'http://192.168.0.107/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.107/hdc/index.php/hdccustomer/index/pricing/'),
+(1822, 'http://192.168.0.107/hdc/index.php/forms', NULL);
 
 -- --------------------------------------------------------
 
@@ -12096,7 +12087,7 @@ INSERT INTO `log_visitor` (`visitor_id`, `session_id`, `first_visit_at`, `last_v
 (34, 'g0tj8tlq6563jdq4991nvh5225', '2014-07-18 08:52:21', '2014-07-18 08:52:21', 0, 1),
 (35, 'p3235898v72bat8h3p4jue6ek6', '2014-07-18 08:52:22', '2014-07-18 08:59:44', 1710, 1),
 (36, 'is5dvdcmdo924qjm2041nta8j2', '2014-07-19 01:17:58', '2014-07-19 02:30:01', 1781, 1),
-(37, 'dukqikqjsvtstgeb218gr14893', '2014-07-19 22:53:50', '2014-07-20 00:40:03', 1820, 1);
+(37, 'dukqikqjsvtstgeb218gr14893', '2014-07-19 22:53:50', '2014-07-20 00:41:27', 1822, 1);
 
 -- --------------------------------------------------------
 
