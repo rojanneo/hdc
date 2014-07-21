@@ -8,7 +8,7 @@ $forms = $this->getDataset();
 <?php $filename = explode('/',$form->getFormFile());
 $filename = $filename[2];
 ?>
-<li><a href="<?php echo Mage::getBaseUrl('media').'forms/form/'.$filename;?>"><?php echo $form->getFormName();?></a></li>
+<li><a href="<?php echo $this->getUrl('forms/index/download',array('filename'=>$filename));?>"><?php echo $form->getFormName();?></a></li>
 <?php endforeach;?>
 </ul>
 </div>

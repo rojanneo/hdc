@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.12
+-- version 4.0.4.1
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Jul 20, 2014 at 04:50 PM
--- Server version: 5.6.16
--- PHP Version: 5.5.11
+-- Host: localhost
+-- Generation Time: Jul 21, 2014 at 01:10 PM
+-- Server version: 5.6.11
+-- PHP Version: 5.5.1
 
 SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `hdc`
 --
+CREATE DATABASE IF NOT EXISTS `hdc` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `hdc`;
 
 -- --------------------------------------------------------
 
@@ -40,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `adminnotification_inbox` (
   KEY `IDX_ADMINNOTIFICATION_INBOX_SEVERITY` (`severity`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_READ` (`is_read`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_REMOVE` (`is_remove`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=112 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=117 ;
 
 --
 -- Dumping data for table `adminnotification_inbox`
@@ -157,7 +159,12 @@ INSERT INTO `adminnotification_inbox` (`notification_id`, `severity`, `date_adde
 (108, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (109, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (110, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
-(111, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
+(111, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(112, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(113, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(114, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(115, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(116, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -256,7 +263,7 @@ CREATE TABLE IF NOT EXISTS `admin_user` (
 --
 
 INSERT INTO `admin_user` (`user_id`, `firstname`, `lastname`, `email`, `username`, `password`, `created`, `modified`, `logdate`, `lognum`, `reload_acl_flag`, `is_active`, `extra`, `rp_token`, `rp_token_created_at`) VALUES
-(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-20 07:50:25', 36, 0, 1, 'a:1:{s:11:"configState";a:34:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"0";s:25:"trans_email_ident_general";s:1:"1";s:23:"trans_email_ident_sales";s:1:"1";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"1";s:25:"trans_email_ident_custom2";s:1:"1";s:21:"announcements_general";s:1:"1";s:12:"admin_emails";s:1:"0";s:13:"admin_startup";s:1:"0";s:9:"admin_url";s:1:"0";s:14:"admin_security";s:1:"0";s:15:"admin_dashboard";s:1:"0";s:20:"admin_aoe_filepicker";s:1:"1";s:13:"admin_captcha";s:1:"0";s:22:"customer_account_share";s:1:"0";s:25:"customer_online_customers";s:1:"0";s:23:"customer_create_account";s:1:"0";s:17:"customer_password";s:1:"0";s:16:"customer_address";s:1:"0";s:16:"customer_startup";s:1:"0";s:26:"customer_address_templates";s:1:"0";s:16:"customer_captcha";s:1:"1";s:19:"testimonial_general";s:1:"1";}}', NULL, NULL);
+(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-21 05:21:30', 40, 0, 1, 'a:1:{s:11:"configState";a:34:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"0";s:25:"trans_email_ident_general";s:1:"1";s:23:"trans_email_ident_sales";s:1:"1";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"1";s:25:"trans_email_ident_custom2";s:1:"1";s:21:"announcements_general";s:1:"1";s:12:"admin_emails";s:1:"0";s:13:"admin_startup";s:1:"0";s:9:"admin_url";s:1:"0";s:14:"admin_security";s:1:"0";s:15:"admin_dashboard";s:1:"0";s:20:"admin_aoe_filepicker";s:1:"1";s:13:"admin_captcha";s:1:"0";s:22:"customer_account_share";s:1:"0";s:25:"customer_online_customers";s:1:"0";s:23:"customer_create_account";s:1:"0";s:17:"customer_password";s:1:"0";s:16:"customer_address";s:1:"0";s:16:"customer_startup";s:1:"0";s:26:"customer_address_templates";s:1:"0";s:16:"customer_captcha";s:1:"1";s:19:"testimonial_general";s:1:"1";}}', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -717,19 +724,22 @@ INSERT INTO `cataloginventory_stock_status_idx` (`product_id`, `website_id`, `st
 (5, 1, 1, '100.0000', 1),
 (6, 1, 1, '100.0000', 1),
 (7, 1, 1, '100.0000', 1),
-(8, 1, 1, '100.0000', 1),
-(9, 1, 1, '100.0000', 1),
 (10, 1, 1, '100.0000', 1),
-(11, 1, 1, '100.0000', 1),
-(12, 1, 1, '100.0000', 1),
-(13, 1, 1, '100.0000', 1),
-(14, 1, 1, '100.0000', 1),
-(15, 1, 1, '100.0000', 1),
-(16, 1, 1, '100.0000', 1),
-(17, 1, 1, '100.0000', 1),
-(18, 1, 1, '100.0000', 0),
-(19, 1, 1, '100.0000', 1),
-(20, 1, 1, '0.0000', 1);
+(21, 1, 1, '100.0000', 1),
+(22, 1, 1, '100.0000', 1),
+(23, 1, 1, '0.0000', 1),
+(24, 1, 1, '111.0000', 1),
+(25, 1, 1, '111.0000', 1),
+(26, 1, 1, '0.0000', 1),
+(27, 1, 1, '111.0000', 1),
+(28, 1, 1, '111.0000', 1),
+(29, 1, 1, '0.0000', 1),
+(30, 1, 1, '111.0000', 1),
+(31, 1, 1, '111.0000', 1),
+(32, 1, 1, '0.0000', 1),
+(33, 1, 1, '111.0000', 1),
+(34, 1, 1, '111.0000', 1),
+(35, 1, 1, '0.0000', 1);
 
 -- --------------------------------------------------------
 
@@ -895,26 +905,26 @@ CREATE TABLE IF NOT EXISTS `catalogsearch_fulltext` (
   PRIMARY KEY (`fulltext_id`),
   UNIQUE KEY `UNQ_CATALOGSEARCH_FULLTEXT_PRODUCT_ID_STORE_ID` (`product_id`,`store_id`),
   FULLTEXT KEY `FTI_CATALOGSEARCH_FULLTEXT_DATA_INDEX` (`data_index`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Catalog search result table' AUTO_INCREMENT=70 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Catalog search result table' AUTO_INCREMENT=93 ;
 
 --
 -- Dumping data for table `catalogsearch_fulltext`
 --
 
 INSERT INTO `catalogsearch_fulltext` (`fulltext_id`, `product_id`, `store_id`, `data_index`) VALUES
-(64, 32, 1, 'yaky_yams_lotsa_chicken|Taxable Goods|Taxable Goods|Taxable Goods|Yaky Yams Lotsa Chicken|Yaky Yams Lotsa Chicken 4 oz box|Yaky Yam Lotsa Chicken 14 oz box|&nbsp;|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|&nbsp;|&nbsp;|&nbsp;|0|9.99|9.99|1'),
-(63, 35, 1, 'yaky_yam_very_veggy|Taxable Goods|Taxable Goods|Taxable Goods|Yaky Yam Very Veggy|Yaky Yam Very Veggy 4 oz box|Yaky Yam Very Veggy 14 oz box|&nbsp;|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|&nbsp;|&nbsp;|&nbsp;|0|3.99|9.99|1'),
-(61, 29, 1, 'yaky_yam_fruit_fruit|Taxable Goods|Taxable Goods|Taxable Goods|Yaky Yam Fruity Fruit|Yaky Yam Fruity Fruit 4 oz box|Yaky Yam Fruity Fruit 14 oz box|&nbsp;|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|&nbsp;|&nbsp;|&nbsp;|0|3.99|9.99|1'),
-(60, 26, 1, 'yaky_sticks|Taxable Goods|Taxable Goods|None|Yaky Sticks|Yaky Sticks 12 inches|Yaky Stick 6 inches|&nbsp;|box of 12 pieces : 304 cal per stick|box of 12 pieces : 152 cal per stick|&nbsp;|&nbsp;|&nbsp;|0|11.99|7.99|1'),
-(47, 10, 1, 'puff|Taxable Goods|Yaky Puff|12 - 13 pieces | 16 - 18 cal per treat|For all dog sizes|4.99|1'),
-(44, 7, 1, 'seasoning|Taxable Goods|HDC Seasoning|2 oz bottle : 204 cal per bottle|For all dog sizes|3.99|1'),
-(43, 6, 1, 'nuggets|Taxable Goods|Yaky Nugget|21 - 24 pieces | 17 - 20 cal per treat|For all dog sizes|4.99|1'),
-(69, 5, 1, '65 lbs|Taxable Goods|HDC Yellow|3 piece | 1,179 cal|For dogs under 65 lbs|27.99|1'),
-(66, 2, 1, '70 lbs|Taxable Goods|HDC Gray|1 piece | 614 cal|For dogs under 70 lbs|17.99|1'),
-(67, 3, 1, '35 lbs|Taxable Goods|HDC Green|1 piece | 256 cal|For dogs under 35 lbs|7.99|1'),
-(68, 4, 1, '55 lbs|Taxable Goods|HDC Red|1 piece | 359 cal|For dogs under 55 lbs|9.99|1'),
-(65, 1, 1, '15 lbs|Taxable Goods|HDC Blue|3 - 4 piece | 359 cal|For Dogs Under 15 lbs|9.99|1'),
-(59, 23, 1, 'yaky_crunch|Taxable Goods|None|None|Yaky Crunch|Yaky Crunch 1.25 oz box|Yaky Crunch 3 oz box|&nbsp;|1.25 oz box : 75 - 80 pieces | 1.5 - 2 cal per treat|3 oz box : 200 - 220 pieces | 1.5 - 2 cal per treat|&nbsp;|&nbsp;|&nbsp;|4.99|0|0|1');
+(91, 32, 1, 'yaky_yams_lotsa_chicken|Taxable Goods|Taxable Goods|Taxable Goods|Yaky Yams Lotsa Chicken|Yaky Yams Lotsa Chicken 4 oz box|Yaky Yam Lotsa Chicken 14 oz box|&nbsp;|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|&nbsp;|&nbsp;|0|9.99|9.99|1'),
+(90, 29, 1, 'yaky_yam_fruit_fruit|Taxable Goods|Taxable Goods|Taxable Goods|Yaky Yam Fruity Fruit|Yaky Yam Fruity Fruit 4 oz box|Yaky Yam Fruity Fruit 14 oz box|&nbsp;|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|&nbsp;|&nbsp;|0|3.99|9.99|1'),
+(89, 26, 1, 'yaky_sticks|Taxable Goods|Taxable Goods|None|Yaky Sticks|Yaky Sticks 12 inches|Yaky Stick 6 inches|&nbsp;|box of 12 pieces : 304 cal per stick|box of 12 pieces : 152 cal per stick|For all dog sizes|&nbsp;|&nbsp;|0|11.99|7.99|1'),
+(88, 23, 1, 'yaky_crunch|Taxable Goods|None|None|Yaky Crunch|Yaky Crunch 1.25 oz box|Yaky Crunch 3 oz box|&nbsp;|1.25 oz box : 75 - 80 pieces | 1.5 - 2 cal per treat|3 oz box : 200 - 220 pieces | 1.5 - 2 cal per treat|For all dog sizes|&nbsp;|&nbsp;|4.99|0|0|1'),
+(77, 10, 1, 'puff|Taxable Goods|Yaky Puff|12 - 13 pieces | 16 - 18 cal per treat|For all dog sizes|4.99|1'),
+(76, 7, 1, 'seasoning|Taxable Goods|HDC Seasoning|2 oz bottle : 204 cal per bottle|For all dog sizes|3.99|1'),
+(87, 5, 1, '65 lbs|Taxable Goods|HDC Yellow|3 piece | 1,179 cal|For dogs under 65 lbs|27.99|1'),
+(75, 6, 1, 'nuggets|Taxable Goods|Yaky Nugget|21 - 24 pieces | 17 - 20 cal per treat|For all dog sizes|4.99|1'),
+(86, 4, 1, '55 lbs|Taxable Goods|HDC Red|1 piece | 359 cal|For dogs under 55 lbs|9.99|1'),
+(85, 3, 1, '35 lbs|Taxable Goods|HDC Green|1 piece | 256 cal|For dogs under 35 lbs|7.99|1'),
+(83, 1, 1, '15 lbs|Taxable Goods|HDC Blue|3 - 4 piece | 359 cal|For Dogs Under 15 lbs|9.99|1'),
+(84, 2, 1, '70 lbs|Taxable Goods|HDC Gray|1 piece | 614 cal|For dogs under 70 lbs|17.99|1'),
+(92, 35, 1, 'yaky_yam_very_veggy|Taxable Goods|Taxable Goods|Taxable Goods|Yaky Yam Very Veggy|Yaky Yam Very Veggy 4 oz box|Yaky Yam Very Veggy 14 oz box|&nbsp;|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|&nbsp;|&nbsp;|0|3.99|9.99|1');
 
 -- --------------------------------------------------------
 
@@ -1492,16 +1502,16 @@ CREATE TABLE IF NOT EXISTS `catalog_category_product_index` (
 --
 
 INSERT INTO `catalog_category_product_index` (`category_id`, `product_id`, `position`, `is_parent`, `store_id`, `visibility`) VALUES
-(2, 24, 200001, 0, 1, 1),
-(2, 25, 200001, 0, 1, 1),
-(2, 27, 240001, 0, 1, 1),
-(2, 28, 240001, 0, 1, 1),
-(2, 30, 240001, 0, 1, 1),
-(2, 31, 240001, 0, 1, 1),
-(2, 33, 240001, 0, 1, 1),
-(2, 34, 240001, 0, 1, 1),
-(2, 21, 280001, 0, 1, 1),
-(2, 22, 280001, 0, 1, 1),
+(2, 24, 50016, 0, 1, 1),
+(2, 25, 50016, 0, 1, 1),
+(2, 27, 60019, 0, 1, 1),
+(2, 28, 60019, 0, 1, 1),
+(2, 30, 60019, 0, 1, 1),
+(2, 31, 60019, 0, 1, 1),
+(2, 33, 60019, 0, 1, 1),
+(2, 34, 60019, 0, 1, 1),
+(2, 21, 70022, 0, 1, 1),
+(2, 22, 70022, 0, 1, 1),
 (2, 1, 20007, 0, 1, 4),
 (2, 2, 20007, 0, 1, 4),
 (2, 3, 20007, 0, 1, 4),
@@ -1509,22 +1519,22 @@ INSERT INTO `catalog_category_product_index` (`category_id`, `product_id`, `posi
 (2, 5, 20007, 0, 1, 4),
 (2, 6, 30010, 0, 1, 4),
 (2, 10, 40013, 0, 1, 4),
+(2, 26, 50016, 0, 1, 4),
+(2, 29, 60019, 0, 1, 4),
+(2, 32, 60019, 0, 1, 4),
+(2, 35, 60019, 0, 1, 4),
+(2, 23, 70022, 0, 1, 4),
 (2, 7, 80025, 0, 1, 4),
-(2, 26, 200001, 0, 1, 4),
-(2, 29, 240001, 0, 1, 4),
-(2, 32, 240001, 0, 1, 4),
-(2, 35, 240001, 0, 1, 4),
-(2, 23, 280001, 0, 1, 4),
-(3, 24, 200001, 0, 1, 1),
-(3, 25, 200001, 0, 1, 1),
-(3, 27, 240001, 0, 1, 1),
-(3, 28, 240001, 0, 1, 1),
-(3, 30, 240001, 0, 1, 1),
-(3, 31, 240001, 0, 1, 1),
-(3, 33, 240001, 0, 1, 1),
-(3, 34, 240001, 0, 1, 1),
-(3, 21, 280001, 0, 1, 1),
-(3, 22, 280001, 0, 1, 1),
+(3, 24, 50016, 0, 1, 1),
+(3, 25, 50016, 0, 1, 1),
+(3, 27, 60019, 0, 1, 1),
+(3, 28, 60019, 0, 1, 1),
+(3, 30, 60019, 0, 1, 1),
+(3, 31, 60019, 0, 1, 1),
+(3, 33, 60019, 0, 1, 1),
+(3, 34, 60019, 0, 1, 1),
+(3, 21, 70022, 0, 1, 1),
+(3, 22, 70022, 0, 1, 1),
 (3, 1, 20007, 0, 1, 4),
 (3, 2, 20007, 0, 1, 4),
 (3, 3, 20007, 0, 1, 4),
@@ -1532,12 +1542,12 @@ INSERT INTO `catalog_category_product_index` (`category_id`, `product_id`, `posi
 (3, 5, 20007, 0, 1, 4),
 (3, 6, 30010, 0, 1, 4),
 (3, 10, 40013, 0, 1, 4),
+(3, 26, 50016, 0, 1, 4),
+(3, 29, 60019, 0, 1, 4),
+(3, 32, 60019, 0, 1, 4),
+(3, 35, 60019, 0, 1, 4),
+(3, 23, 70022, 0, 1, 4),
 (3, 7, 80025, 0, 1, 4),
-(3, 26, 200001, 0, 1, 4),
-(3, 29, 240001, 0, 1, 4),
-(3, 32, 240001, 0, 1, 4),
-(3, 35, 240001, 0, 1, 4),
-(3, 23, 280001, 0, 1, 4),
 (4, 1, 1, 1, 1, 4),
 (4, 2, 1, 1, 1, 4),
 (4, 3, 1, 1, 1, 4),
@@ -1914,29 +1924,29 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity` (
 --
 
 INSERT INTO `catalog_product_entity` (`entity_id`, `entity_type_id`, `attribute_set_id`, `type_id`, `sku`, `has_options`, `required_options`, `created_at`, `updated_at`) VALUES
-(1, 4, 4, 'simple', '15 lbs', 0, 0, '2014-08-10 01:02:57', '2014-07-20 08:58:56'),
-(2, 4, 4, 'simple', '70 lbs', 0, 0, '2014-07-11 02:51:25', '2014-07-20 08:59:17'),
-(3, 4, 4, 'simple', '35 lbs', 0, 0, '2014-07-11 02:53:21', '2014-07-20 08:59:41'),
-(4, 4, 4, 'simple', '55 lbs', 0, 0, '2014-07-11 02:58:08', '2014-07-20 09:00:03'),
-(5, 4, 4, 'simple', '65 lbs', 0, 0, '2014-07-11 03:00:01', '2014-07-20 09:00:24'),
+(1, 4, 4, 'simple', '15 lbs', 0, 0, '2014-07-11 01:02:57', '2014-07-21 03:32:41'),
+(2, 4, 4, 'simple', '70 lbs', 0, 0, '2014-07-11 02:51:25', '2014-07-21 03:32:57'),
+(3, 4, 4, 'simple', '35 lbs', 0, 0, '2014-07-11 02:53:21', '2014-07-21 03:33:08'),
+(4, 4, 4, 'simple', '55 lbs', 0, 0, '2014-07-11 02:58:08', '2014-07-21 03:33:17'),
+(5, 4, 4, 'simple', '65 lbs', 0, 0, '2014-07-11 03:00:01', '2014-07-21 03:33:34'),
 (6, 4, 4, 'simple', 'nuggets', 0, 0, '2014-07-11 03:01:50', '2014-07-11 03:43:05'),
 (7, 4, 4, 'simple', 'seasoning', 0, 0, '2014-07-11 03:03:18', '2014-07-11 03:03:18'),
 (10, 4, 4, 'simple', 'puff', 0, 0, '2014-07-11 03:08:37', '2014-07-11 03:08:37'),
 (21, 4, 9, 'simple', 'yaky_crunch_125ozbox', 0, 0, '2014-07-20 08:01:33', '2014-07-20 08:03:50'),
 (22, 4, 9, 'simple', 'yaky_crunch_3ozbox', 0, 0, '2014-07-20 08:03:04', '2014-07-20 08:05:52'),
-(23, 4, 9, 'configurable', 'yaky_crunch', 1, 1, '2014-07-20 08:03:19', '2014-07-20 08:03:19'),
+(23, 4, 9, 'configurable', 'yaky_crunch', 1, 1, '2014-07-20 08:03:19', '2014-07-21 04:02:31'),
 (24, 4, 10, 'simple', 'yaky_sticks_12', 0, 0, '2014-07-20 08:19:13', '2014-07-20 08:19:13'),
 (25, 4, 10, 'simple', 'yaky_stick_6', 0, 0, '2014-07-20 08:20:54', '2014-07-20 08:20:54'),
-(26, 4, 10, 'configurable', 'yaky_sticks', 1, 1, '2014-07-20 08:21:21', '2014-07-20 08:21:21'),
+(26, 4, 10, 'configurable', 'yaky_sticks', 1, 1, '2014-07-20 08:21:21', '2014-07-21 04:02:38'),
 (27, 4, 11, 'simple', 'yaky_yam_fruity_fruit_4oz', 0, 0, '2014-07-20 08:27:32', '2014-07-20 08:27:32'),
 (28, 4, 11, 'simple', 'yaky_yam_fruity_fruit_14oz', 0, 0, '2014-07-20 08:29:22', '2014-07-20 08:29:22'),
-(29, 4, 11, 'configurable', 'yaky_yam_fruit_fruit', 1, 1, '2014-07-20 08:29:38', '2014-07-20 08:29:38'),
+(29, 4, 11, 'configurable', 'yaky_yam_fruit_fruit', 1, 1, '2014-07-20 08:29:38', '2014-07-21 04:02:55'),
 (30, 4, 11, 'simple', 'yaky_yam_lotsa_chicken_4oz', 0, 0, '2014-07-20 08:32:42', '2014-07-20 08:32:42'),
 (31, 4, 11, 'simple', 'yaky_yam_lotsa_chicken_14oz', 0, 0, '2014-07-20 08:34:26', '2014-07-20 08:53:11'),
-(32, 4, 11, 'configurable', 'yaky_yams_lotsa_chicken', 1, 1, '2014-07-20 08:34:43', '2014-07-20 08:34:43'),
+(32, 4, 11, 'configurable', 'yaky_yams_lotsa_chicken', 1, 1, '2014-07-20 08:34:43', '2014-07-21 04:03:01'),
 (33, 4, 11, 'simple', 'yaky_yam_very_veggy_4oz', 0, 0, '2014-07-20 08:50:59', '2014-07-20 08:50:59'),
 (34, 4, 11, 'simple', 'yaky_yam_very_veggy_14oz', 0, 0, '2014-07-20 08:52:31', '2014-07-20 08:52:31'),
-(35, 4, 11, 'configurable', 'yaky_yam_very_veggy', 1, 1, '2014-07-20 08:52:46', '2014-07-20 08:52:46');
+(35, 4, 11, 'configurable', 'yaky_yam_very_veggy', 1, 1, '2014-07-20 08:52:46', '2014-07-21 04:03:13');
 
 -- --------------------------------------------------------
 
@@ -1956,7 +1966,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_datetime` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DATETIME_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DATETIME_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DATETIME_ENTITY_ID` (`entity_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Datetime Attribute Backend Table' AUTO_INCREMENT=295 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Datetime Attribute Backend Table' AUTO_INCREMENT=355 ;
 
 --
 -- Dumping data for table `catalog_product_entity_datetime`
@@ -2120,7 +2130,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_decimal` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DECIMAL_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DECIMAL_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DECIMAL_ATTRIBUTE_ID` (`attribute_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Decimal Attribute Backend Table' AUTO_INCREMENT=177 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Decimal Attribute Backend Table' AUTO_INCREMENT=207 ;
 
 --
 -- Dumping data for table `catalog_product_entity_decimal`
@@ -2254,18 +2264,18 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_group_price` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_GROUP_PRICE_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_GROUP_PRICE_CUSTOMER_GROUP_ID` (`customer_group_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_GROUP_PRICE_WEBSITE_ID` (`website_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Group Price Attribute Backend Table' AUTO_INCREMENT=38 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Group Price Attribute Backend Table' AUTO_INCREMENT=43 ;
 
 --
 -- Dumping data for table `catalog_product_entity_group_price`
 --
 
 INSERT INTO `catalog_product_entity_group_price` (`value_id`, `entity_id`, `all_groups`, `customer_group_id`, `value`, `website_id`) VALUES
-(1, 1, 0, 3, '5.1500', 0),
-(2, 2, 0, 3, '8.8000', 0),
-(3, 3, 0, 3, '4.1500', 0),
-(4, 4, 0, 3, '5.1500', 0),
-(5, 5, 0, 3, '16.7500', 0),
+(1, 1, 0, 3, '5.0000', 0),
+(2, 2, 0, 3, '8.6000', 0),
+(3, 3, 0, 3, '4.0000', 0),
+(4, 4, 0, 3, '5.0000', 0),
+(5, 5, 0, 3, '16.3000', 0),
 (6, 6, 0, 3, '2.6500', 0),
 (7, 7, 0, 3, '1.8500', 0),
 (10, 10, 0, 3, '2.6500', 0),
@@ -2286,7 +2296,12 @@ INSERT INTO `catalog_product_entity_group_price` (`value_id`, `entity_id`, `all_
 (34, 33, 0, 2, '1.8500', 0),
 (35, 33, 0, 3, '1.7500', 0),
 (36, 34, 0, 2, '4.8500', 0),
-(37, 34, 0, 3, '4.6000', 0);
+(37, 34, 0, 3, '4.6000', 0),
+(38, 1, 0, 2, '5.1500', 0),
+(39, 2, 0, 2, '8.8000', 0),
+(40, 3, 0, 2, '4.1500', 0),
+(41, 4, 0, 2, '5.1500', 0),
+(42, 5, 0, 2, '16.7500', 0);
 
 -- --------------------------------------------------------
 
@@ -2484,7 +2499,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_text` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_TEXT_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_TEXT_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_TEXT_ENTITY_ID` (`entity_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Text Attribute Backend Table' AUTO_INCREMENT=208 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Text Attribute Backend Table' AUTO_INCREMENT=243 ;
 
 --
 -- Dumping data for table `catalog_product_entity_text`
@@ -2539,7 +2554,7 @@ INSERT INTO `catalog_product_entity_text` (`value_id`, `entity_type_id`, `attrib
 (118, 4, 83, 0, 22, NULL),
 (119, 4, 106, 0, 22, NULL),
 (120, 4, 72, 0, 23, '&nbsp;'),
-(121, 4, 73, 0, 23, '&nbsp;'),
+(121, 4, 73, 0, 23, 'For all dog sizes'),
 (122, 4, 133, 0, 23, NULL),
 (123, 4, 83, 0, 23, NULL),
 (124, 4, 106, 0, 23, NULL),
@@ -2554,7 +2569,7 @@ INSERT INTO `catalog_product_entity_text` (`value_id`, `entity_type_id`, `attrib
 (138, 4, 83, 0, 25, NULL),
 (139, 4, 106, 0, 25, NULL),
 (140, 4, 72, 0, 26, '&nbsp;'),
-(141, 4, 73, 0, 26, '&nbsp;'),
+(141, 4, 73, 0, 26, 'For all dog sizes'),
 (142, 4, 133, 0, 26, NULL),
 (143, 4, 83, 0, 26, NULL),
 (144, 4, 106, 0, 26, NULL),
@@ -2569,7 +2584,7 @@ INSERT INTO `catalog_product_entity_text` (`value_id`, `entity_type_id`, `attrib
 (153, 4, 83, 0, 28, NULL),
 (154, 4, 106, 0, 28, NULL),
 (155, 4, 72, 0, 29, '&nbsp;'),
-(156, 4, 73, 0, 29, '&nbsp;'),
+(156, 4, 73, 0, 29, 'For all dog sizes'),
 (157, 4, 133, 0, 29, NULL),
 (158, 4, 83, 0, 29, NULL),
 (159, 4, 106, 0, 29, NULL),
@@ -2584,7 +2599,7 @@ INSERT INTO `catalog_product_entity_text` (`value_id`, `entity_type_id`, `attrib
 (168, 4, 83, 0, 31, NULL),
 (169, 4, 106, 0, 31, NULL),
 (170, 4, 72, 0, 32, '&nbsp;'),
-(171, 4, 73, 0, 32, '&nbsp;'),
+(171, 4, 73, 0, 32, 'For all dog sizes'),
 (172, 4, 133, 0, 32, NULL),
 (173, 4, 83, 0, 32, NULL),
 (174, 4, 106, 0, 32, NULL),
@@ -2599,7 +2614,7 @@ INSERT INTO `catalog_product_entity_text` (`value_id`, `entity_type_id`, `attrib
 (183, 4, 83, 0, 34, NULL),
 (184, 4, 106, 0, 34, NULL),
 (185, 4, 72, 0, 35, '&nbsp;'),
-(186, 4, 73, 0, 35, '&nbsp;'),
+(186, 4, 73, 0, 35, 'For all dog sizes'),
 (187, 4, 133, 0, 35, NULL),
 (188, 4, 83, 0, 35, NULL),
 (189, 4, 106, 0, 35, NULL),
@@ -2607,7 +2622,12 @@ INSERT INTO `catalog_product_entity_text` (`value_id`, `entity_type_id`, `attrib
 (196, 4, 139, 0, 2, 'Crude Protein Min 52.8%, Crude Fat Min 0.9%, Moisture Max 10.2%, Ash Max 6.0%'),
 (199, 4, 139, 0, 3, 'Crude Protein Min 52.8%, Crude Fat Min 0.9%, Moisture Max 10.2%, Ash Max 6.0%'),
 (202, 4, 139, 0, 4, 'Crude Protein Min 52.8%, Crude Fat Min 0.9%, Moisture Max 10.2%, Ash Max 6.0%'),
-(205, 4, 139, 0, 5, 'Crude Protein Min 52.8%, Crude Fat Min 0.9%, Moisture Max 10.2%, Ash Max 6.0%');
+(205, 4, 139, 0, 5, 'Crude Protein Min 52.8%, Crude Fat Min 0.9%, Moisture Max 10.2%, Ash Max 6.0%'),
+(218, 4, 139, 0, 23, NULL),
+(223, 4, 139, 0, 26, NULL),
+(228, 4, 139, 0, 29, NULL),
+(233, 4, 139, 0, 32, NULL),
+(238, 4, 139, 0, 35, NULL);
 
 -- --------------------------------------------------------
 
@@ -2648,7 +2668,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_varchar` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_VARCHAR_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_VARCHAR_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_VARCHAR_ENTITY_ID` (`entity_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Varchar Attribute Backend Table' AUTO_INCREMENT=705 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Varchar Attribute Backend Table' AUTO_INCREMENT=776 ;
 
 --
 -- Dumping data for table `catalog_product_entity_varchar`
@@ -2835,8 +2855,8 @@ INSERT INTO `catalog_product_entity_varchar` (`value_id`, `entity_type_id`, `att
 (449, 4, 107, 0, 23, NULL),
 (450, 4, 109, 0, 23, 'container2'),
 (451, 4, 122, 0, 23, NULL),
-(452, 4, 98, 1, 23, 'yaky-crunch-23.html'),
-(453, 4, 98, 0, 23, 'yaky-crunch-23.html'),
+(452, 4, 98, 1, 23, 'yaky-crunch.html'),
+(453, 4, 98, 0, 23, 'yaky-crunch.html'),
 (466, 4, 71, 0, 24, 'Yaky Sticks 12 inches'),
 (467, 4, 97, 0, 24, 'yaky-sticks-12-inches'),
 (468, 4, 117, 0, 24, NULL),
@@ -2931,8 +2951,8 @@ INSERT INTO `catalog_product_entity_varchar` (`value_id`, `entity_type_id`, `att
 (557, 4, 107, 0, 29, NULL),
 (558, 4, 109, 0, 29, 'container2'),
 (559, 4, 122, 0, 29, NULL),
-(560, 4, 98, 1, 29, 'yaky-yam-fruity-fruit-29.html'),
-(561, 4, 98, 0, 29, 'yaky-yam-fruity-fruit-29.html'),
+(560, 4, 98, 1, 29, 'yaky-yam-fruity-fruit.html'),
+(561, 4, 98, 0, 29, 'yaky-yam-fruity-fruit.html'),
 (562, 4, 71, 0, 30, 'Yaky Yams Lotsa Chicken 4 oz box'),
 (563, 4, 97, 0, 30, 'yaky-yams-lotsa-chicken-4-oz-box'),
 (564, 4, 117, 0, 30, NULL),
@@ -3027,13 +3047,18 @@ INSERT INTO `catalog_product_entity_varchar` (`value_id`, `entity_type_id`, `att
 (653, 4, 107, 0, 35, NULL),
 (654, 4, 109, 0, 35, 'container2'),
 (655, 4, 122, 0, 35, NULL),
-(656, 4, 98, 1, 35, 'yaky-yam-very-veggy-35.html'),
-(657, 4, 98, 0, 35, 'yaky-yam-very-veggy-35.html'),
+(656, 4, 98, 1, 35, 'yaky-yam-very-veggy.html'),
+(657, 4, 98, 0, 35, 'yaky-yam-very-veggy.html'),
 (664, 4, 138, 0, 1, 'Yak and cow milk, Salt and Lime juice'),
 (674, 4, 138, 0, 2, 'Yak and cow milk, Salt and Lime juice'),
 (681, 4, 138, 0, 3, 'Yak and cow milk, Salt and Lime juice'),
 (691, 4, 138, 0, 4, 'Yak and cow milk, Salt and Lime juice'),
-(698, 4, 138, 0, 5, 'Yak and cow milk, Salt and Lime juice');
+(698, 4, 138, 0, 5, 'Yak and cow milk, Salt and Lime juice'),
+(741, 4, 138, 0, 23, NULL),
+(748, 4, 138, 0, 26, NULL),
+(755, 4, 138, 0, 29, NULL),
+(762, 4, 138, 0, 32, NULL),
+(769, 4, 138, 0, 35, NULL);
 
 -- --------------------------------------------------------
 
@@ -3213,18 +3238,14 @@ INSERT INTO `catalog_product_index_eav_idx` (`entity_id`, `attribute_id`, `store
 (5, 121, 1, 2),
 (6, 121, 1, 2),
 (7, 121, 1, 2),
-(8, 121, 1, 2),
-(9, 121, 1, 2),
 (10, 121, 1, 2),
-(11, 121, 1, 2),
-(12, 121, 1, 2),
-(13, 121, 1, 2),
-(14, 121, 1, 2),
-(15, 121, 1, 2),
-(16, 121, 1, 2),
-(17, 121, 1, 2),
-(20, 121, 1, 0),
-(20, 121, 1, 2);
+(23, 121, 1, 0),
+(23, 121, 1, 2),
+(26, 121, 1, 0),
+(26, 121, 1, 2),
+(29, 121, 1, 2),
+(32, 121, 1, 2),
+(35, 121, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -3249,7 +3270,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_eav_tmp` (
 --
 
 INSERT INTO `catalog_product_index_eav_tmp` (`entity_id`, `attribute_id`, `store_id`, `value`) VALUES
-(5, 121, 1, 2);
+(35, 121, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -3266,13 +3287,6 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_group_price` (
   KEY `IDX_CATALOG_PRODUCT_INDEX_GROUP_PRICE_CUSTOMER_GROUP_ID` (`customer_group_id`),
   KEY `IDX_CATALOG_PRODUCT_INDEX_GROUP_PRICE_WEBSITE_ID` (`website_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Catalog Product Group Price Index Table';
-
---
--- Dumping data for table `catalog_product_index_group_price`
---
-
-INSERT INTO `catalog_product_index_group_price` (`entity_id`, `customer_group_id`, `website_id`, `price`) VALUES
-(5, 3, 1, '16.7500');
 
 -- --------------------------------------------------------
 
@@ -3305,24 +3319,24 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_price` (
 INSERT INTO `catalog_product_index_price` (`entity_id`, `customer_group_id`, `website_id`, `tax_class_id`, `price`, `final_price`, `min_price`, `max_price`, `tier_price`, `group_price`) VALUES
 (1, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
 (1, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(1, 2, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(1, 3, 1, 2, '9.9900', '5.1500', '5.1500', '5.1500', NULL, '5.1500'),
+(1, 2, 1, 2, '9.9900', '5.1500', '5.1500', '5.1500', NULL, '5.1500'),
+(1, 3, 1, 2, '9.9900', '5.0000', '5.0000', '5.0000', NULL, '5.0000'),
 (2, 0, 1, 2, '17.9900', '17.9900', '17.9900', '17.9900', NULL, NULL),
 (2, 1, 1, 2, '17.9900', '17.9900', '17.9900', '17.9900', NULL, NULL),
-(2, 2, 1, 2, '17.9900', '17.9900', '17.9900', '17.9900', NULL, NULL),
-(2, 3, 1, 2, '17.9900', '8.8000', '8.8000', '8.8000', NULL, '8.8000'),
+(2, 2, 1, 2, '17.9900', '8.8000', '8.8000', '8.8000', NULL, '8.8000'),
+(2, 3, 1, 2, '17.9900', '8.6000', '8.6000', '8.6000', NULL, '8.6000'),
 (3, 0, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
 (3, 1, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
-(3, 2, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
-(3, 3, 1, 2, '7.9900', '4.1500', '4.1500', '4.1500', NULL, '4.1500'),
+(3, 2, 1, 2, '7.9900', '4.1500', '4.1500', '4.1500', NULL, '4.1500'),
+(3, 3, 1, 2, '7.9900', '4.0000', '4.0000', '4.0000', NULL, '4.0000'),
 (4, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
 (4, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(4, 2, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(4, 3, 1, 2, '9.9900', '5.1500', '5.1500', '5.1500', NULL, '5.1500'),
+(4, 2, 1, 2, '9.9900', '5.1500', '5.1500', '5.1500', NULL, '5.1500'),
+(4, 3, 1, 2, '9.9900', '5.0000', '5.0000', '5.0000', NULL, '5.0000'),
 (5, 0, 1, 2, '27.9900', '27.9900', '27.9900', '27.9900', NULL, NULL),
 (5, 1, 1, 2, '27.9900', '27.9900', '27.9900', '27.9900', NULL, NULL),
-(5, 2, 1, 2, '27.9900', '27.9900', '27.9900', '27.9900', NULL, NULL),
-(5, 3, 1, 2, '27.9900', '16.7500', '16.7500', '16.7500', NULL, '16.7500'),
+(5, 2, 1, 2, '27.9900', '16.7500', '16.7500', '16.7500', NULL, '16.7500'),
+(5, 3, 1, 2, '27.9900', '16.3000', '16.3000', '16.3000', NULL, '16.3000'),
 (6, 0, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
 (6, 1, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
 (6, 2, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
@@ -3728,54 +3742,70 @@ INSERT INTO `catalog_product_index_price_idx` (`entity_id`, `customer_group_id`,
 (7, 1, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
 (7, 2, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
 (7, 3, 1, 2, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
-(8, 0, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
-(8, 1, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
-(8, 2, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
-(8, 3, 1, 2, '4.9900', '2.6500', '2.6500', '2.6500', NULL, '2.6500'),
-(9, 0, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
-(9, 1, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
-(9, 2, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
-(9, 3, 1, 2, '4.9900', '2.6500', '2.6500', '2.6500', NULL, '2.6500'),
 (10, 0, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
 (10, 1, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
 (10, 2, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
 (10, 3, 1, 2, '4.9900', '2.6500', '2.6500', '2.6500', NULL, '2.6500'),
-(11, 0, 1, 2, '11.9900', '11.9900', '11.9900', '11.9900', NULL, NULL),
-(11, 1, 1, 2, '11.9900', '11.9900', '11.9900', '11.9900', NULL, NULL),
-(11, 2, 1, 2, '11.9900', '11.9900', '11.9900', '11.9900', NULL, NULL),
-(11, 3, 1, 2, '11.9900', '5.9500', '5.9500', '5.9500', NULL, '5.9500'),
-(12, 0, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
-(12, 1, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
-(12, 2, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
-(12, 3, 1, 2, '7.9900', '3.5000', '3.5000', '3.5000', NULL, '3.5000'),
-(13, 0, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(13, 1, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(13, 2, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(13, 3, 1, 2, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
-(14, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(14, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(14, 2, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(14, 3, 1, 2, '9.9900', '4.8500', '4.8500', '4.8500', NULL, '4.8500'),
-(15, 0, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(15, 1, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(15, 2, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(15, 3, 1, 2, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
-(16, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(16, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(16, 2, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(16, 3, 1, 2, '9.9900', '4.8500', '4.8500', '4.8500', NULL, '4.8500'),
-(17, 0, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(17, 1, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(17, 2, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(17, 3, 1, 2, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
-(19, 0, 1, 0, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(19, 1, 1, 0, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(19, 2, 1, 0, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
-(19, 3, 1, 0, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
-(20, 0, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
-(20, 1, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
-(20, 2, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
-(20, 3, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL);
+(21, 0, 1, 0, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(21, 1, 1, 0, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(21, 2, 1, 0, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(21, 3, 1, 0, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(22, 0, 1, 0, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(22, 1, 1, 0, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(22, 2, 1, 0, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(22, 3, 1, 0, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(23, 0, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(23, 1, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
+(23, 2, 1, 2, '4.9900', '2.6500', '2.6500', '2.6500', NULL, '2.6500'),
+(23, 3, 1, 2, '4.9900', '2.5000', '2.5000', '2.5000', NULL, '2.5000'),
+(24, 0, 1, 2, '11.9900', '11.9900', '11.9900', '11.9900', NULL, NULL),
+(24, 1, 1, 2, '11.9900', '11.9900', '11.9900', '11.9900', NULL, NULL),
+(24, 2, 1, 2, '11.9900', '5.9500', '5.9500', '5.9500', NULL, '5.9500'),
+(24, 3, 1, 2, '11.9900', '5.7500', '5.7500', '5.7500', NULL, '5.7500'),
+(25, 0, 1, 0, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
+(25, 1, 1, 0, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
+(25, 2, 1, 0, '7.9900', '3.5000', '3.5000', '3.5000', NULL, '3.5000'),
+(25, 3, 1, 0, '7.9900', '3.3500', '3.3500', '3.3500', NULL, '3.3500'),
+(26, 0, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(26, 1, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(26, 2, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(26, 3, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(27, 0, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(27, 1, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(27, 2, 1, 2, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
+(27, 3, 1, 2, '3.9900', '1.7500', '1.7500', '1.7500', NULL, '1.7500'),
+(28, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(28, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(28, 2, 1, 2, '9.9900', '4.8500', '4.8500', '4.8500', NULL, '4.8500'),
+(28, 3, 1, 2, '9.9900', '1.6000', '1.6000', '1.6000', NULL, '1.6000'),
+(29, 0, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(29, 1, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(29, 2, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(29, 3, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(30, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(30, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(30, 2, 1, 2, '9.9900', '4.8500', '4.8500', '4.8500', NULL, '4.8500'),
+(30, 3, 1, 2, '9.9900', '4.6000', '4.6000', '4.6000', NULL, '4.6000'),
+(31, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(31, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(31, 2, 1, 2, '9.9900', '4.8500', '4.8500', '4.8500', NULL, '4.8500'),
+(31, 3, 1, 2, '9.9900', '4.6000', '4.6000', '4.6000', NULL, '4.6000'),
+(32, 0, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(32, 1, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(32, 2, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(32, 3, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(33, 0, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(33, 1, 1, 2, '3.9900', '3.9900', '3.9900', '3.9900', NULL, NULL),
+(33, 2, 1, 2, '3.9900', '1.8500', '1.8500', '1.8500', NULL, '1.8500'),
+(33, 3, 1, 2, '3.9900', '1.7500', '1.7500', '1.7500', NULL, '1.7500'),
+(34, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(34, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
+(34, 2, 1, 2, '9.9900', '4.8500', '4.8500', '4.8500', NULL, '4.8500'),
+(34, 3, 1, 2, '9.9900', '4.6000', '4.6000', '4.6000', NULL, '4.6000'),
+(35, 0, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(35, 1, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(35, 2, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(35, 3, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -3875,10 +3905,10 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_price_tmp` (
 --
 
 INSERT INTO `catalog_product_index_price_tmp` (`entity_id`, `customer_group_id`, `website_id`, `tax_class_id`, `price`, `final_price`, `min_price`, `max_price`, `tier_price`, `group_price`) VALUES
-(5, 0, 1, 2, '27.9900', '27.9900', '27.9900', '27.9900', NULL, NULL),
-(5, 1, 1, 2, '27.9900', '27.9900', '27.9900', '27.9900', NULL, NULL),
-(5, 2, 1, 2, '27.9900', '27.9900', '27.9900', '27.9900', NULL, NULL),
-(5, 3, 1, 2, '27.9900', '16.7500', '16.7500', '16.7500', NULL, '16.7500');
+(35, 0, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(35, 1, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(35, 2, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
+(35, 3, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -3915,7 +3945,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_website` (
 --
 
 INSERT INTO `catalog_product_index_website` (`website_id`, `website_date`, `rate`) VALUES
-(1, '2014-07-20', 1);
+(1, '2014-07-21', 1);
 
 -- --------------------------------------------------------
 
@@ -4948,7 +4978,7 @@ CREATE TABLE IF NOT EXISTS `core_url_rewrite` (
   KEY `IDX_CORE_URL_REWRITE_STORE_ID` (`store_id`),
   KEY `FK_CORE_URL_REWRITE_CTGR_ID_CAT_CTGR_ENTT_ENTT_ID` (`category_id`),
   KEY `FK_CORE_URL_REWRITE_PRODUCT_ID_CATALOG_CATEGORY_ENTITY_ENTITY_ID` (`product_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Url Rewrites' AUTO_INCREMENT=135 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Url Rewrites' AUTO_INCREMENT=195 ;
 
 --
 -- Dumping data for table `core_url_rewrite`
@@ -4983,8 +5013,8 @@ INSERT INTO `core_url_rewrite` (`url_rewrite_id`, `store_id`, `id_path`, `reques
 (106, 1, 'product/21', 'yaky-crunch-1-25-oz-box.html', 'catalog/product/view/id/21', 1, NULL, NULL, NULL, 21),
 (107, 1, 'product/22/9', 'our-creations/yaky-crunch/yaky-crunch-3-oz-box.html', 'catalog/product/view/id/22/category/9', 1, NULL, NULL, 9, 22),
 (108, 1, 'product/22', 'yaky-crunch-3-oz-box.html', 'catalog/product/view/id/22', 1, NULL, NULL, NULL, 22),
-(109, 1, 'product/23/9', 'our-creations/yaky-crunch/yaky-crunch-23.html', 'catalog/product/view/id/23/category/9', 1, NULL, NULL, 9, 23),
-(110, 1, 'product/23', 'yaky-crunch-23.html', 'catalog/product/view/id/23', 1, NULL, NULL, NULL, 23),
+(109, 1, 'product/23/9', 'our-creations/yaky-crunch/yaky-crunch.html', 'catalog/product/view/id/23/category/9', 1, NULL, NULL, 9, 23),
+(110, 1, 'product/23', 'yaky-crunch.html', 'catalog/product/view/id/23', 1, NULL, NULL, NULL, 23),
 (111, 1, 'product/24/7', 'our-creations/yaky-stick/yaky-sticks-12-inches.html', 'catalog/product/view/id/24/category/7', 1, NULL, NULL, 7, 24),
 (112, 1, 'product/24', 'yaky-sticks-12-inches.html', 'catalog/product/view/id/24', 1, NULL, NULL, NULL, 24),
 (113, 1, 'product/25/7', 'our-creations/yaky-stick/yaky-stick-6-inches.html', 'catalog/product/view/id/25/category/7', 1, NULL, NULL, 7, 25),
@@ -4995,8 +5025,8 @@ INSERT INTO `core_url_rewrite` (`url_rewrite_id`, `store_id`, `id_path`, `reques
 (118, 1, 'product/27', 'yaky-yam-fruity-fruit-4-oz-box.html', 'catalog/product/view/id/27', 1, NULL, NULL, NULL, 27),
 (119, 1, 'product/28/8', 'our-creations/yaky-yams/yaky-yam-fruity-fruit-14-oz-box.html', 'catalog/product/view/id/28/category/8', 1, NULL, NULL, 8, 28),
 (120, 1, 'product/28', 'yaky-yam-fruity-fruit-14-oz-box.html', 'catalog/product/view/id/28', 1, NULL, NULL, NULL, 28),
-(121, 1, 'product/29/8', 'our-creations/yaky-yams/yaky-yam-fruity-fruit-29.html', 'catalog/product/view/id/29/category/8', 1, NULL, NULL, 8, 29),
-(122, 1, 'product/29', 'yaky-yam-fruity-fruit-29.html', 'catalog/product/view/id/29', 1, NULL, NULL, NULL, 29),
+(121, 1, 'product/29/8', 'our-creations/yaky-yams/yaky-yam-fruity-fruit.html', 'catalog/product/view/id/29/category/8', 1, NULL, NULL, 8, 29),
+(122, 1, 'product/29', 'yaky-yam-fruity-fruit.html', 'catalog/product/view/id/29', 1, NULL, NULL, NULL, 29),
 (123, 1, 'product/30/8', 'our-creations/yaky-yams/yaky-yams-lotsa-chicken-4-oz-box.html', 'catalog/product/view/id/30/category/8', 1, NULL, NULL, 8, 30),
 (124, 1, 'product/30', 'yaky-yams-lotsa-chicken-4-oz-box.html', 'catalog/product/view/id/30', 1, NULL, NULL, NULL, 30),
 (125, 1, 'product/31/8', 'our-creations/yaky-yams/yaky-yam-lotsa-chicken-14-oz-box.html', 'catalog/product/view/id/31/category/8', 1, NULL, NULL, 8, 31),
@@ -5007,8 +5037,14 @@ INSERT INTO `core_url_rewrite` (`url_rewrite_id`, `store_id`, `id_path`, `reques
 (130, 1, 'product/33', 'yaky-yam-very-veggy-4-oz-box.html', 'catalog/product/view/id/33', 1, NULL, NULL, NULL, 33),
 (131, 1, 'product/34/8', 'our-creations/yaky-yams/yaky-yam-very-veggy-14-oz-box.html', 'catalog/product/view/id/34/category/8', 1, NULL, NULL, 8, 34),
 (132, 1, 'product/34', 'yaky-yam-very-veggy-14-oz-box.html', 'catalog/product/view/id/34', 1, NULL, NULL, NULL, 34),
-(133, 1, 'product/35/8', 'our-creations/yaky-yams/yaky-yam-very-veggy-35.html', 'catalog/product/view/id/35/category/8', 1, NULL, NULL, 8, 35),
-(134, 1, 'product/35', 'yaky-yam-very-veggy-35.html', 'catalog/product/view/id/35', 1, NULL, NULL, NULL, 35);
+(133, 1, 'product/35/8', 'our-creations/yaky-yams/yaky-yam-very-veggy.html', 'catalog/product/view/id/35/category/8', 1, NULL, NULL, 8, 35),
+(134, 1, 'product/35', 'yaky-yam-very-veggy.html', 'catalog/product/view/id/35', 1, NULL, NULL, NULL, 35),
+(164, 1, '38605200_1405917454', 'yaky-crunch-23.html', 'yaky-crunch.html', 0, 'RP', NULL, NULL, 23),
+(166, 1, '39156900_1405917454', 'our-creations/yaky-crunch/yaky-crunch-23.html', 'our-creations/yaky-crunch/yaky-crunch.html', 0, 'RP', NULL, 9, 23),
+(178, 1, '41436500_1405917454', 'yaky-yam-fruity-fruit-29.html', 'yaky-yam-fruity-fruit.html', 0, 'RP', NULL, NULL, 29),
+(180, 1, '41996100_1405917454', 'our-creations/yaky-yams/yaky-yam-fruity-fruit-29.html', 'our-creations/yaky-yams/yaky-yam-fruity-fruit.html', 0, 'RP', NULL, 8, 29),
+(192, 1, '43969800_1405917454', 'yaky-yam-very-veggy-35.html', 'yaky-yam-very-veggy.html', 0, 'RP', NULL, NULL, 35),
+(194, 1, '44566800_1405917454', 'our-creations/yaky-yams/yaky-yam-very-veggy-35.html', 'our-creations/yaky-yams/yaky-yam-very-veggy.html', 0, 'RP', NULL, 8, 35);
 
 -- --------------------------------------------------------
 
@@ -8378,7 +8414,14 @@ CREATE TABLE IF NOT EXISTS `forms` (
   `form_name` text,
   `form_file` longtext,
   PRIMARY KEY (`form_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+
+--
+-- Dumping data for table `forms`
+--
+
+INSERT INTO `forms` (`form_id`, `form_name`, `form_file`) VALUES
+(8, 'Form 1', 'forms/form/MarketandSellersforGrowmyFood.pdf');
 
 -- --------------------------------------------------------
 
@@ -8655,15 +8698,15 @@ CREATE TABLE IF NOT EXISTS `index_process` (
 --
 
 INSERT INTO `index_process` (`process_id`, `indexer_code`, `status`, `started_at`, `ended_at`, `mode`) VALUES
-(1, 'catalog_product_attribute', 'pending', '2014-07-20 09:00:26', '2014-07-20 09:00:26', 'real_time'),
-(2, 'catalog_product_price', 'pending', '2014-07-20 09:00:28', '2014-07-20 09:00:28', 'real_time'),
-(3, 'catalog_url', 'pending', '2014-07-20 09:00:26', '2014-07-20 09:00:26', 'real_time'),
+(1, 'catalog_product_attribute', 'pending', '2014-07-21 04:03:13', '2014-07-21 04:03:13', 'real_time'),
+(2, 'catalog_product_price', 'pending', '2014-07-21 04:03:14', '2014-07-21 04:03:14', 'real_time'),
+(3, 'catalog_url', 'pending', '2014-07-21 04:03:13', '2014-07-21 04:03:13', 'real_time'),
 (4, 'catalog_product_flat', 'pending', '2014-06-28 09:52:40', '2014-06-28 09:52:40', 'real_time'),
 (5, 'catalog_category_flat', 'pending', '2014-06-28 09:52:40', '2014-06-28 09:52:41', 'real_time'),
-(6, 'catalog_category_product', 'pending', '2014-07-20 09:00:26', '2014-07-20 09:00:26', 'real_time'),
-(7, 'catalogsearch_fulltext', 'require_reindex', '2014-07-20 09:00:26', '2014-07-20 09:00:27', 'real_time'),
-(8, 'cataloginventory_stock', 'pending', '2014-07-20 09:00:26', '2014-07-20 09:00:26', 'real_time'),
-(9, 'tag_summary', 'pending', '2014-07-20 09:00:28', '2014-07-20 09:00:28', 'real_time');
+(6, 'catalog_category_product', 'pending', '2014-07-21 04:03:13', '2014-07-21 04:03:13', 'real_time'),
+(7, 'catalogsearch_fulltext', 'pending', '2014-07-21 04:03:13', '2014-07-21 04:03:14', 'real_time'),
+(8, 'cataloginventory_stock', 'pending', '2014-07-21 04:03:13', '2014-07-21 04:03:13', 'real_time'),
+(9, 'tag_summary', 'pending', '2014-07-21 04:03:14', '2014-07-21 04:03:14', 'real_time');
 
 -- --------------------------------------------------------
 
@@ -8694,7 +8737,7 @@ CREATE TABLE IF NOT EXISTS `log_customer` (
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`log_id`),
   KEY `IDX_LOG_CUSTOMER_VISITOR_ID` (`visitor_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Customers Table' AUTO_INCREMENT=52 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Customers Table' AUTO_INCREMENT=57 ;
 
 --
 -- Dumping data for table `log_customer`
@@ -8751,7 +8794,12 @@ INSERT INTO `log_customer` (`log_id`, `visitor_id`, `customer_id`, `login_at`, `
 (48, 35, 1, '2014-07-18 08:53:06', '2014-07-18 08:54:04', 1),
 (49, 35, 1, '2014-07-18 08:54:46', '2014-07-18 08:59:29', 1),
 (50, 35, 1, '2014-07-18 08:59:42', NULL, 1),
-(51, 37, 1, '2014-07-19 22:56:00', NULL, 1);
+(51, 37, 1, '2014-07-19 22:56:00', NULL, 1),
+(52, 39, 1, '2014-07-20 21:13:11', '2014-07-20 22:10:01', 1),
+(53, 39, 1, '2014-07-20 22:10:35', NULL, 1),
+(54, 42, 1, '2014-07-21 00:17:44', '2014-07-21 00:18:32', 1),
+(55, 44, 1, '2014-07-21 03:09:39', NULL, 1),
+(56, 45, 1, '2014-07-21 05:19:47', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -10672,7 +10720,261 @@ INSERT INTO `log_url` (`url_id`, `visitor_id`, `visit_time`) VALUES
 (1838, 38, '2014-07-20 08:53:16'),
 (1839, 38, '2014-07-20 09:01:50'),
 (1840, 38, '2014-07-20 09:02:18'),
-(1841, 38, '2014-07-20 09:02:42');
+(1841, 38, '2014-07-20 09:02:42'),
+(1842, 39, '2014-07-20 21:12:14'),
+(1843, 39, '2014-07-20 21:12:17'),
+(1844, 39, '2014-07-20 21:12:18'),
+(1845, 39, '2014-07-20 21:12:19'),
+(1846, 39, '2014-07-20 21:12:31'),
+(1847, 39, '2014-07-20 21:12:36'),
+(1848, 39, '2014-07-20 21:12:38'),
+(1849, 39, '2014-07-20 21:12:39'),
+(1850, 39, '2014-07-20 21:12:56'),
+(1851, 39, '2014-07-20 21:13:02'),
+(1852, 39, '2014-07-20 21:13:03'),
+(1853, 39, '2014-07-20 21:13:11'),
+(1854, 39, '2014-07-20 21:13:12'),
+(1855, 39, '2014-07-20 21:13:16'),
+(1856, 39, '2014-07-20 21:15:59'),
+(1857, 39, '2014-07-20 21:16:58'),
+(1858, 39, '2014-07-20 21:17:34'),
+(1859, 39, '2014-07-20 22:03:19'),
+(1860, 39, '2014-07-20 22:03:22'),
+(1861, 39, '2014-07-20 22:03:23'),
+(1862, 39, '2014-07-20 22:03:24'),
+(1863, 39, '2014-07-20 22:03:27'),
+(1864, 39, '2014-07-20 22:05:04'),
+(1865, 39, '2014-07-20 22:08:10'),
+(1866, 39, '2014-07-20 22:10:01'),
+(1867, 39, '2014-07-20 22:10:02'),
+(1868, 39, '2014-07-20 22:10:03'),
+(1869, 39, '2014-07-20 22:10:05'),
+(1870, 39, '2014-07-20 22:10:06'),
+(1871, 39, '2014-07-20 22:10:07'),
+(1872, 39, '2014-07-20 22:10:12'),
+(1873, 39, '2014-07-20 22:10:13'),
+(1874, 39, '2014-07-20 22:10:21'),
+(1875, 39, '2014-07-20 22:10:25'),
+(1876, 39, '2014-07-20 22:10:30'),
+(1877, 39, '2014-07-20 22:10:30'),
+(1878, 39, '2014-07-20 22:10:35'),
+(1879, 39, '2014-07-20 22:10:41'),
+(1880, 39, '2014-07-20 22:10:48'),
+(1881, 39, '2014-07-20 22:11:03'),
+(1882, 39, '2014-07-20 22:11:23'),
+(1883, 39, '2014-07-20 22:11:50'),
+(1884, 39, '2014-07-20 22:12:04'),
+(1885, 39, '2014-07-20 22:21:12'),
+(1886, 39, '2014-07-20 22:21:47'),
+(1887, 39, '2014-07-20 22:22:17'),
+(1888, 39, '2014-07-20 22:22:37'),
+(1889, 39, '2014-07-20 22:23:04'),
+(1890, 39, '2014-07-20 22:23:06'),
+(1891, 39, '2014-07-20 22:23:08'),
+(1892, 39, '2014-07-20 22:23:09'),
+(1893, 39, '2014-07-20 22:25:56'),
+(1894, 39, '2014-07-20 22:26:13'),
+(1895, 39, '2014-07-20 22:28:19'),
+(1896, 39, '2014-07-20 22:29:19'),
+(1897, 39, '2014-07-20 22:29:28'),
+(1898, 39, '2014-07-20 22:31:22'),
+(1899, 39, '2014-07-20 22:31:33'),
+(1900, 39, '2014-07-20 22:31:49'),
+(1901, 39, '2014-07-20 22:31:54'),
+(1902, 39, '2014-07-20 22:32:00'),
+(1903, 39, '2014-07-20 22:32:15'),
+(1904, 39, '2014-07-20 22:33:45'),
+(1905, 39, '2014-07-20 22:34:09'),
+(1906, 39, '2014-07-20 22:35:47'),
+(1907, 39, '2014-07-20 22:35:49'),
+(1908, 39, '2014-07-20 22:35:51'),
+(1909, 39, '2014-07-20 22:35:52'),
+(1910, 39, '2014-07-20 22:35:53'),
+(1911, 39, '2014-07-20 22:35:56'),
+(1912, 39, '2014-07-20 22:35:58'),
+(1913, 39, '2014-07-20 22:36:00'),
+(1914, 39, '2014-07-20 22:36:01'),
+(1915, 39, '2014-07-20 22:36:02'),
+(1916, 39, '2014-07-20 22:45:17'),
+(1917, 39, '2014-07-20 22:47:19'),
+(1918, 39, '2014-07-20 22:47:39'),
+(1919, 39, '2014-07-20 22:48:13'),
+(1920, 39, '2014-07-20 22:48:45'),
+(1921, 39, '2014-07-20 22:53:04'),
+(1922, 39, '2014-07-20 22:53:27'),
+(1923, 39, '2014-07-20 22:54:03'),
+(1924, 39, '2014-07-20 22:54:06'),
+(1925, 39, '2014-07-20 22:54:11'),
+(1926, 39, '2014-07-20 22:54:47'),
+(1927, 39, '2014-07-20 22:55:08'),
+(1928, 39, '2014-07-20 22:55:09'),
+(1929, 39, '2014-07-20 22:55:29'),
+(1930, 39, '2014-07-20 22:56:20'),
+(1931, 39, '2014-07-20 22:56:21'),
+(1932, 39, '2014-07-20 22:56:21'),
+(1933, 39, '2014-07-20 22:56:22'),
+(1934, 39, '2014-07-20 22:56:23'),
+(1935, 39, '2014-07-20 22:57:39'),
+(1936, 39, '2014-07-20 22:59:40'),
+(1937, 39, '2014-07-20 23:02:59'),
+(1938, 39, '2014-07-20 23:03:26'),
+(1939, 39, '2014-07-20 23:03:45'),
+(1940, 39, '2014-07-20 23:06:28'),
+(1941, 39, '2014-07-20 23:07:43'),
+(1942, 39, '2014-07-20 23:07:44'),
+(1943, 39, '2014-07-20 23:07:48'),
+(1944, 39, '2014-07-20 23:08:27'),
+(1945, 39, '2014-07-20 23:09:14'),
+(1946, 39, '2014-07-20 23:09:33'),
+(1947, 39, '2014-07-20 23:09:54'),
+(1948, 39, '2014-07-20 23:09:54'),
+(1949, 39, '2014-07-20 23:09:55'),
+(1950, 39, '2014-07-20 23:09:56'),
+(1951, 39, '2014-07-20 23:09:56'),
+(1952, 39, '2014-07-20 23:11:21'),
+(1953, 39, '2014-07-20 23:14:03'),
+(1954, 39, '2014-07-20 23:14:16'),
+(1955, 39, '2014-07-20 23:14:33'),
+(1956, 39, '2014-07-20 23:15:26'),
+(1957, 39, '2014-07-20 23:16:36'),
+(1958, 39, '2014-07-20 23:20:44'),
+(1959, 39, '2014-07-20 23:21:27'),
+(1960, 39, '2014-07-20 23:21:39'),
+(1961, 39, '2014-07-20 23:22:34'),
+(1962, 39, '2014-07-20 23:22:40'),
+(1963, 39, '2014-07-20 23:23:09'),
+(1964, 39, '2014-07-20 23:23:13'),
+(1965, 39, '2014-07-20 23:23:33'),
+(1966, 39, '2014-07-20 23:24:11'),
+(1967, 39, '2014-07-20 23:24:25'),
+(1968, 39, '2014-07-20 23:24:47'),
+(1969, 39, '2014-07-20 23:26:46'),
+(1970, 39, '2014-07-20 23:26:46'),
+(1971, 39, '2014-07-20 23:26:47'),
+(1972, 39, '2014-07-20 23:26:48'),
+(1973, 39, '2014-07-20 23:26:48'),
+(1974, 39, '2014-07-20 23:26:49'),
+(1975, 39, '2014-07-20 23:26:52'),
+(1976, 39, '2014-07-20 23:26:53'),
+(1977, 39, '2014-07-20 23:26:54'),
+(1978, 39, '2014-07-20 23:26:57'),
+(1979, 39, '2014-07-20 23:27:30'),
+(1980, 39, '2014-07-20 23:27:41'),
+(1981, 39, '2014-07-20 23:27:55'),
+(1982, 39, '2014-07-20 23:30:36'),
+(1983, 39, '2014-07-20 23:30:38'),
+(1984, 39, '2014-07-20 23:31:32'),
+(1985, 39, '2014-07-21 00:11:08'),
+(1986, 40, '2014-07-21 00:11:22'),
+(1987, 41, '2014-07-21 00:12:25'),
+(1988, 42, '2014-07-21 00:15:37'),
+(1989, 42, '2014-07-21 00:16:45'),
+(1990, 42, '2014-07-21 00:16:46'),
+(1991, 42, '2014-07-21 00:16:55'),
+(1992, 42, '2014-07-21 00:17:13'),
+(1993, 42, '2014-07-21 00:17:14'),
+(1994, 42, '2014-07-21 00:17:24'),
+(1995, 42, '2014-07-21 00:17:32'),
+(1996, 42, '2014-07-21 00:17:44'),
+(1997, 42, '2014-07-21 00:17:45'),
+(1998, 42, '2014-07-21 00:17:50'),
+(1999, 42, '2014-07-21 00:17:51'),
+(2000, 42, '2014-07-21 00:17:52'),
+(2001, 42, '2014-07-21 00:17:53'),
+(2002, 42, '2014-07-21 00:18:28'),
+(2003, 42, '2014-07-21 00:18:32'),
+(2004, 42, '2014-07-21 00:18:33'),
+(2005, 42, '2014-07-21 00:18:34'),
+(2006, 42, '2014-07-21 00:18:36'),
+(2007, 42, '2014-07-21 00:18:37'),
+(2008, 42, '2014-07-21 00:18:37'),
+(2009, 42, '2014-07-21 00:18:40'),
+(2010, 39, '2014-07-21 00:22:21'),
+(2011, 39, '2014-07-21 00:22:33'),
+(2012, 39, '2014-07-21 00:22:40'),
+(2013, 39, '2014-07-21 00:22:41'),
+(2014, 39, '2014-07-21 00:22:43'),
+(2015, 39, '2014-07-21 00:22:44'),
+(2016, 39, '2014-07-21 00:34:02'),
+(2017, 43, '2014-07-21 02:50:52'),
+(2018, 43, '2014-07-21 02:50:58'),
+(2019, 43, '2014-07-21 02:50:59'),
+(2020, 43, '2014-07-21 02:51:00'),
+(2021, 43, '2014-07-21 02:51:24'),
+(2022, 43, '2014-07-21 02:51:31'),
+(2023, 43, '2014-07-21 02:51:36'),
+(2024, 44, '2014-07-21 03:09:23'),
+(2025, 44, '2014-07-21 03:09:24'),
+(2026, 44, '2014-07-21 03:09:27'),
+(2027, 44, '2014-07-21 03:09:28'),
+(2028, 44, '2014-07-21 03:09:28'),
+(2029, 44, '2014-07-21 03:09:29'),
+(2030, 44, '2014-07-21 03:09:39'),
+(2031, 44, '2014-07-21 03:09:41'),
+(2032, 44, '2014-07-21 03:09:44'),
+(2033, 44, '2014-07-21 03:09:46'),
+(2034, 44, '2014-07-21 03:09:47'),
+(2035, 44, '2014-07-21 03:09:48'),
+(2036, 44, '2014-07-21 03:11:02'),
+(2037, 44, '2014-07-21 03:11:46'),
+(2038, 44, '2014-07-21 03:14:40'),
+(2039, 44, '2014-07-21 03:14:54'),
+(2040, 44, '2014-07-21 03:15:08'),
+(2041, 44, '2014-07-21 03:16:29'),
+(2042, 44, '2014-07-21 03:16:42'),
+(2043, 44, '2014-07-21 03:19:02'),
+(2044, 44, '2014-07-21 03:20:05'),
+(2045, 44, '2014-07-21 03:20:39'),
+(2046, 44, '2014-07-21 03:20:54'),
+(2047, 44, '2014-07-21 03:21:01'),
+(2048, 44, '2014-07-21 03:21:31'),
+(2049, 44, '2014-07-21 03:22:16'),
+(2050, 44, '2014-07-21 03:22:26'),
+(2051, 44, '2014-07-21 03:23:52'),
+(2052, 44, '2014-07-21 03:24:02'),
+(2053, 44, '2014-07-21 03:24:17'),
+(2054, 44, '2014-07-21 03:25:10'),
+(2055, 44, '2014-07-21 03:25:19'),
+(2056, 44, '2014-07-21 03:25:38'),
+(2057, 44, '2014-07-21 03:25:49'),
+(2058, 44, '2014-07-21 03:26:04'),
+(2059, 44, '2014-07-21 03:27:07'),
+(2060, 44, '2014-07-21 03:27:24'),
+(2061, 44, '2014-07-21 03:28:40'),
+(2062, 44, '2014-07-21 03:28:52'),
+(2063, 44, '2014-07-21 03:28:59'),
+(2064, 44, '2014-07-21 03:29:59'),
+(2065, 44, '2014-07-21 03:30:38'),
+(2066, 44, '2014-07-21 03:34:46'),
+(2067, 44, '2014-07-21 03:40:39'),
+(2068, 44, '2014-07-21 03:43:13'),
+(2069, 44, '2014-07-21 03:43:42'),
+(2070, 44, '2014-07-21 03:44:52'),
+(2071, 44, '2014-07-21 03:45:31'),
+(2072, 44, '2014-07-21 03:45:52'),
+(2073, 44, '2014-07-21 03:49:51'),
+(2074, 44, '2014-07-21 03:49:57'),
+(2075, 44, '2014-07-21 03:50:43'),
+(2076, 44, '2014-07-21 04:01:46'),
+(2077, 44, '2014-07-21 04:03:19'),
+(2078, 44, '2014-07-21 04:03:32'),
+(2079, 44, '2014-07-21 04:03:36'),
+(2080, 44, '2014-07-21 04:03:38'),
+(2081, 44, '2014-07-21 04:10:15'),
+(2082, 45, '2014-07-21 05:19:21'),
+(2083, 45, '2014-07-21 05:19:23'),
+(2084, 45, '2014-07-21 05:19:25'),
+(2085, 45, '2014-07-21 05:19:26'),
+(2086, 45, '2014-07-21 05:19:26'),
+(2087, 45, '2014-07-21 05:19:27'),
+(2088, 45, '2014-07-21 05:19:47'),
+(2089, 45, '2014-07-21 05:19:48'),
+(2090, 45, '2014-07-21 05:19:52'),
+(2091, 45, '2014-07-21 05:19:54'),
+(2092, 45, '2014-07-21 05:19:56'),
+(2093, 45, '2014-07-21 05:19:57'),
+(2094, 45, '2014-07-21 05:22:11'),
+(2095, 45, '2014-07-21 05:22:58');
 
 -- --------------------------------------------------------
 
@@ -10685,7 +10987,7 @@ CREATE TABLE IF NOT EXISTS `log_url_info` (
   `url` varchar(255) DEFAULT NULL COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=1842 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=2096 ;
 
 --
 -- Dumping data for table `log_url_info`
@@ -12535,7 +12837,262 @@ INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
 (1838, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
 (1839, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
 (1840, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
-(1841, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.107/hdc/index.php/our-creations.html');
+(1841, 'http://192.168.0.107/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.107/hdc/index.php/our-creations.html'),
+(1842, 'http://192.168.0.26/hdc/', NULL),
+(1843, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/'),
+(1844, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/'),
+(1845, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/'),
+(1846, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(1847, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
+(1848, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
+(1849, 'http://192.168.0.26/hdc/forms', NULL),
+(1850, 'http://192.168.0.26/hdc/index.php/customer/account/login/', 'http://192.168.0.26/hdc/forms'),
+(1851, 'http://192.168.0.26/hdc/index.php/customer/account/loginPost/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(1852, 'http://192.168.0.26/hdc/index.php/customer/account/login/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(1853, 'http://192.168.0.26/hdc/index.php/customer/account/loginPost/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(1854, 'http://192.168.0.26/hdc/index.php/customer/account/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(1855, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(1856, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(1857, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(1858, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(1859, 'http://192.168.0.26/hdc/', NULL),
+(1860, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/'),
+(1861, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(1862, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/'),
+(1863, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
+(1864, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
+(1865, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', NULL),
+(1866, 'http://192.168.0.26/hdc/index.php/customer/account/logout/', 'http://192.168.0.26/hdc/index.php/our-creations/chews.html'),
+(1867, 'http://192.168.0.26/hdc/index.php/customer/account/logoutSuccess/', 'http://192.168.0.26/hdc/index.php/our-creations/chews.html'),
+(1868, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/our-creations/chews.html'),
+(1869, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/our-creations/chews.html'),
+(1870, 'http://192.168.0.26/hdc/index.php/customer/account/login/', 'http://192.168.0.26/hdc/index.php/'),
+(1871, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/our-creations/chews.html'),
+(1872, 'http://192.168.0.26/hdc/index.php/customer/account/loginPost/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(1873, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(1874, 'http://192.168.0.26/hdc/index.php/customer/index/pricing', NULL),
+(1875, 'http://192.168.0.26/hdc/index.php/customer/account/login/', 'http://192.168.0.26/hdc/index.php/customer/index/pricing'),
+(1876, 'http://192.168.0.26/hdc/index.php/customer/account/loginPost/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(1877, 'http://192.168.0.26/hdc/index.php/customer/account/login/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(1878, 'http://192.168.0.26/hdc/index.php/customer/account/loginPost/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(1879, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(1880, 'http://192.168.0.26/hdc/index.php/customer/index/pricing', NULL),
+(1881, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1882, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1883, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1884, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1885, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1886, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1887, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1888, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1889, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1890, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing'),
+(1891, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing'),
+(1892, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing'),
+(1893, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1894, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(1895, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?p=2', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing'),
+(1896, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?p=2', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing'),
+(1897, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', NULL),
+(1898, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', NULL),
+(1899, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', NULL),
+(1900, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', NULL),
+(1901, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=list', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/'),
+(1902, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=list'),
+(1903, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=list'),
+(1904, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=list'),
+(1905, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=list'),
+(1906, 'http://192.168.0.26/hdc/index.php/debug/index/toggleTemplateHints/', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid'),
+(1907, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid'),
+(1908, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid'),
+(1909, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid'),
+(1910, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid'),
+(1911, 'http://192.168.0.26/hdc/index.php/debug/index/toggleTemplateHints/', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid'),
+(1912, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid'),
+(1913, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid'),
+(1914, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid'),
+(1915, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/?mode=grid'),
+(1916, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1917, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1918, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1919, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1920, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1921, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1922, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1923, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1924, 'http://192.168.0.26/hdc/index.php/testimonials?p=2', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(1925, 'http://192.168.0.26/hdc/index.php/testimonials?p=1', 'http://192.168.0.26/hdc/index.php/testimonials?p=2'),
+(1926, 'http://192.168.0.26/hdc/index.php/testimonials?p=1', 'http://192.168.0.26/hdc/index.php/testimonials?p=2'),
+(1927, 'http://192.168.0.26/hdc/index.php/testimonials?p=1', 'http://192.168.0.26/hdc/index.php/testimonials?p=2'),
+(1928, 'http://192.168.0.26/hdc/index.php/testimonials?p=1', 'http://192.168.0.26/hdc/index.php/testimonials?p=2'),
+(1929, 'http://192.168.0.26/hdc/index.php/testimonials?p=1', 'http://192.168.0.26/hdc/index.php/testimonials?p=2'),
+(1930, 'http://192.168.0.26/hdc/index.php/testimonials?p=1', 'http://192.168.0.26/hdc/index.php/testimonials?p=2'),
+(1931, 'http://192.168.0.26/hdc/index.php/testimonials?p=1', 'http://192.168.0.26/hdc/index.php/testimonials?p=2'),
+(1932, 'http://192.168.0.26/hdc/index.php/testimonials?p=1', 'http://192.168.0.26/hdc/index.php/testimonials?p=2');
+INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
+(1933, 'http://192.168.0.26/hdc/index.php/testimonials?p=1', 'http://192.168.0.26/hdc/index.php/testimonials?p=2'),
+(1934, 'http://192.168.0.26/hdc/index.php/testimonials?p=1', 'http://192.168.0.26/hdc/index.php/testimonials?p=2'),
+(1935, 'http://192.168.0.26/hdc/index.php/testimonials?p=1', 'http://192.168.0.26/hdc/index.php/testimonials?p=2'),
+(1936, 'http://192.168.0.26/hdc/index.php/testimonials?p=1', 'http://192.168.0.26/hdc/index.php/testimonials?p=2'),
+(1937, 'http://192.168.0.26/hdc/index.php/testimonials/index/form', NULL),
+(1938, 'http://192.168.0.26/hdc/index.php/testimonials/index/form', NULL),
+(1939, 'http://192.168.0.26/hdc/index.php/testimonials/index/form', NULL),
+(1940, 'http://192.168.0.26/hdc/index.php/testimonials/index/form', NULL),
+(1941, 'http://192.168.0.26/hdc/index.php/testimonials/index/form', NULL),
+(1942, 'http://192.168.0.26/hdc/index.php/testimonials/index/form', NULL),
+(1943, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1944, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1945, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1946, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1947, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1948, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1949, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1950, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1951, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1952, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1953, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1954, 'http://192.168.0.26/hdc/index.php/debug/index/viewtemplate/?template=frontend%5Cbase%5Cdefault%5Ctemplate%5Ccaptcha%2Fzend.phtml', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(1955, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1956, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1957, 'http://192.168.0.26/hdc/index.php/debug/index/viewFilesWithHandle/layout/testimonials_index_index/', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(1958, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1959, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1960, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1961, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1962, 'http://192.168.0.26/hdc/index.php/contacts/', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(1963, 'http://192.168.0.26/hdc/index.php/contacts/', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(1964, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1965, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1966, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1967, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1968, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1969, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1970, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1971, 'http://192.168.0.26/hdc/index.php/', NULL),
+(1972, 'http://192.168.0.26/hdc/index.php/', NULL),
+(1973, 'http://192.168.0.26/hdc/index.php/', NULL),
+(1974, 'http://192.168.0.26/hdc/index.php', NULL),
+(1975, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php'),
+(1976, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php'),
+(1977, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php'),
+(1978, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1979, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1980, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1981, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1982, 'http://192.168.0.26/hdc/index.php/contacts/', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(1983, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1984, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1985, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1986, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1987, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1988, 'http://192.168.0.26/hdc/index.php/testimonials', NULL),
+(1989, 'http://192.168.0.26/hdc/index.php/testimonials/index/formpost/', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(1990, 'http://192.168.0.26/hdc/index.php/testimonials/', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(1991, 'http://192.168.0.26/hdc/index.php/testimonials/?p=2', 'http://192.168.0.26/hdc/index.php/testimonials/'),
+(1992, 'http://192.168.0.26/hdc/index.php/testimonials/index/formpost/', 'http://192.168.0.26/hdc/index.php/testimonials/?p=2'),
+(1993, 'http://192.168.0.26/hdc/index.php/testimonials/', 'http://192.168.0.26/hdc/index.php/testimonials/?p=2'),
+(1994, 'http://192.168.0.26/hdc/index.php/testimonials/?p=2', 'http://192.168.0.26/hdc/index.php/testimonials/'),
+(1995, 'http://192.168.0.26/hdc/index.php/customer/account/login/', 'http://192.168.0.26/hdc/index.php/testimonials/?p=2'),
+(1996, 'http://192.168.0.26/hdc/index.php/customer/account/loginPost/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(1997, 'http://192.168.0.26/hdc/index.php/customer/account/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(1998, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(1999, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(2000, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(2001, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(2002, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/'),
+(2003, 'http://192.168.0.26/hdc/index.php/customer/account/logout/', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/forms/'),
+(2004, 'http://192.168.0.26/hdc/index.php/customer/account/logoutSuccess/', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/forms/'),
+(2005, 'http://192.168.0.26/hdc/index.php/', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/forms/'),
+(2006, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/forms/'),
+(2007, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/forms/'),
+(2008, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/forms/'),
+(2009, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/'),
+(2010, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(2011, 'http://192.168.0.26/hdc/index.php/customer/index/pricing', NULL),
+(2012, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(2013, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(2014, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(2015, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/testimonials'),
+(2016, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(2017, 'http://192.168.0.26/hdc/', NULL),
+(2018, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/'),
+(2019, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/'),
+(2020, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/'),
+(2021, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/'),
+(2022, 'http://192.168.0.26/hdc/index.php/contacts/', 'http://192.168.0.26/hdc/'),
+(2023, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
+(2024, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(2025, 'http://192.168.0.26/hdc/index.php/', NULL),
+(2026, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(2027, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(2028, 'http://192.168.0.26/hdc/index.php/customer/account/login/', 'http://192.168.0.26/hdc/index.php/'),
+(2029, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(2030, 'http://192.168.0.26/hdc/index.php/customer/account/loginPost/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(2031, 'http://192.168.0.26/hdc/index.php/customer/account/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(2032, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2033, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(2034, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(2035, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(2036, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2037, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2038, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2039, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2040, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2041, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2042, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2043, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2044, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2045, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2046, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2047, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2048, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2049, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2050, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2051, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2052, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2053, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2054, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2055, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2056, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2057, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2058, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2059, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2060, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2061, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2062, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2063, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2064, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2065, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2066, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2067, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2068, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2069, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2070, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2071, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2072, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2073, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/'),
+(2074, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/'),
+(2075, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/forms/', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/'),
+(2076, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/'),
+(2077, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/'),
+(2078, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/3', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/'),
+(2079, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/4', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
+(2080, 'http://192.168.0.26/hdc/index.php/catalog/category/view/id/8', 'http://192.168.0.26/hdc/index.php/our-creations.html'),
+(2081, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/'),
+(2082, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing', NULL),
+(2083, 'http://192.168.0.26/hdc/index.php/', NULL),
+(2084, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/'),
+(2085, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/'),
+(2086, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/'),
+(2087, 'http://192.168.0.26/hdc/index.php/customer/account/login/', 'http://192.168.0.26/hdc/index.php/'),
+(2088, 'http://192.168.0.26/hdc/index.php/customer/account/loginPost/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(2089, 'http://192.168.0.26/hdc/index.php/customer/account/', 'http://192.168.0.26/hdc/index.php/customer/account/login/'),
+(2090, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2091, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2092, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2093, 'http://192.168.0.26/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2094, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/'),
+(2095, 'http://192.168.0.26/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.0.26/hdc/index.php/customer/account/');
 
 -- --------------------------------------------------------
 
@@ -12551,7 +13108,7 @@ CREATE TABLE IF NOT EXISTS `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=39 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=46 ;
 
 --
 -- Dumping data for table `log_visitor`
@@ -12595,7 +13152,14 @@ INSERT INTO `log_visitor` (`visitor_id`, `session_id`, `first_visit_at`, `last_v
 (35, 'p3235898v72bat8h3p4jue6ek6', '2014-07-18 08:52:22', '2014-07-18 08:59:44', 1710, 1),
 (36, 'is5dvdcmdo924qjm2041nta8j2', '2014-07-19 01:17:58', '2014-07-19 02:30:01', 1781, 1),
 (37, 'dukqikqjsvtstgeb218gr14893', '2014-07-19 22:53:50', '2014-07-20 00:41:27', 1822, 1),
-(38, 'nr8qi0v63qoj4v49pkiu59ajo4', '2014-07-20 08:03:34', '2014-07-20 09:02:42', 1841, 1);
+(38, 'nr8qi0v63qoj4v49pkiu59ajo4', '2014-07-20 08:03:34', '2014-07-20 09:02:42', 1841, 1),
+(39, 'arco6n2r9f3bplkkg2p8g85ou6', '2014-07-20 21:12:12', '2014-07-21 00:34:02', 2016, 1),
+(40, 'vq2lnnhi9ms11pl441ujolha85', '2014-07-21 00:11:20', '2014-07-21 00:11:22', 1986, 1),
+(41, 'rl83ppa02sivnc7ovpd43ubmb0', '2014-07-21 00:12:24', '2014-07-21 00:12:25', 1987, 1),
+(42, 'v6n285f8mmj00413igv36fm7l2', '2014-07-21 00:15:37', '2014-07-21 00:18:40', 2009, 1),
+(43, 'g24avvshoftpgb12j54keb4v34', '2014-07-21 02:50:51', '2014-07-21 02:51:36', 2023, 1),
+(44, '6kbtu4m3efo4372r929q48f7f0', '2014-07-21 03:09:21', '2014-07-21 04:10:15', 2081, 1),
+(45, 't5gep7ldg64q04t347dvmk5j63', '2014-07-21 05:19:19', '2014-07-21 05:22:58', 2095, 1);
 
 -- --------------------------------------------------------
 
@@ -12656,7 +13220,14 @@ INSERT INTO `log_visitor_info` (`visitor_id`, `http_referer`, `http_user_agent`,
 (35, 'http://192.168.0.107/hdc/index.php/customer/account/login/', 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (36, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (37, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
-(38, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669);
+(38, NULL, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
+(39, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750),
+(40, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', NULL, 'en-US,en;q=0.5', -1062731750, -1062731750),
+(41, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko', NULL, 'en-US', -1062731750, -1062731750),
+(42, NULL, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731576),
+(43, NULL, 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731750, -1062731714),
+(44, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750),
+(45, NULL, 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1678.0 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731750, -1062731750);
 
 -- --------------------------------------------------------
 
@@ -15775,7 +16346,7 @@ CREATE TABLE IF NOT EXISTS `testimonials` (
   `testimonial_show` varchar(100) DEFAULT NULL,
   `testimonial_date` date DEFAULT NULL,
   PRIMARY KEY (`testimonial_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `testimonials`
@@ -15788,7 +16359,8 @@ INSERT INTO `testimonials` (`testimonial_id`, `testimonial_name`, `testimonial_a
 (5, 'Rojan Shrestha', 'Kathmandu', 'rojan_neo@hotmail.com', 'test', 'yes', '2014-07-19'),
 (6, 'Rojan Shrestha', 'Tucson', 'rojan_neo@hotmail.com', 'Testimonial 3', 'yes', '2014-07-19'),
 (7, 'Rojan Shrestha', 'Tucson', 'rojan_neo@hotmail.com', 'Testimonial 5', 'yes', '2014-07-19'),
-(8, 'Alina Bhari', 'Nepal', 'alina.bhari@gmail.com', 'Testimonial 6', 'no', '2014-07-19');
+(8, 'Alina Bhari', 'Nepal', 'alina.bhari@gmail.com', 'Testimonial 6', 'no', '2014-07-19'),
+(9, 'Rojan Shrestha', 'Nepal', 'rojan.shrestha@gmail.com', 'Testimonial 3', 'no', '2014-07-21');
 
 -- --------------------------------------------------------
 

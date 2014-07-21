@@ -1,4 +1,4 @@
-<form action="<?php echo $this->getUrl('testimonials/index/formpost')?>" method="post" id="testimonials_form">
+<form action="<?php echo $this->getUrl('testimonials/index/formpost')?>" method="post" id="testimonials">
  <ul class="form-list">
  <li class="fields">
 <label for="name"><?php echo $this->__('Name: ')?></label>
@@ -24,6 +24,7 @@
 <textarea name="testimonial_comment"rows="4" cols="50" class="input-text required-entry validate-text"></textarea>
 </div>
 </li>
+
 <li>
 <?php
 echo $this->getChildHtml('captcha'); 
@@ -34,6 +35,6 @@ echo $this->getChildHtml('captcha');
 </form>
 <script type="text/javascript">
 //<![CDATA[
-    var testimonialForm = new VarienForm('testimonials_form', true);
+    var testimonialForm = new VarienForm('testimonials', true);
 //]]>
 </script>

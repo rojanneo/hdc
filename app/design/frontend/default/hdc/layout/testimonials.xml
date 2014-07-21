@@ -6,7 +6,7 @@
     </reference>   
     <reference name="content">
 <block type="testimonials/collection" name="testimonials_collection" template="testimonials/collection.phtml" />	
-      <block type="testimonials/form" name="testimonials_index" template="testimonials/form.phtml">   
+      <block type="testimonials/form" name="testimonials_form" template="testimonials/form.phtml">   
 		<block type="captcha/captcha" name="captcha">
 			 <reference name="head">
 				 <action method="addJs">
@@ -24,7 +24,9 @@
 			 </action>
 		</block>
 	  </block>
+	  
     </reference>   
-  </testimonials_index_index>   
+  </testimonials_index_index>
+
 </layout>   
 	

@@ -91,8 +91,8 @@
     <?php foreach($_productCollection as $_product):?>
         <li class="image-<?php echo $count++?> product-image"  style="display:none">
             <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>" width="135" height="135" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
-			<p><?php echo $_helper->productAttribute($_product, $_product->getIngridients(), 'ingridients') ?></p>
-			<p><?php echo $_helper->productAttribute($_product, $_product->getGuarnateedAnalysis(), 'guaranteed_analysis') ?></p>			
+			<p><span><?php echo $this->__('Ingridients:');?></span><?php echo $_helper->productAttribute($_product, $_product->getIngridients(), 'ingridients') ?></p>
+			<p><span><?php echo $this->__('Guaranteed Analysis');?></span><?php echo $_helper->productAttribute($_product, $_product->getGuarnateedAnalysis(), 'guaranteed_analysis') ?></p>			
         </li>
     <?php endforeach;?>
     </ul>
