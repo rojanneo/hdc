@@ -138,11 +138,18 @@
     <?php endforeach; ?>
 </ul>
     </div>
+    <div class="customer-product-list-carousel">
+        <ul class="slides">
+            <?php foreach ($_productCollection as $_product): ?>
+                <li><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>" width="135" height="135" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></li>
+            <?php endforeach;?>
+        </ul>
+    </div>
 <?php endif;?>
 
 
 <script>
- jQuery(document).ready(function(){
+ /*jQuery(document).ready(function(){
                     jQuery('.products-list-customer').flexslider({
                     animation: "slide",
                     itemWidth: 400,
@@ -158,7 +165,31 @@
                     directionNav:true,
                     controlNav:true,
   });
-             });
+             });*/
+
+ jQuery(window).load(function(){
+      jQuery('.customer-product-list-carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        directionNav: true,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 200,
+        itemHeight:200,
+        itemMargin: 5,
+        asNavFor: '.products-list-customer'
+      });
+
+      jQuery('.products-list-customer').flexslider({
+        animation: "slide",
+        controlNav: false,
+        directionNav: true,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 1000,
+        sync: ".customer-product-list-carousel",
+      });
+    });
 </script>
 
 
