@@ -64,17 +64,15 @@
   </admin>
   <adminhtml>
 	<menu>
-	  <forms module="forms">
-		<title>Forms</title>
-		<sort_order>100</sort_order>
+	  <hdc module="forms">
 		<children>
 		  <form module="forms">
-		    <title>Manage Form</title>
+		    <title>Forms</title>
 			<sort_order>0</sort_order>
 			<action>forms/adminhtml_form</action>
 		  </form>
 		</children>
-	  </forms>
+	  </hdc>
 	</menu>
 	<acl>
 	  <resources>

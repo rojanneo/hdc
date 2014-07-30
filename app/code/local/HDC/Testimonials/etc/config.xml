@@ -93,17 +93,16 @@
   </admin>
   <adminhtml>
 	<menu>
-	  <testimonials module="testimonials">
-		<title>Testimonials</title>
+	  <hdc module="testimonials">
 		<sort_order>100</sort_order>
 		<children>
 		  <testimonial module="testimonials">
-		    <title>Manage Testimonial</title>
+		    <title>Testimonials</title>
 			<sort_order>0</sort_order>
 			<action>testimonials/adminhtml_testimonial</action>
 		  </testimonial>
 		</children>
-	  </testimonials>
+	  </hdc>
 	</menu>
 	<acl>
 	  <resources>
