@@ -1,4 +1,12 @@
 <?php
-var_dump($this->getDataset()->getData());
+$faq = $this->getDataset();
 ?>
 
+<div class="faq-detail">
+	<div class="question">
+		<p><?php echo $faq->getFaqQuestion()?></p>
+	</div>
+	<div class="answer">
+		<p><?php echo $faq->getFaqAnswer()?></p>
+	</div>
+</div>
