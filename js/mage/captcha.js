@@ -36,7 +36,11 @@ Captcha.prototype = {
                 if (response.responseText.isJSON()) {
                     var json = response.responseText.evalJSON();
                     if (!json.error && json.imgSrc) {
-                        $(formId).writeAttribute('src', json.imgSrc);
+                        //USING JQUERY TO CHANGE CAPTCHA IMAGE INSTEAD OF PROTOTYPE
+                        jQuery('img#'+formId).attr('src',json.imgSrc);
+
+
+                        //$(formId).writeAttribute('src', json.imgSrc);
                         if (elem) Element.removeClassName(elem, 'refreshing');
                     } else {
                         if (elem) Element.removeClassName(elem, 'refreshing');

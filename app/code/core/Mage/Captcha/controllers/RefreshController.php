@@ -45,6 +45,6 @@ class Mage_Captcha_RefreshController extends Mage_Core_Controller_Front_Action
         $captchaModel = Mage::helper('captcha')->getCaptcha($formId);
         $this->getLayout()->createBlock($captchaModel->getBlockName())->setFormId($formId)->setIsAjax(true)->toHtml();
         $this->getResponse()->setBody(json_encode(array('imgSrc' => $captchaModel->getImgSrc())));
-        $this->setFlag('', self::FLAG_NO_POST_DISPATCH, true);
+        $this->setFlag('', self::FLAG_NO_POST_DISPATCH, false);
     }
 }
