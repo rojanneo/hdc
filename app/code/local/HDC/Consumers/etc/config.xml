@@ -86,17 +86,15 @@
   </admin>
   <adminhtml>
 	<menu>
-	  <consumers module="consumers">
-		<title>Consumers</title>
-		<sort_order>100</sort_order>
+	  <hdc module="consumers">
 		<children>
 		  <consumer module="consumers">
-		    <title>Manage Consumer</title>
+		    <title>Consumers</title>
 			<sort_order>0</sort_order>
 			<action>consumers/adminhtml_consumer</action>
 		  </consumer>
 		</children>
-	  </consumers>
+	  </hdc>
 	</menu>
 	<acl>
 	  <resources>

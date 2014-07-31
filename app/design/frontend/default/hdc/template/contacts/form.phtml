@@ -64,7 +64,7 @@
 </form>
 
 <div class="contacts-sidebar">
-    <a href="#"><?php echo $this->__('our FAQs')?></a>
+    <a href="<?php echo $this->getUrl('faq');?>"><?php echo $this->__('our FAQs')?></a>
     <div class="store-info">
         <p><?php echo Mage::getStoreConfig('general/store_information/name');?></p>
         <p><?php echo Mage::getStoreConfig('general/store_information/address');?></p>
