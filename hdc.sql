@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 30, 2014 at 07:15 AM
+-- Generation Time: Jul 31, 2014 at 08:29 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `adminnotification_inbox` (
   KEY `IDX_ADMINNOTIFICATION_INBOX_SEVERITY` (`severity`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_READ` (`is_read`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_REMOVE` (`is_remove`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=125 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox' AUTO_INCREMENT=129 ;
 
 --
 -- Dumping data for table `adminnotification_inbox`
@@ -170,7 +170,11 @@ INSERT INTO `adminnotification_inbox` (`notification_id`, `severity`, `date_adde
 (121, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (122, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
 (123, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
-(124, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
+(124, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(125, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(126, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(127, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0),
+(128, 4, '2008-11-07 23:01:42', 'Reminder: Change Magento`s default phone numbers and callouts before site launch', 'Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -269,7 +273,7 @@ CREATE TABLE IF NOT EXISTS `admin_user` (
 --
 
 INSERT INTO `admin_user` (`user_id`, `firstname`, `lastname`, `email`, `username`, `password`, `created`, `modified`, `logdate`, `lognum`, `reload_acl_flag`, `is_active`, `extra`, `rp_token`, `rp_token_created_at`) VALUES
-(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-29 23:24:40', 46, 0, 1, 'a:1:{s:11:"configState";a:34:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"0";s:25:"trans_email_ident_general";s:1:"1";s:23:"trans_email_ident_sales";s:1:"1";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"1";s:25:"trans_email_ident_custom2";s:1:"1";s:21:"announcements_general";s:1:"1";s:12:"admin_emails";s:1:"0";s:13:"admin_startup";s:1:"0";s:9:"admin_url";s:1:"0";s:14:"admin_security";s:1:"0";s:15:"admin_dashboard";s:1:"0";s:20:"admin_aoe_filepicker";s:1:"1";s:13:"admin_captcha";s:1:"0";s:22:"customer_account_share";s:1:"0";s:25:"customer_online_customers";s:1:"0";s:23:"customer_create_account";s:1:"1";s:17:"customer_password";s:1:"1";s:16:"customer_address";s:1:"0";s:16:"customer_startup";s:1:"0";s:26:"customer_address_templates";s:1:"0";s:16:"customer_captcha";s:1:"1";s:19:"testimonial_general";s:1:"1";}}', NULL, NULL);
+(1, 'Rojan', 'Shrestha', 'rojan_neo@hotmail.com', 'admin', '3ad90eaba69ed82eb4381b6c3c6bd6f0:IbsubmEhe8JGDkwSXSEhg8sGhhkrSWJR', '2014-06-28 09:51:35', '2014-06-28 09:51:35', '2014-07-31 00:16:29', 48, 0, 1, 'a:1:{s:11:"configState";a:35:{s:14:"design_package";s:1:"0";s:12:"design_theme";s:1:"0";s:11:"design_head";s:1:"0";s:13:"design_header";s:1:"1";s:13:"design_footer";s:1:"1";s:16:"design_watermark";s:1:"0";s:17:"design_pagination";s:1:"0";s:12:"design_email";s:1:"0";s:15:"general_country";s:1:"0";s:14:"general_region";s:1:"0";s:14:"general_locale";s:1:"0";s:25:"general_store_information";s:1:"0";s:25:"trans_email_ident_general";s:1:"1";s:23:"trans_email_ident_sales";s:1:"1";s:25:"trans_email_ident_support";s:1:"1";s:25:"trans_email_ident_custom1";s:1:"1";s:25:"trans_email_ident_custom2";s:1:"1";s:21:"announcements_general";s:1:"1";s:12:"admin_emails";s:1:"0";s:13:"admin_startup";s:1:"0";s:9:"admin_url";s:1:"0";s:14:"admin_security";s:1:"0";s:15:"admin_dashboard";s:1:"0";s:20:"admin_aoe_filepicker";s:1:"1";s:13:"admin_captcha";s:1:"0";s:22:"customer_account_share";s:1:"0";s:25:"customer_online_customers";s:1:"0";s:23:"customer_create_account";s:1:"0";s:17:"customer_password";s:1:"0";s:16:"customer_address";s:1:"0";s:16:"customer_startup";s:1:"0";s:26:"customer_address_templates";s:1:"0";s:16:"customer_captcha";s:1:"1";s:19:"testimonial_general";s:1:"1";s:27:"customer_customeractivation";s:1:"0";}}', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -911,26 +915,26 @@ CREATE TABLE IF NOT EXISTS `catalogsearch_fulltext` (
   PRIMARY KEY (`fulltext_id`),
   UNIQUE KEY `UNQ_CATALOGSEARCH_FULLTEXT_PRODUCT_ID_STORE_ID` (`product_id`,`store_id`),
   FULLTEXT KEY `FTI_CATALOGSEARCH_FULLTEXT_DATA_INDEX` (`data_index`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Catalog search result table' AUTO_INCREMENT=93 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Catalog search result table' AUTO_INCREMENT=106 ;
 
 --
 -- Dumping data for table `catalogsearch_fulltext`
 --
 
 INSERT INTO `catalogsearch_fulltext` (`fulltext_id`, `product_id`, `store_id`, `data_index`) VALUES
-(91, 32, 1, 'yaky_yams_lotsa_chicken|Taxable Goods|Taxable Goods|Taxable Goods|Yaky Yams Lotsa Chicken|Yaky Yams Lotsa Chicken 4 oz box|Yaky Yam Lotsa Chicken 14 oz box|&nbsp;|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|&nbsp;|&nbsp;|0|9.99|9.99|1'),
-(90, 29, 1, 'yaky_yam_fruit_fruit|Taxable Goods|Taxable Goods|Taxable Goods|Yaky Yam Fruity Fruit|Yaky Yam Fruity Fruit 4 oz box|Yaky Yam Fruity Fruit 14 oz box|&nbsp;|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|&nbsp;|&nbsp;|0|3.99|9.99|1'),
-(89, 26, 1, 'yaky_sticks|Taxable Goods|Taxable Goods|None|Yaky Sticks|Yaky Sticks 12 inches|Yaky Stick 6 inches|&nbsp;|box of 12 pieces : 304 cal per stick|box of 12 pieces : 152 cal per stick|For all dog sizes|&nbsp;|&nbsp;|0|11.99|7.99|1'),
-(88, 23, 1, 'yaky_crunch|Taxable Goods|None|None|Yaky Crunch|Yaky Crunch 1.25 oz box|Yaky Crunch 3 oz box|&nbsp;|1.25 oz box : 75 - 80 pieces | 1.5 - 2 cal per treat|3 oz box : 200 - 220 pieces | 1.5 - 2 cal per treat|For all dog sizes|&nbsp;|&nbsp;|4.99|0|0|1'),
-(77, 10, 1, 'puff|Taxable Goods|Yaky Puff|12 - 13 pieces | 16 - 18 cal per treat|For all dog sizes|4.99|1'),
-(76, 7, 1, 'seasoning|Taxable Goods|HDC Seasoning|2 oz bottle : 204 cal per bottle|For all dog sizes|3.99|1'),
-(87, 5, 1, '65 lbs|Taxable Goods|HDC Yellow|3 piece | 1,179 cal|For dogs under 65 lbs|27.99|1'),
-(75, 6, 1, 'nuggets|Taxable Goods|Yaky Nugget|21 - 24 pieces | 17 - 20 cal per treat|For all dog sizes|4.99|1'),
-(86, 4, 1, '55 lbs|Taxable Goods|HDC Red|1 piece | 359 cal|For dogs under 55 lbs|9.99|1'),
-(85, 3, 1, '35 lbs|Taxable Goods|HDC Green|1 piece | 256 cal|For dogs under 35 lbs|7.99|1'),
-(83, 1, 1, '15 lbs|Taxable Goods|HDC Blue|3 - 4 piece | 359 cal|For Dogs Under 15 lbs|9.99|1'),
-(84, 2, 1, '70 lbs|Taxable Goods|HDC Gray|1 piece | 614 cal|For dogs under 70 lbs|17.99|1'),
-(92, 35, 1, 'yaky_yam_very_veggy|Taxable Goods|Taxable Goods|Taxable Goods|Yaky Yam Very Veggy|Yaky Yam Very Veggy 4 oz box|Yaky Yam Very Veggy 14 oz box|&nbsp;|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|&nbsp;|&nbsp;|0|3.99|9.99|1');
+(104, 32, 1, 'yaky_yams_lotsa_chicken|Taxable Goods|Taxable Goods|Taxable Goods|Yaky Yams Lotsa Chicken|Yaky Yams Lotsa Chicken 4 oz box|Yaky Yam Lotsa Chicken 14 oz box|&nbsp;|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|&nbsp;|&nbsp;|0|9.99|9.99|1'),
+(103, 29, 1, 'yaky_yam_fruit_fruit|Taxable Goods|Taxable Goods|Taxable Goods|Yaky Yam Fruity Fruit|Yaky Yam Fruity Fruit 4 oz box|Yaky Yam Fruity Fruit 14 oz box|&nbsp;|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|&nbsp;|&nbsp;|0|3.99|9.99|1'),
+(102, 26, 1, 'yaky_sticks|Taxable Goods|Taxable Goods|None|Yaky Sticks|Yaky Sticks 12 inches|Yaky Stick 6 inches|&nbsp;|box of 12 pieces : 304 cal per stick|box of 12 pieces : 152 cal per stick|For all dog sizes|&nbsp;|&nbsp;|0|11.99|7.99|1'),
+(101, 23, 1, 'yaky_crunch|Taxable Goods|None|None|Yaky Crunch|Yaky Crunch 1.25 oz box|Yaky Crunch 3 oz box|&nbsp;|1.25 oz box : 75 - 80 pieces | 1.5 - 2 cal per treat|3 oz box : 200 - 220 pieces | 1.5 - 2 cal per treat|For all dog sizes|&nbsp;|&nbsp;|4.99|0|0|1'),
+(100, 10, 1, 'puff|Taxable Goods|Yaky Puff|12 - 13 pieces | 16 - 18 cal per treat|For all dog sizes|4.99|1'),
+(99, 7, 1, 'seasoning|Taxable Goods|HDC Seasoning|2 oz bottle : 204 cal per bottle|For all dog sizes|3.99|1'),
+(98, 6, 1, 'nuggets|Taxable Goods|Yaky Nugget|21 - 24 pieces | 17 - 20 cal per treat|For all dog sizes|4.99|1'),
+(97, 5, 1, '65 lbs|Taxable Goods|HDC Yellow|3 piece | 1,179 cal|For dogs under 65 lbs|27.99|1'),
+(96, 4, 1, '55 lbs|Taxable Goods|HDC Red|1 piece | 359 cal|For dogs under 55 lbs|9.99|1'),
+(93, 1, 1, '15 lbs|Taxable Goods|HDC Blue|3 - 4 piece | 359 cal|For Dogs Under 15 lbs|9.99|1'),
+(94, 2, 1, '70 lbs|Taxable Goods|HDC Gray|1 piece | 614 cal|For dogs under 70 lbs|17.99|1'),
+(95, 3, 1, '35 lbs|Taxable Goods|HDC Green|1 piece | 256 cal|For dogs under 35 lbs|7.99|1'),
+(105, 35, 1, 'yaky_yam_very_veggy|Taxable Goods|Taxable Goods|Taxable Goods|Yaky Yam Very Veggy|Yaky Yam Very Veggy 4 oz box|Yaky Yam Very Veggy 14 oz box|&nbsp;|4 oz box : 40 - 43 pieces | 8 - 11 cal per treat|14 oz box : 140 - 146 pieces | 8 - 11 cal per treat|For all dog sizes|&nbsp;|&nbsp;|0|3.99|9.99|1');
 
 -- --------------------------------------------------------
 
@@ -1972,7 +1976,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_datetime` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DATETIME_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DATETIME_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DATETIME_ENTITY_ID` (`entity_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Datetime Attribute Backend Table' AUTO_INCREMENT=355 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Datetime Attribute Backend Table' AUTO_INCREMENT=259 ;
 
 --
 -- Dumping data for table `catalog_product_entity_datetime`
@@ -2136,7 +2140,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_decimal` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DECIMAL_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DECIMAL_ENTITY_ID` (`entity_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_DECIMAL_ATTRIBUTE_ID` (`attribute_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Decimal Attribute Backend Table' AUTO_INCREMENT=207 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Decimal Attribute Backend Table' AUTO_INCREMENT=159 ;
 
 --
 -- Dumping data for table `catalog_product_entity_decimal`
@@ -2505,7 +2509,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_text` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_TEXT_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_TEXT_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_TEXT_ENTITY_ID` (`entity_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Text Attribute Backend Table' AUTO_INCREMENT=243 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Text Attribute Backend Table' AUTO_INCREMENT=239 ;
 
 --
 -- Dumping data for table `catalog_product_entity_text`
@@ -2674,7 +2678,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_entity_varchar` (
   KEY `IDX_CATALOG_PRODUCT_ENTITY_VARCHAR_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_VARCHAR_STORE_ID` (`store_id`),
   KEY `IDX_CATALOG_PRODUCT_ENTITY_VARCHAR_ENTITY_ID` (`entity_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Varchar Attribute Backend Table' AUTO_INCREMENT=776 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Catalog Product Varchar Attribute Backend Table' AUTO_INCREMENT=770 ;
 
 --
 -- Dumping data for table `catalog_product_entity_varchar`
@@ -3271,13 +3275,6 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_eav_tmp` (
   KEY `IDX_CATALOG_PRODUCT_INDEX_EAV_TMP_VALUE` (`value`)
 ) ENGINE=MEMORY DEFAULT CHARSET=utf8 COMMENT='Catalog Product EAV Indexer Temp Table';
 
---
--- Dumping data for table `catalog_product_index_eav_tmp`
---
-
-INSERT INTO `catalog_product_index_eav_tmp` (`entity_id`, `attribute_id`, `store_id`, `value`) VALUES
-(35, 121, 1, 2);
-
 -- --------------------------------------------------------
 
 --
@@ -3293,6 +3290,43 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_group_price` (
   KEY `IDX_CATALOG_PRODUCT_INDEX_GROUP_PRICE_CUSTOMER_GROUP_ID` (`customer_group_id`),
   KEY `IDX_CATALOG_PRODUCT_INDEX_GROUP_PRICE_WEBSITE_ID` (`website_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Catalog Product Group Price Index Table';
+
+--
+-- Dumping data for table `catalog_product_index_group_price`
+--
+
+INSERT INTO `catalog_product_index_group_price` (`entity_id`, `customer_group_id`, `website_id`, `price`) VALUES
+(1, 2, 1, '5.1500'),
+(1, 3, 1, '5.0000'),
+(2, 2, 1, '8.8000'),
+(2, 3, 1, '8.6000'),
+(3, 2, 1, '4.1500'),
+(3, 3, 1, '4.0000'),
+(4, 2, 1, '5.1500'),
+(4, 3, 1, '5.0000'),
+(5, 2, 1, '16.7500'),
+(5, 3, 1, '16.3000'),
+(6, 3, 1, '2.6500'),
+(7, 3, 1, '1.8500'),
+(10, 3, 1, '2.6500'),
+(23, 2, 1, '2.6500'),
+(23, 3, 1, '2.5000'),
+(24, 2, 1, '5.9500'),
+(24, 3, 1, '5.7500'),
+(25, 2, 1, '3.5000'),
+(25, 3, 1, '3.3500'),
+(27, 2, 1, '1.8500'),
+(27, 3, 1, '1.7500'),
+(28, 2, 1, '4.8500'),
+(28, 3, 1, '1.6000'),
+(30, 2, 1, '4.8500'),
+(30, 3, 1, '4.6000'),
+(31, 2, 1, '4.8500'),
+(31, 3, 1, '4.6000'),
+(33, 2, 1, '1.8500'),
+(33, 3, 1, '1.7500'),
+(34, 2, 1, '4.8500'),
+(34, 3, 1, '4.6000');
 
 -- --------------------------------------------------------
 
@@ -3722,24 +3756,24 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_price_idx` (
 INSERT INTO `catalog_product_index_price_idx` (`entity_id`, `customer_group_id`, `website_id`, `tax_class_id`, `price`, `final_price`, `min_price`, `max_price`, `tier_price`, `group_price`) VALUES
 (1, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
 (1, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(1, 2, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(1, 3, 1, 2, '9.9900', '5.1500', '5.1500', '5.1500', NULL, '5.1500'),
+(1, 2, 1, 2, '9.9900', '5.1500', '5.1500', '5.1500', NULL, '5.1500'),
+(1, 3, 1, 2, '9.9900', '5.0000', '5.0000', '5.0000', NULL, '5.0000'),
 (2, 0, 1, 2, '17.9900', '17.9900', '17.9900', '17.9900', NULL, NULL),
 (2, 1, 1, 2, '17.9900', '17.9900', '17.9900', '17.9900', NULL, NULL),
-(2, 2, 1, 2, '17.9900', '17.9900', '17.9900', '17.9900', NULL, NULL),
-(2, 3, 1, 2, '17.9900', '8.8000', '8.8000', '8.8000', NULL, '8.8000'),
+(2, 2, 1, 2, '17.9900', '8.8000', '8.8000', '8.8000', NULL, '8.8000'),
+(2, 3, 1, 2, '17.9900', '8.6000', '8.6000', '8.6000', NULL, '8.6000'),
 (3, 0, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
 (3, 1, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
-(3, 2, 1, 2, '7.9900', '7.9900', '7.9900', '7.9900', NULL, NULL),
-(3, 3, 1, 2, '7.9900', '4.1500', '4.1500', '4.1500', NULL, '4.1500'),
+(3, 2, 1, 2, '7.9900', '4.1500', '4.1500', '4.1500', NULL, '4.1500'),
+(3, 3, 1, 2, '7.9900', '4.0000', '4.0000', '4.0000', NULL, '4.0000'),
 (4, 0, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
 (4, 1, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(4, 2, 1, 2, '9.9900', '9.9900', '9.9900', '9.9900', NULL, NULL),
-(4, 3, 1, 2, '9.9900', '5.1500', '5.1500', '5.1500', NULL, '5.1500'),
+(4, 2, 1, 2, '9.9900', '5.1500', '5.1500', '5.1500', NULL, '5.1500'),
+(4, 3, 1, 2, '9.9900', '5.0000', '5.0000', '5.0000', NULL, '5.0000'),
 (5, 0, 1, 2, '27.9900', '27.9900', '27.9900', '27.9900', NULL, NULL),
 (5, 1, 1, 2, '27.9900', '27.9900', '27.9900', '27.9900', NULL, NULL),
-(5, 2, 1, 2, '27.9900', '27.9900', '27.9900', '27.9900', NULL, NULL),
-(5, 3, 1, 2, '27.9900', '16.7500', '16.7500', '16.7500', NULL, '16.7500'),
+(5, 2, 1, 2, '27.9900', '16.7500', '16.7500', '16.7500', NULL, '16.7500'),
+(5, 3, 1, 2, '27.9900', '16.3000', '16.3000', '16.3000', NULL, '16.3000'),
 (6, 0, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
 (6, 1, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
 (6, 2, 1, 2, '4.9900', '4.9900', '4.9900', '4.9900', NULL, NULL),
@@ -3906,16 +3940,6 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_price_tmp` (
   KEY `IDX_CATALOG_PRODUCT_INDEX_PRICE_TMP_MIN_PRICE` (`min_price`)
 ) ENGINE=MEMORY DEFAULT CHARSET=utf8 COMMENT='Catalog Product Price Indexer Temp Table';
 
---
--- Dumping data for table `catalog_product_index_price_tmp`
---
-
-INSERT INTO `catalog_product_index_price_tmp` (`entity_id`, `customer_group_id`, `website_id`, `tax_class_id`, `price`, `final_price`, `min_price`, `max_price`, `tier_price`, `group_price`) VALUES
-(35, 0, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
-(35, 1, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
-(35, 2, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL),
-(35, 3, 1, 2, '0.0000', '0.0000', '0.0000', '0.0000', NULL, NULL);
-
 -- --------------------------------------------------------
 
 --
@@ -3951,7 +3975,7 @@ CREATE TABLE IF NOT EXISTS `catalog_product_index_website` (
 --
 
 INSERT INTO `catalog_product_index_website` (`website_id`, `website_date`, `rate`) VALUES
-(1, '2014-07-21', 1);
+(1, '2014-07-29', 1);
 
 -- --------------------------------------------------------
 
@@ -4507,6 +4531,34 @@ INSERT INTO `cms_page_store` (`page_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `consumers`
+--
+
+CREATE TABLE IF NOT EXISTS `consumers` (
+  `consumer_id` int(11) NOT NULL AUTO_INCREMENT,
+  `consumer_name` varchar(255) DEFAULT NULL,
+  `consumer_address` text,
+  `consumer_apt_ste` varchar(255) DEFAULT NULL,
+  `consumer_email` text,
+  `consumer_state` varchar(255) DEFAULT NULL,
+  `consumer_zip` varchar(255) DEFAULT NULL,
+  `consumer_phone` varchar(255) DEFAULT NULL,
+  `consumer_fax` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`consumer_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `consumers`
+--
+
+INSERT INTO `consumers` (`consumer_id`, `consumer_name`, `consumer_address`, `consumer_apt_ste`, `consumer_email`, `consumer_state`, `consumer_zip`, `consumer_phone`, `consumer_fax`) VALUES
+(1, 'Rojan Shrestha', 'test address', '123', 'rojan_neo@hotmail.com', 'tes state', '123', '123', '13'),
+(2, 'Rojan', 'test', 'test', 'rojan.neo@hotmail.com', '132', '132', '132', '13'),
+(3, 'Rojan', 'test', '13', 'rojan.test@gmail.com', '132', '132', '13', '13');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `core_cache`
 --
 
@@ -4573,7 +4625,7 @@ CREATE TABLE IF NOT EXISTS `core_config_data` (
   `value` text COMMENT 'Config Value',
   PRIMARY KEY (`config_id`),
   UNIQUE KEY `UNQ_CORE_CONFIG_DATA_SCOPE_SCOPE_ID_PATH` (`scope`,`scope_id`,`path`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Config Data' AUTO_INCREMENT=131 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Config Data' AUTO_INCREMENT=139 ;
 
 --
 -- Dumping data for table `core_config_data`
@@ -4701,7 +4753,7 @@ INSERT INTO `core_config_data` (`config_id`, `scope`, `scope_id`, `path`, `value
 (119, 'default', 0, 'customer/address_templates/js_template', '#{prefix} #{firstname} #{middlename} #{lastname} #{suffix}<br/>#{company}<br/>#{street0}<br/>#{street1}<br/>#{street2}<br/>#{street3}<br/>#{city}, #{region}, #{postcode}<br/>#{country_id}<br/>T: #{telephone}<br/>F: #{fax}<br/>VAT: #{vat_id}'),
 (120, 'default', 0, 'customer/captcha/enable', '1'),
 (121, 'default', 0, 'customer/captcha/font', 'linlibertine'),
-(122, 'default', 0, 'customer/captcha/forms', 'testimonials'),
+(122, 'default', 0, 'customer/captcha/forms', 'consumers,testimonials'),
 (123, 'default', 0, 'customer/captcha/mode', 'after_fail'),
 (124, 'default', 0, 'customer/captcha/failed_attempts_login', '0'),
 (125, 'default', 0, 'customer/captcha/timeout', '7'),
@@ -4709,7 +4761,15 @@ INSERT INTO `core_config_data` (`config_id`, `scope`, `scope_id`, `path`, `value
 (127, 'default', 0, 'customer/captcha/symbols', 'ABCDEFGHJKMnpqrstuvwxyz23456789'),
 (128, 'default', 0, 'customer/captcha/case_sensitive', '0'),
 (129, 'default', 0, 'testimonial/general/validate', '1'),
-(130, 'default', 0, 'testimonial/general/enable_disable', '0');
+(130, 'default', 0, 'testimonial/general/enable_disable', '0'),
+(131, 'default', 0, 'customer/customeractivation/disable_ext', '0'),
+(132, 'default', 0, 'customer/customeractivation/alert_admin', '1'),
+(133, 'default', 0, 'customer/customeractivation/admin_email', NULL),
+(134, 'default', 0, 'customer/customeractivation/registration_admin_template', 'customer_customeractivation_registration_admin_template'),
+(135, 'default', 0, 'customer/customeractivation/alert_customer', '0'),
+(136, 'default', 0, 'customer/customeractivation/activation_status_default', '0'),
+(137, 'default', 0, 'customer/customeractivation/require_activation_for_specific_groups', '0'),
+(138, 'default', 0, 'customer/customeractivation/always_send_admin_email', '0');
 
 -- --------------------------------------------------------
 
@@ -4828,6 +4888,7 @@ INSERT INTO `core_resource` (`code`, `version`, `data_version`) VALUES
 ('checkout_setup', '1.6.0.0', '1.6.0.0'),
 ('cms_setup', '1.6.0.0.2', '1.6.0.0.2'),
 ('compiler_setup', '1.6.0.0', '1.6.0.0'),
+('consumers_setup', '0.1.0', '0.1.0'),
 ('contacts_setup', '1.6.0.0', '1.6.0.0'),
 ('core_setup', '1.6.0.4', '1.6.0.4'),
 ('cron_setup', '1.6.0.0', '1.6.0.0'),
@@ -5293,7 +5354,7 @@ CREATE TABLE IF NOT EXISTS `customer_address_entity_int` (
   KEY `IDX_CUSTOMER_ADDRESS_ENTITY_INT_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CUSTOMER_ADDRESS_ENTITY_INT_ENTITY_ID` (`entity_id`),
   KEY `IDX_CUSTOMER_ADDRESS_ENTITY_INT_ENTITY_ID_ATTRIBUTE_ID_VALUE` (`entity_id`,`attribute_id`,`value`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Customer Address Entity Int' AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Customer Address Entity Int' AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `customer_address_entity_int`
@@ -5552,7 +5613,7 @@ CREATE TABLE IF NOT EXISTS `customer_entity_int` (
   KEY `IDX_CUSTOMER_ENTITY_INT_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CUSTOMER_ENTITY_INT_ENTITY_ID` (`entity_id`),
   KEY `IDX_CUSTOMER_ENTITY_INT_ENTITY_ID_ATTRIBUTE_ID_VALUE` (`entity_id`,`attribute_id`,`value`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Customer Entity Int' AUTO_INCREMENT=30 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Customer Entity Int' AUTO_INCREMENT=28 ;
 
 --
 -- Dumping data for table `customer_entity_int`
@@ -5605,7 +5666,7 @@ CREATE TABLE IF NOT EXISTS `customer_entity_varchar` (
   KEY `IDX_CUSTOMER_ENTITY_VARCHAR_ATTRIBUTE_ID` (`attribute_id`),
   KEY `IDX_CUSTOMER_ENTITY_VARCHAR_ENTITY_ID` (`entity_id`),
   KEY `IDX_CUSTOMER_ENTITY_VARCHAR_ENTITY_ID_ATTRIBUTE_ID_VALUE` (`entity_id`,`attribute_id`,`value`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Customer Entity Varchar' AUTO_INCREMENT=72 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Customer Entity Varchar' AUTO_INCREMENT=71 ;
 
 --
 -- Dumping data for table `customer_entity_varchar`
@@ -8824,15 +8885,15 @@ CREATE TABLE IF NOT EXISTS `index_process` (
 --
 
 INSERT INTO `index_process` (`process_id`, `indexer_code`, `status`, `started_at`, `ended_at`, `mode`) VALUES
-(1, 'catalog_product_attribute', 'pending', '2014-07-21 04:03:13', '2014-07-21 04:03:13', 'real_time'),
-(2, 'catalog_product_price', 'pending', '2014-07-21 04:03:14', '2014-07-21 04:03:14', 'real_time'),
-(3, 'catalog_url', 'pending', '2014-07-21 04:03:13', '2014-07-21 04:03:13', 'real_time'),
+(1, 'catalog_product_attribute', 'pending', '2014-07-30 00:04:22', '2014-07-30 00:04:22', 'real_time'),
+(2, 'catalog_product_price', 'pending', '2014-07-30 00:04:22', '2014-07-30 00:04:26', 'real_time'),
+(3, 'catalog_url', 'pending', '2014-07-30 00:04:26', '2014-07-30 00:04:26', 'real_time'),
 (4, 'catalog_product_flat', 'pending', '2014-06-28 09:52:40', '2014-06-28 09:52:40', 'real_time'),
 (5, 'catalog_category_flat', 'pending', '2014-06-28 09:52:40', '2014-06-28 09:52:41', 'real_time'),
-(6, 'catalog_category_product', 'pending', '2014-07-21 04:03:13', '2014-07-21 04:03:13', 'real_time'),
-(7, 'catalogsearch_fulltext', 'pending', '2014-07-21 04:03:13', '2014-07-21 04:03:14', 'real_time'),
-(8, 'cataloginventory_stock', 'pending', '2014-07-21 04:03:13', '2014-07-21 04:03:13', 'real_time'),
-(9, 'tag_summary', 'pending', '2014-07-21 04:03:14', '2014-07-21 04:03:14', 'real_time');
+(6, 'catalog_category_product', 'pending', '2014-07-30 00:04:26', '2014-07-30 00:04:28', 'real_time'),
+(7, 'catalogsearch_fulltext', 'pending', '2014-07-30 00:04:28', '2014-07-30 00:04:28', 'real_time'),
+(8, 'cataloginventory_stock', 'pending', '2014-07-30 00:04:21', '2014-07-30 00:04:22', 'real_time'),
+(9, 'tag_summary', 'pending', '2014-07-30 00:04:28', '2014-07-30 00:04:28', 'real_time');
 
 -- --------------------------------------------------------
 
@@ -8863,7 +8924,7 @@ CREATE TABLE IF NOT EXISTS `log_customer` (
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`log_id`),
   KEY `IDX_LOG_CUSTOMER_VISITOR_ID` (`visitor_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Customers Table' AUTO_INCREMENT=69 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Customers Table' AUTO_INCREMENT=70 ;
 
 --
 -- Dumping data for table `log_customer`
@@ -8937,7 +8998,8 @@ INSERT INTO `log_customer` (`log_id`, `visitor_id`, `customer_id`, `login_at`, `
 (65, 53, 1, '2014-07-29 22:48:10', NULL, 1),
 (66, 54, 8, '2014-07-29 23:23:11', '2014-07-29 23:24:17', 1),
 (67, 54, 8, '2014-07-29 23:26:49', '2014-07-29 23:29:23', 1),
-(68, 54, 9, '2014-07-29 23:30:22', NULL, 1);
+(68, 54, 9, '2014-07-29 23:30:22', NULL, 1),
+(69, 56, 9, '2014-07-30 01:58:20', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -11360,7 +11422,153 @@ INSERT INTO `log_url` (`url_id`, `visitor_id`, `visit_time`) VALUES
 (2332, 54, '2014-07-29 23:29:36'),
 (2333, 54, '2014-07-29 23:29:39'),
 (2334, 54, '2014-07-29 23:30:22'),
-(2335, 54, '2014-07-29 23:30:24');
+(2335, 54, '2014-07-29 23:30:24'),
+(2336, 54, '2014-07-29 23:32:20'),
+(2337, 54, '2014-07-29 23:32:29'),
+(2338, 54, '2014-07-29 23:32:45'),
+(2339, 54, '2014-07-29 23:32:51'),
+(2340, 54, '2014-07-29 23:36:30'),
+(2341, 54, '2014-07-29 23:36:31'),
+(2342, 54, '2014-07-29 23:36:32'),
+(2343, 54, '2014-07-29 23:36:33'),
+(2344, 54, '2014-07-29 23:37:49'),
+(2345, 54, '2014-07-29 23:37:58'),
+(2346, 54, '2014-07-29 23:40:43'),
+(2347, 54, '2014-07-29 23:43:27'),
+(2348, 54, '2014-07-29 23:43:41'),
+(2349, 54, '2014-07-29 23:44:57'),
+(2350, 54, '2014-07-29 23:44:59'),
+(2351, 54, '2014-07-29 23:45:02'),
+(2352, 54, '2014-07-29 23:45:35'),
+(2353, 54, '2014-07-29 23:45:36'),
+(2354, 54, '2014-07-29 23:46:03'),
+(2355, 54, '2014-07-29 23:46:05'),
+(2356, 54, '2014-07-29 23:46:29'),
+(2357, 54, '2014-07-29 23:46:31'),
+(2358, 54, '2014-07-29 23:47:00'),
+(2359, 54, '2014-07-29 23:47:01'),
+(2360, 54, '2014-07-29 23:47:05'),
+(2361, 54, '2014-07-29 23:49:04'),
+(2362, 54, '2014-07-29 23:49:45'),
+(2363, 54, '2014-07-29 23:49:48'),
+(2364, 54, '2014-07-29 23:49:51'),
+(2365, 54, '2014-07-29 23:50:09'),
+(2366, 54, '2014-07-29 23:50:11'),
+(2367, 54, '2014-07-29 23:50:12'),
+(2368, 54, '2014-07-29 23:50:21'),
+(2369, 54, '2014-07-29 23:50:23'),
+(2370, 54, '2014-07-29 23:50:24'),
+(2371, 54, '2014-07-29 23:50:43'),
+(2372, 54, '2014-07-29 23:50:44'),
+(2373, 54, '2014-07-29 23:53:51'),
+(2374, 56, '2014-07-30 01:58:14'),
+(2375, 56, '2014-07-30 01:58:20'),
+(2376, 56, '2014-07-30 01:58:21'),
+(2377, 56, '2014-07-30 01:58:29'),
+(2378, 56, '2014-07-30 01:58:30'),
+(2379, 56, '2014-07-30 01:58:34'),
+(2380, 56, '2014-07-30 01:58:36'),
+(2381, 56, '2014-07-30 01:58:36'),
+(2382, 56, '2014-07-30 01:58:37'),
+(2383, 57, '2014-07-30 03:52:18'),
+(2384, 57, '2014-07-30 03:52:20'),
+(2385, 57, '2014-07-30 03:52:20'),
+(2386, 57, '2014-07-30 03:52:21'),
+(2387, 57, '2014-07-30 04:01:14'),
+(2388, 57, '2014-07-30 04:01:18'),
+(2389, 57, '2014-07-30 04:01:19'),
+(2390, 57, '2014-07-30 04:01:20'),
+(2391, 57, '2014-07-30 04:01:29'),
+(2392, 57, '2014-07-30 04:01:30'),
+(2393, 57, '2014-07-30 04:03:35'),
+(2394, 57, '2014-07-30 04:03:36'),
+(2395, 57, '2014-07-30 04:03:37'),
+(2396, 57, '2014-07-30 04:03:37'),
+(2397, 57, '2014-07-30 04:03:41'),
+(2398, 57, '2014-07-30 04:03:52'),
+(2399, 57, '2014-07-30 04:03:52'),
+(2400, 57, '2014-07-30 04:03:58'),
+(2401, 57, '2014-07-30 04:04:00'),
+(2402, 57, '2014-07-30 04:04:05'),
+(2403, 57, '2014-07-30 04:04:19'),
+(2404, 57, '2014-07-30 04:04:21'),
+(2405, 57, '2014-07-30 04:04:30'),
+(2406, 57, '2014-07-30 04:04:30'),
+(2407, 57, '2014-07-30 04:04:36'),
+(2408, 57, '2014-07-30 04:04:47'),
+(2409, 57, '2014-07-30 04:04:47'),
+(2410, 57, '2014-07-30 04:04:53'),
+(2411, 57, '2014-07-30 04:05:04'),
+(2412, 57, '2014-07-30 04:05:04'),
+(2413, 57, '2014-07-30 04:05:05'),
+(2414, 57, '2014-07-30 04:05:05'),
+(2415, 57, '2014-07-30 04:05:05'),
+(2416, 57, '2014-07-30 04:05:05'),
+(2417, 57, '2014-07-30 04:05:05'),
+(2418, 57, '2014-07-30 04:05:05'),
+(2419, 57, '2014-07-30 04:05:05'),
+(2420, 57, '2014-07-30 04:05:07'),
+(2421, 57, '2014-07-30 04:05:07'),
+(2422, 57, '2014-07-30 04:05:07'),
+(2423, 57, '2014-07-30 04:05:07'),
+(2424, 57, '2014-07-30 04:05:07'),
+(2425, 57, '2014-07-30 04:05:11'),
+(2426, 57, '2014-07-30 04:05:11'),
+(2427, 57, '2014-07-30 04:05:11'),
+(2428, 57, '2014-07-30 04:05:11'),
+(2429, 57, '2014-07-30 04:05:11'),
+(2430, 57, '2014-07-30 04:05:11'),
+(2431, 57, '2014-07-30 04:05:15'),
+(2432, 57, '2014-07-30 04:05:15'),
+(2433, 57, '2014-07-30 04:05:15'),
+(2434, 57, '2014-07-30 04:05:15'),
+(2435, 57, '2014-07-30 04:05:16'),
+(2436, 57, '2014-07-30 04:05:16'),
+(2437, 57, '2014-07-30 04:05:16'),
+(2438, 57, '2014-07-30 04:05:19'),
+(2439, 57, '2014-07-30 04:05:19'),
+(2440, 57, '2014-07-30 04:05:19'),
+(2441, 57, '2014-07-30 04:05:19'),
+(2442, 57, '2014-07-30 04:05:19'),
+(2443, 57, '2014-07-30 04:05:19'),
+(2444, 57, '2014-07-30 04:05:19'),
+(2445, 57, '2014-07-30 04:05:19'),
+(2446, 57, '2014-07-30 04:05:25'),
+(2447, 57, '2014-07-30 04:07:16'),
+(2448, 57, '2014-07-30 04:21:03'),
+(2449, 57, '2014-07-30 04:21:04'),
+(2450, 57, '2014-07-30 04:21:04'),
+(2451, 57, '2014-07-30 04:21:05'),
+(2452, 57, '2014-07-30 04:30:41'),
+(2453, 58, '2014-07-30 23:07:12'),
+(2454, 58, '2014-07-30 23:07:14'),
+(2455, 58, '2014-07-30 23:07:15'),
+(2456, 58, '2014-07-30 23:07:16'),
+(2457, 58, '2014-07-30 23:13:39'),
+(2458, 58, '2014-07-30 23:13:42'),
+(2459, 58, '2014-07-30 23:14:08'),
+(2460, 58, '2014-07-30 23:19:27'),
+(2461, 58, '2014-07-30 23:22:18'),
+(2462, 58, '2014-07-30 23:23:32'),
+(2463, 58, '2014-07-30 23:50:42'),
+(2464, 58, '2014-07-31 00:15:45'),
+(2465, 58, '2014-07-31 00:16:18'),
+(2466, 58, '2014-07-31 00:16:59'),
+(2467, 58, '2014-07-31 00:17:16'),
+(2468, 58, '2014-07-31 00:17:17'),
+(2469, 58, '2014-07-31 00:17:40'),
+(2470, 58, '2014-07-31 00:17:40'),
+(2471, 58, '2014-07-31 00:21:35'),
+(2472, 58, '2014-07-31 00:21:35'),
+(2473, 58, '2014-07-31 00:21:37'),
+(2474, 58, '2014-07-31 00:21:57'),
+(2475, 58, '2014-07-31 00:21:58'),
+(2476, 58, '2014-07-31 00:22:30'),
+(2477, 58, '2014-07-31 00:22:31'),
+(2478, 58, '2014-07-31 00:23:01'),
+(2479, 58, '2014-07-31 00:23:09'),
+(2480, 59, '2014-07-31 00:43:25'),
+(2481, 59, '2014-07-31 00:43:30');
 
 -- --------------------------------------------------------
 
@@ -11373,7 +11581,7 @@ CREATE TABLE IF NOT EXISTS `log_url_info` (
   `url` varchar(255) DEFAULT NULL COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=2336 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table' AUTO_INCREMENT=2482 ;
 
 --
 -- Dumping data for table `log_url_info`
@@ -13718,7 +13926,154 @@ INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
 (2332, 'http://192.168.1.107/hdc/index.php/customer/account/login/', 'http://192.168.1.107/hdc/index.php/'),
 (2333, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
 (2334, 'http://192.168.1.107/hdc/index.php/customer/account/createpost/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
-(2335, 'http://192.168.1.107/hdc/index.php/customer/account/login/', 'http://192.168.1.107/hdc/index.php/customer/account/create/');
+(2335, 'http://192.168.1.107/hdc/index.php/customer/account/login/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
+(2336, 'http://192.168.1.107/hdc/index.php/testimonials', NULL),
+(2337, 'http://192.168.1.107/hdc/index.php/testimonials?p=2', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2338, 'http://192.168.1.107/hdc/index.php/testimonials?p=2', NULL),
+(2339, 'http://192.168.1.107/hdc/index.php/testimonials?p=2', NULL),
+(2340, 'http://192.168.1.107/hdc/index.php/', NULL),
+(2341, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2342, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2343, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2344, 'http://192.168.1.107/hdc/index.php/testimonials', NULL),
+(2345, 'http://192.168.1.107/hdc/index.php/testimonials', NULL),
+(2346, 'http://192.168.1.107/hdc/index.php/testimonials', NULL),
+(2347, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2348, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2349, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2350, 'http://192.168.1.107/hdc/index.php/testimonials', NULL),
+(2351, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2352, 'http://192.168.1.107/hdc/index.php/testimonials', NULL),
+(2353, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2354, 'http://192.168.1.107/hdc/index.php/testimonials', NULL),
+(2355, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2356, 'http://192.168.1.107/hdc/index.php/testimonials', NULL),
+(2357, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2358, 'http://192.168.1.107/hdc/index.php/testimonials', NULL),
+(2359, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2360, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2361, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2362, 'http://192.168.1.107/hdc/index.php/testimonials', NULL),
+(2363, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2364, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2365, 'http://192.168.1.107/hdc/index.php/testimonials', NULL);
+INSERT INTO `log_url_info` (`url_id`, `url`, `referer`) VALUES
+(2366, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2367, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2368, 'http://192.168.1.107/hdc/index.php/testimonials', NULL),
+(2369, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2370, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2371, 'http://192.168.1.107/hdc/index.php/testimonials/index/formpost/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2372, 'http://192.168.1.107/hdc/index.php/testimonials/', 'http://192.168.1.107/hdc/index.php/testimonials'),
+(2373, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/testimonials/'),
+(2374, 'http://192.168.1.107/hdc/index.php/customer/account/login/', NULL),
+(2375, 'http://192.168.1.107/hdc/index.php/customer/account/loginPost/', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2376, 'http://192.168.1.107/hdc/index.php/customer/account/login/', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2377, 'http://192.168.1.107/hdc/index.php/customer/account/loginPost/', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2378, 'http://192.168.1.107/hdc/index.php/customer/account/', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2379, 'http://192.168.1.107/hdc/index.php/hdccustomer/index/pricing/', 'http://192.168.1.107/hdc/index.php/customer/account/'),
+(2380, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2381, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2382, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2383, 'http://192.168.1.107/hdc/', NULL),
+(2384, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.1.107/hdc/'),
+(2385, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.1.107/hdc/'),
+(2386, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.1.107/hdc/'),
+(2387, 'http://192.168.1.107/hdc/testimonials', NULL),
+(2388, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/testimonials'),
+(2389, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/testimonials'),
+(2390, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/testimonials'),
+(2391, 'http://192.168.1.107/hdc/index.php/testimonials/index/formpost/', 'http://192.168.1.107/hdc/testimonials'),
+(2392, 'http://192.168.1.107/hdc/index.php/testimonials/', 'http://192.168.1.107/hdc/testimonials'),
+(2393, 'http://192.168.1.107/hdc/index.php/photogallery/', 'http://192.168.1.107/hdc/index.php/testimonials/'),
+(2394, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.1.107/hdc/testimonials'),
+(2395, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.1.107/hdc/testimonials'),
+(2396, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.1.107/hdc/testimonials'),
+(2397, 'http://192.168.1.107/hdc/index.php/contacts/', 'http://192.168.1.107/hdc/index.php/photogallery/'),
+(2398, 'http://192.168.1.107/hdc/index.php/contacts/faq', NULL),
+(2399, 'http://192.168.1.107/hdc/index.php/contacts/faq', NULL),
+(2400, 'http://192.168.1.107/hdc/index.php/faq', NULL),
+(2401, 'http://192.168.1.107/hdc/index.php/faq/index/faqdetail/id/1/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2402, 'http://192.168.1.107/hdc/index.php/faq', NULL),
+(2403, 'http://192.168.1.107/hdc/index.php/faq/index/faqdetail/id/2/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2404, 'http://192.168.1.107/hdc/index.php/faq', NULL),
+(2405, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2406, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2407, 'http://192.168.1.107/hdc/index.php/faq', NULL),
+(2408, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2409, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2410, 'http://192.168.1.107/hdc/index.php/faq', NULL),
+(2411, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2412, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2413, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2414, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2415, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2416, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2417, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2418, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2419, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2420, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2421, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2422, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2423, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2424, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2425, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2426, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2427, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2428, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2429, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2430, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2431, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2432, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2433, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2434, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2435, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2436, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2437, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2438, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2439, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2440, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2441, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2442, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2443, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2444, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2445, 'http://192.168.1.107/hdc/index.php/faq/index/ajaxsearch/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2446, 'http://192.168.1.107/hdc/index.php/faq/index/faqdetail/id/2/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2447, 'http://192.168.1.107/hdc/index.php/faq/index/faqdetail/id/2/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2448, 'http://192.168.1.107/hdc/index.php/photogallery/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2449, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.1.107/hdc/index.php/contacts/'),
+(2450, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.1.107/hdc/index.php/contacts/'),
+(2451, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.1.107/hdc/index.php/contacts/'),
+(2452, 'http://192.168.1.107/hdc/index.php/photogallery/', 'http://192.168.1.107/hdc/index.php/faq'),
+(2453, 'http://192.168.1.107/hdc/', NULL),
+(2454, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.woff', 'http://192.168.1.107/hdc/'),
+(2455, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.ttf', 'http://192.168.1.107/hdc/'),
+(2456, 'http://192.168.1.107/hdc/skin/frontend/default/hdc/css/fonts/flexslider-icon.svg', 'http://192.168.1.107/hdc/'),
+(2457, 'http://192.168.1.107/hdc/index.php/customer/account/login/', 'http://192.168.1.107/hdc/'),
+(2458, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2459, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2460, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2461, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2462, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/login/'),
+(2463, 'http://192.168.1.107/hdc/index.php/customer/account/create', NULL),
+(2464, 'http://192.168.1.107/hdc/index.php/customer/account/create', NULL),
+(2465, 'http://192.168.1.107/hdc/index.php/customer/account/create', NULL),
+(2466, 'http://192.168.1.107/hdc/index.php/customer/account/create', NULL),
+(2467, 'http://192.168.1.107/hdc/index.php/consumers/index/createpost/', 'http://192.168.1.107/hdc/index.php/customer/account/create'),
+(2468, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/create'),
+(2469, 'http://192.168.1.107/hdc/index.php/consumers/index/createpost/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
+(2470, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
+(2471, 'http://192.168.1.107/hdc/index.php/consumers/index/createpost/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
+(2472, 'http://192.168.1.107/hdc/index.php/consumers/index/createpost/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
+(2473, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
+(2474, 'http://192.168.1.107/hdc/index.php/consumers/index/createpost/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
+(2475, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
+(2476, 'http://192.168.1.107/hdc/index.php/consumers/index/createpost/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
+(2477, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
+(2478, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
+(2479, 'http://192.168.1.107/hdc/index.php/customer/account/create/', 'http://192.168.1.107/hdc/index.php/customer/account/create/'),
+(2480, 'http://192.168.1.107/hdc/index.php/customer/account/create', NULL),
+(2481, 'http://192.168.1.107/hdc/index.php/captcha/refresh/', 'http://192.168.1.107/hdc/index.php/customer/account/create');
 
 -- --------------------------------------------------------
 
@@ -13734,7 +14089,7 @@ CREATE TABLE IF NOT EXISTS `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=56 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table' AUTO_INCREMENT=60 ;
 
 --
 -- Dumping data for table `log_visitor`
@@ -13794,8 +14149,12 @@ INSERT INTO `log_visitor` (`visitor_id`, `session_id`, `first_visit_at`, `last_v
 (51, '9p6fj82neng13h2jpagh1l34v0', '2014-07-25 01:55:49', '2014-07-25 01:55:49', 0, 1),
 (52, 'mkiddqikqae48h2thv5da5sk67', '2014-07-25 01:55:50', '2014-07-25 02:40:11', 2267, 1),
 (53, 'iliak0c7omta8e7nfnk0rti762', '2014-07-29 22:47:47', '2014-07-29 22:48:35', 2286, 1),
-(54, 'mnkua68io7un5bbfbs55g4hvn0', '2014-07-29 22:52:02', '2014-07-29 23:30:24', 2335, 1),
-(55, 'kg1e49pul5mnkbbiigac2c4bc0', '2014-07-29 22:52:39', '2014-07-29 22:52:42', 2294, 1);
+(54, 'mnkua68io7un5bbfbs55g4hvn0', '2014-07-29 22:52:02', '2014-07-29 23:53:51', 2373, 1),
+(55, 'kg1e49pul5mnkbbiigac2c4bc0', '2014-07-29 22:52:39', '2014-07-29 22:52:42', 2294, 1),
+(56, '8s34jeb061u4kd6rflef60ou03', '2014-07-30 01:58:12', '2014-07-30 01:58:37', 2382, 1),
+(57, 'mpi75339c68pv25bqg5arnlir7', '2014-07-30 03:52:16', '2014-07-30 04:30:40', 2452, 1),
+(58, 'ufi6ithvin7ctmtevgfhim5pd5', '2014-07-30 23:07:07', '2014-07-31 00:23:09', 2479, 1),
+(59, '9l2j9hejad7io3p1pkhal8o824', '2014-07-31 00:43:24', '2014-07-31 00:43:30', 2481, 1);
 
 -- --------------------------------------------------------
 
@@ -13873,7 +14232,11 @@ INSERT INTO `log_visitor_info` (`visitor_id`, `http_referer`, `http_user_agent`,
 (52, 'http://192.168.0.107/hdc/index.php/customer/account/index/', 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36', NULL, 'en-US,en;q=0.8,hi;q=0.6', -1062731669, -1062731669),
 (53, NULL, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36', NULL, 'en-US,en;q=0.8', 2130706433, 2130706433),
 (54, NULL, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731413, -1062731413),
-(55, NULL, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731413, -1062731513);
+(55, NULL, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731413, -1062731513),
+(56, NULL, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731413, -1062731413),
+(57, NULL, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731413, -1062731413),
+(58, NULL, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36', NULL, 'en-US,en;q=0.8', -1062731413, -1062731413),
+(59, NULL, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0', NULL, 'en-US,en;q=0.5', -1062731413, -1062731413);
 
 -- --------------------------------------------------------
 
@@ -17016,7 +17379,7 @@ CREATE TABLE IF NOT EXISTS `testimonials` (
   `testimonial_show` varchar(100) DEFAULT NULL,
   `testimonial_date` date DEFAULT NULL,
   PRIMARY KEY (`testimonial_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `testimonials`
@@ -17030,7 +17393,8 @@ INSERT INTO `testimonials` (`testimonial_id`, `testimonial_name`, `testimonial_a
 (6, 'Rojan Shrestha', 'Tucson', 'rojan_neo@hotmail.com', 'Testimonial 3', 'yes', '2014-07-19'),
 (7, 'Rojan Shrestha', 'Tucson', 'rojan_neo@hotmail.com', 'Testimonial 5', 'yes', '2014-07-19'),
 (8, 'Alina Bhari', 'Nepal', 'alina.bhari@gmail.com', 'Testimonial 6', 'no', '2014-07-19'),
-(9, 'Rojan Shrestha', 'Nepal', 'rojan.shrestha@gmail.com', 'Testimonial 3', 'no', '2014-07-21');
+(9, 'Rojan Shrestha', 'Nepal', 'rojan.shrestha@gmail.com', 'Testimonial 3', 'no', '2014-07-21'),
+(10, 'New ', 'test', 'rojan.neo@htma.com', 'asdf', 'no', '2014-07-30');
 
 -- --------------------------------------------------------
 

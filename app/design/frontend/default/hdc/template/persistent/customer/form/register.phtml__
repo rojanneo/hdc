@@ -314,80 +314,107 @@
 	</div>
 	
 	<div class="consumer-form" style="display:none" id="consumer-form-validate">
-	<form method = "post" action = "<?php echo $this->getUrl('consumers/index/createpost') ?>" id="consumers">
+	<form method = "post" action = "<?php echo $this->getPostActionUrl() ?>">
         <ul class="form-list">
             <li class="fields">
                     <div class="field">
-                        <label for="consumer_name" class="required"><em>*</em><?php echo $this->__('Name') ?></label>
+                        <label for="first-name" class="required"><em>*</em><?php echo $this->__('First Name') ?></label>
                         <div class="input-box">
-                            <input type="text" name="consumer_name" id="name" title="<?php echo $this->__('Name') ?>" class="input-text required-entry validate-text" />
+                            <input type="text" name="first-name" id="first-name" title="<?php echo $this->__('First Name') ?>" class="input-text required-entry validate-text" />
                         </div>
                     </div>
             </li>
             <li class="fields">
                     <div class="field">
-                        <label for="consumer_email" class="required"><em>*</em><?php echo $this->__('Email') ?></label>
+                        <label for="email" class="required"><em>*</em><?php echo $this->__('Email') ?></label>
                         <div class="input-box">
-                            <input type="text" name="consumer_email" id="email" title="<?php echo $this->__('Email') ?>" class="input-text required-entry validate-email" />
+                            <input type="text" name="email" id="email" title="<?php echo $this->__('Email') ?>" class="input-text required-entry validate-email" />
                         </div>
                     </div>
             </li>
-            
+            <li class="fields">
+                    <div class="field">
+                        <label for="password" class="required"><em>*</em><?php echo $this->__('Password') ?></label>
+                        <div class="input-box">
+                            <input type="password" name="password" id="password" title="<?php echo $this->__('Password') ?>" class="input-text required-entry validate-password" />
+                        </div>
+                    </div>
+                </li>
+                <li class="fields">
+                    <div class="field">
+                        <label for="confirmation" class="required"><em>*</em><?php echo $this->__('Confirm Password') ?></label>
+                        <div class="input-box">
+                            <input type="password" name="confirmation" title="<?php echo $this->__('Confirm Password') ?>" id="confirmation" class="input-text required-entry validate-cpassword" />
+                        </div>
+                    </div>
+                </li>
                 <li class="wide">
-                    <label for="consumer_address" class="required"><em>*</em><?php echo $this->__('Address') ?></label>
+                    <label for="street_1" class="required"><em>*</em><?php echo $this->__('Street Address') ?></label>
                     <div class="input-box">
-                        <input type="text" name="consumer_address" id="consumer_address" class="input-text validate-text" />
+                        <input type="text" name="street[]" value="<?php echo $this->escapeHtml($this->getFormData()->getStreet(1)) ?>" title="<?php echo $this->__('Street Address') ?>" id="street_1" class="input-text <?php echo $_streetValidationClass ?>" />
+                    </div>
+                </li>
+                 <?php $_streetValidationClass = trim(str_replace('required-entry', '', $_streetValidationClass)); ?>
+            <?php for ($_i = 2, $_n = $this->helper('customer/address')->getStreetLines(); $_i <= $_n; $_i++): ?>
+                <li class="wide">
+                    <div class="input-box">
+                        <input type="text" name="street[]" value="<?php echo $this->escapeHtml($this->getFormData()->getStreet($_i)) ?>" title="<?php echo $this->__('Street Address %s', $_i) ?>" id="street_<?php echo $_i ?>" class="input-text <?php echo $_streetValidationClass ?>" />
+                    </div>
+                </li>
+            <?php endfor;?>
+                <li class="fields">
+                    <label for="apt_suite" class="required"><em>*</em><?php echo $this->__('Apt / Ste') ?></label>
+                    <div class="input-box">
+                        <input type="text" name="apt_suite" id="apt_suite" class="input-text  required-entry" />
                     </div>
                 </li>
                 <li class="fields">
-                    <label for="consumer_apt_ste" class="required"><em>*</em><?php echo $this->__('Apt / Ste') ?></label>
-                    <div class="input-box">
-                        <input type="text" name="consumer_apt_ste" id="consumer_apt_ste" class="input-text  required-entry" />
+                    <div class="field">
+                        <label for="city" class="required"><em>*</em><?php echo $this->__('City') ?></label>
+                        <div class="input-box">
+                            <input type="text" name="city" value="<?php echo $this->escapeHtml($this->getFormData()->getCity()) ?>" title="<?php echo $this->__('City') ?>" class="input-text <?php echo $this->helper('customer/address')->getAttributeValidationClass('city') ?>" id="city" />
+                        </div>
                     </div>
-                </li>
-                
+            </li>
             <li class="fields">
                     <div class="field">
-                        <label for="consumer_state" class="required"><em>*</em><?php echo $this->__('State') ?></label>
+                        <label for="region_id" class="required"><em>*</em><?php echo $this->__('State/Province') ?></label>
                         <div class="input-box">
-                            <input type="text" name="consumer_state" class="input-text required-entry " id="consumer_state" />
+                        <input type="text" name="region_id" value="<?php echo $this->escapeHtml($this->getFormData()->getState()) ?>" title="<?php echo $this->__('State') ?>" class="input-text required-entry ?>" id="region_id" />
+                            
                         </div>
                     </div>
                 </li>
                 <li class="fields">
                     <div class="field">
-                        <label for="consumer_zip" class="required"><em>*</em><?php echo $this->__('Zip/Postal Code') ?></label>
+                        <label for="zip" class="required"><em>*</em><?php echo $this->__('Zip/Postal Code') ?></label>
                         <div class="input-box">
-                            <input type="text" name="consumer_zip" id="consumer_zip" class="input-text validate-zip-international"/>
+                            <input type="text" name="postcode" value="<?php echo $this->escapeHtml($this->getFormData()->getPostcode()) ?>" title="<?php echo $this->__('Zip/Postal Code') ?>" id="zip" class="input-text validate-zip-international <?php echo $this->helper('customer/address')->getAttributeValidationClass('postcode') ?>" />
                         </div>
                     </div>
                 </li>
-              
+                <li class="fields">
+                <div class="field">
+                        <label for="country" class="required"><em>*</em><?php echo $this->__('Country') ?></label>
+                        <div class="input-box">
+                            <?php echo $this->getCountryHtmlSelect() ?>
+                        </div>
+                    </div>
+                </li>
                 <li class="fields">
                     <div class="field">
-                        <label for="consumer_phone" class="required"><em>*</em><?php echo $this->__('Phone') ?></label>
+                        <label for="telephone" class="required"><em>*</em><?php echo $this->__('Telephone') ?></label>
                         <div class="input-box">
-                            <input type="text" name="consumer_phone" id="consumer_phone" class="input-text validate-telephone" />
+                            <input type="text" name="telephone" id="telephone" value="<?php echo $this->escapeHtml($this->getFormData()->getTelephone()) ?>" title="<?php echo $this->__('Phone') ?>" class="input-text <?php echo $this->helper('customer/address')->getAttributeValidationClass('telephone') ?>" />
                         </div>
                     </div>
                 </li>
                 <li class="fields">
-                    <label for="consumer_fax" class="required"><em>*</em><?php echo $this->__('Fax') ?></label>
+                    <label for="customer_fax" class="required"><em>*</em><?php echo $this->__('Fax') ?></label>
                     <div class="input-box">
-                        <input type="text" name="consumer_fax" id="consumer_fax" class="input-text  required-entry" />
+                        <input type="text" name="customer_fax" id="customer_fax" class="input-text  required-entry" />
                     </div>
                 </li>
-                <li class="control">
-                    <div class="input-box">
-                        <input type="checkbox" name="terms" class="checkbox required-entry" />
-                    </div>
-                    <label for="terms"><?php echo $this->__('I have read and agreed to Private Policy and Web Usage Agreement') ?></label>
-                </li>
-                <li>
-                <?php
-                echo $this->getLayout()->createBlock('captcha/captcha')->setFormId('consumers')->setImageWidth(230)->setImageHeight(55)->toHtml();
-?>
-</li>
 
         </ul>
          <button type="submit" title="<?php echo $this->__('Submit') ?>" class="button"><span><span><?php echo $this->__('Submit') ?></span></span></button>

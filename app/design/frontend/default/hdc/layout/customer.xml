@@ -133,6 +133,8 @@ New customer registration
                 <block type="page/html_wrapper" name="customer.form.register.fields.before" as="form_fields_before" translate="label">
                     <label>Form Fields Before</label>
                 </block>
+
+                
             </block>
         </reference>
     </customer_account_create>
